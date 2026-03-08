@@ -79,7 +79,7 @@ def update_web():
     
     # webapp/data.js を書き出し (app.js が期待する dictionaryData に合わせる)
     js_content = f"const dictionaryData = {json.dumps(misreadings, ensure_ascii=False, indent=2)};"
-    output_path = os.path.join("webapp", "data.js")
+    output_path = os.path.join("docs", "data.js")
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(js_content)

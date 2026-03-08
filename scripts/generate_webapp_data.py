@@ -39,7 +39,7 @@ def generate_web_data():
     
     # data.js を書き出し
     js_content = f"const MISREADING_DATA = {json.dumps(misreadings, ensure_ascii=False, indent=2)};"
-    output_path = os.path.join("webapp", "data.js")
+    output_path = os.path.join("docs", "data.js")
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(js_content)
