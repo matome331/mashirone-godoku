@@ -1,0 +1,65 @@
+# --- 1. 依存関係 ---
+node_modules/
+venv/
+.venv/
+env/
+
+# --- 2. ログ・キャッシュ ---
+*.log
+npm-debug.log*
+__pycache__/
+.cache/
+
+# --- 3. ビルド成果物 ---
+dist/
+build/
+*.class
+*.o
+*.exe
+*.py[cod]
+
+# --- 4. 環境変数・機密情報 (流出厳禁！) ---
+.env
+.env.*
+Credentials.csv
+google-service-account.json
+aws_access_key_id
+id_rsa
+*.pem
+*.key
+
+# --- 5. データベース ---
+*.sqlite3
+*.db
+dump.sql
+db_dump.json
+data/
+
+# --- 6. エディタ・OSのゴミ ---
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- 7. 個人的なメモ ---
+Memo.txt
+todo.md
+
+# --- 8. AIエージェント関連 (Antigravity/Gemini) ---
+.agents/
+.gemini/
+
+# --- 9. プロジェクト固有 ---
+# Webアプリの自動生成データ（data.jsから生成可能）
+webapp/data.json
+# バックアップファイル
+webapp/styles_backup*.css
+# 一時フォルダ
+_temp_update/
+channel_test/
+# テスト用ファイル
+test_result.*
+test_v2.txt

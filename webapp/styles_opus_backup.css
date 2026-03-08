@@ -1,0 +1,604 @@
+/* Base Variables */
+:root {
+    --primary-gradient: linear-gradient(135deg, #FFE4E1 0%, #E0FFFF 100%);
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --card-border: rgba(255, 255, 255, 0.6);
+    --text-primary: #4a4a4a;
+    --text-secondary: #7e7e7e;
+    --accent-pink: #f28baf;
+    --accent-blue: #7cbfe6;
+    --font-jp: 'M PLUS Rounded 1c', 'Nunito', sans-serif;
+}
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-jp);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 180px;
+    /* Offset for fixed header */
+}
+
+body {
+    background: var(--primary-gradient);
+    background-size: 300% 300%;
+    animation: gradientShift 20s ease infinite;
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+    /* iOSの文字サイズ自動拡大を防止 */
+    text-size-adjust: 100%;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.app-container {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fixed Glassmorphic Header */
+.glass-header {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 1rem;
+    z-index: 100;
+}
+
+.header-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.title-area {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* PC（マウス操作）のみの演出 */
+@media (min-width: 768px) {
+    .title-area {
+        cursor: help;
+    }
+
+    .title-area:hover .subtitle {
+        opacity: 1;
+    }
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--accent-pink);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.subtitle {
+    display: none;
+    /* スマホでは完全に非表示 */
+}
+
+@media (min-width: 768px) {
+    .subtitle {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--text-secondary);
+        background-color: #fffef0;
+        border: 1px solid rgba(124, 191, 230, 0.4);
+        padding: 3px 8px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+
+        opacity: 0;
+        position: fixed;
+        z-index: 10000;
+        white-space: nowrap;
+        pointer-events: none;
+
+        transition: opacity 0.1s ease;
+        transition-delay: 0.05s;
+    }
+}
+
+/* Controls */
+.search-sort-area {
+    display: flex;
+    flex-grow: 1;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.search-container,
+.sort-container {
+    position: relative;
+    max-width: 400px;
+    flex: 1;
+}
+
+.search-icon,
+.sort-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-blue);
+    font-size: 1rem;
+}
+
+#searchInput,
+#sortSelect {
+    width: 100%;
+    padding: 0.8rem 2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+    outline: none;
+    font-weight: 700;
+}
+
+/* iOSのデフォルトスタイルを完全にリセットして余白を効かせる */
+#sortSelect {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237cbfe6' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+    /* 矢印アイコン 用の余白 */
+    cursor: pointer;
+}
+
+#searchInput:focus,
+#sortSelect:focus {
+    background: #ffffff;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 10px rgba(124, 191, 230, 0.3);
+}
+
+.clear-btn {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 1.2rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#searchInput:not(:placeholder-shown)+.clear-btn {
+    visibility: visible;
+}
+
+/* Kana Index */
+.wiki-index {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed rgba(200, 200, 200, 0.5);
+}
+
+.wiki-index a {
+    text-decoration: none;
+    color: var(--accent-pink);
+    font-weight: 900;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.wiki-index a:hover {
+    background: var(--accent-pink);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(242, 139, 175, 0.3);
+}
+
+@media (max-width: 650px) {
+    .app-container {
+        padding: 0.5rem;
+    }
+
+    .glass-header {
+        padding: 0.6rem;
+        margin-bottom: 0.6rem;
+        border-radius: 8px;
+        top: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.0rem;
+        /* 大幅に縮小（改行防止） */
+    }
+
+    .header-main {
+        margin-bottom: 0.3rem;
+        gap: 0.3rem;
+    }
+
+    .search-sort-area {
+        flex-direction: row;
+        /* 横並びに変更 */
+        gap: 0.3rem;
+    }
+
+    .search-container,
+    .sort-container {
+        min-width: 0;
+        /* 文字長によって親が勝手に広がるのを防ぐ */
+        flex: 1 1 0;
+    }
+
+    #searchInput,
+    #sortSelect {
+        width: 100%;
+        padding: 0.35rem 0.2rem 0.35rem 1.5rem;
+        /* 空きすぎたスペースを詰めて全体を左に寄せる */
+        font-size: 0.75rem;
+        /* 横並び用に僅かに縮小 */
+        border-radius: 6px;
+        text-overflow: ellipsis;
+        /* はみ出した文字を「…」にする */
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    #sortSelect {
+        padding-right: 1.2rem;
+        /* iOS用の矢印スペースを確保 */
+        background-position: right 0.2rem center;
+        background-size: 0.8rem;
+    }
+
+    .search-icon,
+    .sort-icon {
+        font-size: 0.8rem;
+        left: 0.4rem;
+        /* アイコン自体も少し左に寄せる */
+    }
+
+    .wiki-index {
+        justify-content: space-evenly;
+        gap: 0.2rem;
+        padding-top: 0.4rem;
+        border-top: 1px dotted rgba(200, 200, 200, 0.5);
+        /* ダッシュより細く */
+    }
+
+    .wiki-index a {
+        font-size: 0.8rem;
+        padding: 0.15rem 0.35rem;
+        /* 指で押せるギリギリのサイズ */
+        border-radius: 6px;
+    }
+}
+
+/* Main Content area */
+.wiki-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Section Header (e.g. あ行 or Video Title) */
+.section-container {
+    margin-bottom: 1rem;
+}
+
+.section-header {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    backdrop-filter: blur(8px);
+    border-left: 6px solid var(--accent-blue);
+    padding: 1rem 1.5rem;
+    border-radius: 0 16px 16px 0;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-date {
+    font-size: 0.85rem;
+    color: var(--accent-pink);
+    font-weight: 700;
+    margin-top: 0.2rem;
+}
+
+/* Cards Grid inside Section */
+.card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(0, 1fr);
+    /* ★ 1frだと中身の最小幅が優先されるので、minmax(0,1fr)で強制的に横幅を制限 */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media (min-width: 650px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Card Style */
+.misreading-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    animation: fadeIn 0.4s ease forwards;
+    overflow: hidden;
+    /* ★ 中身がカードの外にはみ出すのを物理的にブロック */
+}
+
+.misreading-card:hover {
+    border-color: rgba(242, 139, 175, 0.4);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    /* 文字でカードが広がるのを防ぐ */
+    overflow: hidden;
+    /* 子要素の省略（...）を確実に効かせる */
+}
+
+.timestamp {
+    font-size: 0.75rem;
+    background: var(--text-secondary);
+    color: white;
+    padding: 0.1rem 0.6rem;
+    border-radius: 10px;
+    width: fit-content;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.5px;
+}
+
+.words {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    /* ★ 誤読テキストが長い時に折り返すことで幅をはみ出さない */
+}
+
+.original {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--text-primary);
+}
+
+.reading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-pink);
+}
+
+.video-context {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    margin-top: 0.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* Play button */
+.play-btn {
+    background: var(--accent-blue);
+    color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    text-decoration: none;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(124, 191, 230, 0.4);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.play-btn i {
+    margin-left: 2px;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+    background: #6ab0db;
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--card-bg);
+    backdrop-filter: blur(8px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    color: var(--accent-pink);
+    transform: translateY(-5px);
+}
+
+/* Utils */
+.hidden {
+    display: none !important;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 5rem 1rem;
+    color: var(--text-secondary);
+    font-weight: 700;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    border-top: 4px solid var(--accent-blue);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(242, 139, 175, 0.5);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-pink);
+}
+
+/* プランA：モバイル向けカード最適化 */
+@media (max-width: 650px) {
+    .misreading-card {
+        padding: 0.6rem 0.8rem;
+        /* カード自体の余白を詰める */
+        position: relative;
+        /* 再生ボタンの絶対配置の基準に */
+    }
+
+    .card-left {
+        width: 100%;
+        min-width: 0;
+        /* ★文字長でカードが広がるのを防ぐ */
+        padding-right: 2.5rem;
+        /* 右上の再生ボタンとテキストが被らないように余白確保 */
+    }
+
+    .timestamp {
+        margin-bottom: 0.1rem;
+    }
+
+    .play-btn {
+        position: absolute;
+        top: 0.6rem;
+        right: 0.8rem;
+        width: 32px;
+        /* ボタンを小型化 */
+        height: 32px;
+        font-size: 0.85rem;
+    }
+}

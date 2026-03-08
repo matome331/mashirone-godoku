@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>真白猫ミミィ 誤読まとめ</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&family=Nunito:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=37">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Floating Header -->
+        <header class="glass-header">
+            <div class="header-main">
+                <div class="title-area">
+                    <h1 class="logo"><i class="fa-solid fa-book-open"></i> 真白猫ミミィ
+                        誤読まとめ</h1>
+                    <span class="subtitle">@ageha1stさんのタイムスタンプを元に作成しています</span>
+                </div>
+
+                <div class="search-sort-area">
+                    <div class="search-container">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="searchInput" placeholder="語録を探す..." autocomplete="off">
+                        <button id="clearSearch" class="clear-btn" aria-label="クリア"><i
+                                class="fa-solid fa-times"></i></button>
+                    </div>
+
+                    <div class="sort-container">
+                        <i class="fa-solid fa-arrow-down-a-z sort-icon"></i>
+                        <select id="sortSelect">
+                            <option value="kana">五十音順（あ〜わ）</option>
+                            <option value="dateDesc">配信日が新しい順</option>
+                            <option value="dateAsc">配信日が古い順</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kana Index Navigation -->
+            <nav id="kanaIndex" class="wiki-index">
+                <a href="#row-あ">あ</a>
+                <a href="#row-か">か</a>
+                <a href="#row-さ">さ</a>
+                <a href="#row-た">た</a>
+                <a href="#row-な">な</a>
+                <a href="#row-は">は</a>
+                <a href="#row-ま">ま</a>
+                <a href="#row-や">や</a>
+                <a href="#row-ら">ら</a>
+                <a href="#row-わ">わ</a>
+            </nav>
+        </header>
+
+        <!-- Dynamic Content Area -->
+        <main>
+            <div id="loadingIndicator" class="empty-state">
+                <div class="spinner"></div>
+                <p>辞典を開いています...</p>
+            </div>
+
+            <div id="noResults" class="empty-state hidden">
+                <i class="fa-solid fa-ghost"></i>
+                <p>見つかりませんでしたニャ🐾</p>
+            </div>
+
+            <div id="contentSections" class="wiki-content">
+                <!-- Sections (e.g. あ行, or Video Titles) injected here -->
+            </div>
+
+            <a href="#" id="backToTop" class="back-to-top hidden"><i class="fa-solid fa-arrow-up"></i></a>
+        </main>
+
+        <footer>
+            <p>Made with 🤍 for Mashironeko Mimy</p>
+        </footer>
+    </div>
+
+    <script src="data.js?v=38"></script>
+    <script src="app.js?v=33"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
