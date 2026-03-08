@@ -404,7 +404,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
     border: 1px solid transparent;
     transition: all 0.2s;
-    animation: fadeIn 0.4s ease forwards;
     overflow: hidden;
     /* ★ 中身がカードの外にはみ出すのを物理的にブロック */
 }
@@ -551,12 +550,6 @@ body {
 @keyframes spin {
     100% {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
     }
 }
 

@@ -175,8 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
         itemsList.forEach((item, index) => {
             const li = document.createElement('li');
             li.className = 'misreading-card';
-            if (index < 10) li.style.animationDelay = `${index * 0.05}s`;
-            else li.style.opacity = 1;
 
             li.innerHTML = `
                 <div class="card-left">
