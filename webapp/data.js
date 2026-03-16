@@ -1,5 +1,194 @@
 const dictionaryData = [
   {
+    "timestamp": "1:00:23",
+    "original": "腎臓",
+    "reading": "かんぞう",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？🍚✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PAwdFTA1aeA&t=3623s",
+    "date": "2026/03/14"
+  },
+  {
+    "timestamp": "38:34",
+    "original": "崇める称える",
+    "reading": "たたえつかえる",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？🍚✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PAwdFTA1aeA&t=2314s",
+    "date": "2026/03/14"
+  },
+  {
+    "timestamp": "1:41:41",
+    "original": "水信玄餅",
+    "reading": "すいしんげんもち",
+    "context": "",
+    "videoTitle": "【 雑談 】関西弁白猫VTuberとゆる～く雑談しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NvVsUCB0KW4&t=6101s",
+    "date": "2026/03/10"
+  },
+  {
+    "timestamp": "2:10:12",
+    "original": "光GENJI",
+    "reading": "ひかり",
+    "context": "",
+    "videoTitle": "【 雑談 】関西弁白猫VTuberとゆる～く雑談しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NvVsUCB0KW4&t=7812s",
+    "date": "2026/03/10"
+  },
+  {
+    "timestamp": "2:30:42",
+    "original": "不撓不屈",
+    "reading": "ふふん",
+    "context": "",
+    "videoTitle": "【 雑談 】関西弁白猫VTuberとゆる～く雑談しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NvVsUCB0KW4&t=9042s",
+    "date": "2026/03/10"
+  },
+  {
+    "timestamp": "2:30:49",
+    "original": "勇猛果敢",
+    "reading": "ゆうもうかっじつ",
+    "context": "",
+    "videoTitle": "【 雑談 】関西弁白猫VTuberとゆる～く雑談しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NvVsUCB0KW4&t=9049s",
+    "date": "2026/03/10"
+  },
+  {
+    "timestamp": "2:30:59",
+    "original": "僥倖",
+    "reading": "ぼうぼう",
+    "context": "",
+    "videoTitle": "【 雑談 】関西弁白猫VTuberとゆる～く雑談しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NvVsUCB0KW4&t=9059s",
+    "date": "2026/03/10"
+  },
+  {
+    "timestamp": "2:31:04",
+    "original": "意匠惨憺",
+    "reading": "いしざん",
+    "context": "",
+    "videoTitle": "【 雑談 】関西弁白猫VTuberとゆる～く雑談しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NvVsUCB0KW4&t=9064s",
+    "date": "2026/03/10"
+  },
+  {
+    "timestamp": "2:31:07",
+    "original": "温厚篤実",
+    "reading": "おんこうかじつ",
+    "context": "",
+    "videoTitle": "【 雑談 】関西弁白猫VTuberとゆる～く雑談しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NvVsUCB0KW4&t=9067s",
+    "date": "2026/03/10"
+  },
+  {
+    "timestamp": "2:35:53",
+    "original": "購買",
+    "reading": "こうばん",
+    "context": "",
+    "videoTitle": "【 雑談 】関西弁白猫VTuberとゆる～く雑談しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NvVsUCB0KW4&t=9353s",
+    "date": "2026/03/10"
+  },
+  {
+    "timestamp": "2:04:23",
+    "original": "壊滅",
+    "reading": "はかい",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】リニューアル衣装お披露目後はじめての朝活配信☀️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Wp_hQ1DRblc&t=7463s",
+    "date": "2026/03/05"
+  },
+  {
+    "timestamp": "3:51:10",
+    "original": "獺祭",
+    "reading": "なんとかさい",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】リニューアル衣装お披露目後はじめての朝活配信☀️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Wp_hQ1DRblc&t=13870s",
+    "date": "2026/03/05"
+  },
+  {
+    "timestamp": "1:58:17",
+    "original": "追従",
+    "reading": "おうじゅう",
+    "context": "",
+    "videoTitle": "【 生誕祭 】初期衣装リニューアルお披露目です✨️いつも本当にありがとう～！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=xtkIkW1BZQ4&t=7097s",
+    "date": "2026/03/03"
+  },
+  {
+    "timestamp": "2:44:13",
+    "original": "古強者",
+    "reading": "こつわもの",
+    "context": "",
+    "videoTitle": "【 誕生日カウントダウン / 雑談 】初期衣装リニューアルを記念して初配信同時視聴しました！一緒にお誕生日を迎えてくれて本当にありがとう✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=_ftsAThBIFg&t=9853s",
+    "date": "2026/03/02"
+  },
+  {
+    "timestamp": "1:25:11",
+    "original": "添加",
+    "reading": "てんぷ",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=5111s",
+    "date": "2026/03/01"
+  },
+  {
+    "timestamp": "1:49:55",
+    "original": "啓蒙",
+    "reading": "かつどう",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=6595s",
+    "date": "2026/03/01"
+  },
+  {
+    "timestamp": "20:46",
+    "original": "果報",
+    "reading": "こうほう",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=1246s",
+    "date": "2026/03/01"
+  },
+  {
+    "timestamp": "23:54",
+    "original": "渓流",
+    "reading": "りょうりゅう",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=1434s",
+    "date": "2026/03/01"
+  },
+  {
+    "timestamp": "3:14:01",
+    "original": "眉間",
+    "reading": "まゆげ",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=11641s",
+    "date": "2026/03/01"
+  },
+  {
+    "timestamp": "3:16:01",
+    "original": "𠮟責",
+    "reading": "かっせき",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=11761s",
+    "date": "2026/03/01"
+  },
+  {
+    "timestamp": "4:21:30",
+    "original": "鬼ヶ島",
+    "reading": "おにがじま",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=15690s",
+    "date": "2026/03/01"
+  },
+  {
     "timestamp": "1:16:16",
     "original": "耐荷重",
     "reading": "たいにじゅう",

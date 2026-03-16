@@ -65,10 +65,12 @@ def collect_and_analyze():
 
                 video_url = f"https://www.youtube.com/watch?v={video_id}"
                 
+                comments = info.get('comments', [])
+                comment_count = len(comments)
+                
                 # スキップ判定（DBに登録済みかつコメント数取得が可能なら比較）
-                # 今回は一旦IDのみで判定して重複スキャンを防ぐ
-                if db.is_video_processed(video_id):
-                    # print(f"Skipping (already processed): {video_id}")
+                if db.is_video_processed(video_id, current_comment_count=comment_count):
+                    # print(f"Skipping (already processed or no new comments): {video_id}")
                     continue
 
                 try:
@@ -87,8 +89,6 @@ def collect_and_analyze():
 
                 print(f"Scanning: {title} ({upload_date})")
                 
-                comments = info.get('comments', [])
-                comment_count = len(comments)
                 target_clean = TARGET_AUTHOR.lower().lstrip('@')
                 
                 video_new_text = ""
