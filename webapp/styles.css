@@ -347,6 +347,8 @@ body {
 /* Section Header (e.g. あ行 or Video Title) */
 .section-container {
     margin-bottom: 1rem;
+    content-visibility: auto;
+    contain-intrinsic-size: auto 300px;
 }
 
 .section-header {
@@ -406,6 +408,9 @@ body {
     transition: all 0.2s;
     overflow: hidden;
     /* ★ 中身がカードの外にはみ出すのを物理的にブロック */
+    content-visibility: auto;
+    contain-intrinsic-size: auto 70px;
+    will-change: transform;
 }
 
 .misreading-card:hover {
