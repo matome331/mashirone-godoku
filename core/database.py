@@ -71,6 +71,13 @@ class DatabaseManager:
                 cursor.execute('SELECT 1 FROM videos WHERE video_id = ?', (video_id,))
             return cursor.fetchone() is not None
 
+    def has_misreadings(self, video_id):
+        """Check if any misreadings are extracted for this video."""
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute('SELECT 1 FROM misreadings WHERE video_id = ?', (video_id,))
+            return cursor.fetchone() is not None
+
     def clear_video_record(self, video_id):
         """Remove a video record to allow re-processing."""
         with self._get_connection() as conn:

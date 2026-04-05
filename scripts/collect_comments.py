@@ -7,7 +7,7 @@ from core.database import DatabaseManager
 # 設定
 CHANNEL_URL = "https://www.youtube.com/@mashi_rone/streams"
 TARGET_AUTHOR = "@ageha1st"
-THRESHOLD_DATE = "2026/02/20"
+THRESHOLD_DATE = "2026/03/01"
 
 def collect_and_analyze():
     db = DatabaseManager()
@@ -53,9 +53,11 @@ def collect_and_analyze():
             total_found = 0
             
             for entry in entries:
-                # 配信予定地 または 【現在配信中】 であれば、詳細情報を取る前にスキップ
+                # 配信予定地 または 【現在配信中】 または メン限 であれば、詳細情報を取る前にスキップ
                 live_status = entry.get('live_status')
-                if live_status in ['is_upcoming', 'is_live'] or "予定" in (entry.get('title') or ""):
+                entry_title = entry.get('title', '')
+                if live_status in ['is_upcoming', 'is_live'] or "予定" in entry_title or "メン限" in entry_title:
+                    print(f"Skipped (Live/Upcoming/Member): {entry_title}")
                     continue
 
                 # IDの正規化
@@ -65,18 +67,18 @@ def collect_and_analyze():
 
                 video_url = f"https://www.youtube.com/watch?v={video_id}"
                 
-                comments = info.get('comments', [])
-                comment_count = len(comments)
-                
-                # スキップ判定（DBに登録済みかつコメント数取得が可能なら比較）
-                if db.is_video_processed(video_id, current_comment_count=comment_count):
-                    # print(f"Skipping (already processed or no new comments): {video_id}")
+                # agehaさんの誤読コメントが既に1件でも抽出されている場合は完全スキップ
+                if db.has_misreadings(video_id):
+                    print(f"Skipped (Misreadings already found): {entry_title}")
                     continue
-
+                
                 try:
                     info = ydl.extract_info(video_url, download=False)
                 except Exception:
                     continue
+                
+                comments = info.get('comments', [])
+                comment_count = len(comments)
                     
                 title = info.get('title', '')
                 # メン限チェック
