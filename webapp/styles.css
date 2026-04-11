@@ -259,6 +259,18 @@ body {
 }
 
 @media (max-width: 650px) {
+    body {
+        animation: none;
+        /* グラデーションアニメをオフ → GPU負荷を大幅削減 */
+        background-size: 100% 100%;
+    }
+
+    .glass-header {
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        /* blur量を16→8pxに半減 → 描画コスト削減 */
+    }
+
     .app-container {
         padding: 0.5rem;
     }
@@ -409,8 +421,7 @@ body {
     overflow: hidden;
     /* ★ 中身がカードの外にはみ出すのを物理的にブロック */
     content-visibility: auto;
-    contain-intrinsic-size: auto 70px;
-    will-change: transform;
+    contain-intrinsic-size: auto 100px;
 }
 
 .misreading-card:hover {
@@ -601,6 +612,9 @@ footer {
         /* カード自体の余白を詰める */
         position: relative;
         /* 再生ボタンの絶対配置の基準に */
+        transition: none;
+        /* スマホではhoverアニメ不要 → 描画負荷を大幅削減 */
+        border-radius: 12px;
     }
 
     .card-left {
