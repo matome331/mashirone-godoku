@@ -260,6 +260,24 @@ document.addEventListener('DOMContentLoaded', () => {
         searchInput.focus();
     });
 
+    // 五十音インデックスのクリック → 全件読み込んでからジャンプ
+    kanaIndex.addEventListener('click', (e) => {
+        const link = e.target.closest('a');
+        if (!link) return;
+        e.preventDefault();
+
+        // 全件表示にして対象セクションを確実にDOMに存在させる
+        currentLimit = displayedData.length;
+        renderSections();
+
+        // ジャンプ先へスクロール
+        const targetId = link.getAttribute('href').substring(1);
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
     // Back to top behavior
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
