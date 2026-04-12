@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 検索中は全件表示、通常時はページング
         const isSearching = searchInput.value.trim() !== '';
         const visibleData = isSearching ? displayedData : displayedData.slice(0, currentLimit);
-        const hasMore = !isSearching && currentLimit < displayedData.length;
+        let hasMoreFlag = !isSearching && currentLimit < displayedData.length;
 
         // --- GROUPING & SORTING LOGIC ---
         let groups = {};
@@ -88,28 +88,37 @@ document.addEventListener('DOMContentLoaded', () => {
             // SHOW WIKI KANA INDEX
             kanaIndex.style.display = 'flex';
 
+            const rowOrder = ['あ行', 'か行', 'さ行', 'た行', 'な行', 'は行', 'ま行', 'や行', 'ら行', 'わ行', 'その他'];
+            const rowIndex = (item) => {
+                const r = getKanaRow(item.reading);
+                const idx = rowOrder.indexOf(r);
+                return idx >= 0 ? idx : rowOrder.length;
+            };
+
+            // 全データを五十音順にソートしてからスライス
+            const kanaSorted = [...displayedData].sort((a, b) => {
+                const rowDiff = rowIndex(a) - rowIndex(b);
+                if (rowDiff !== 0) return rowDiff;
+                const rCompare = a.reading.localeCompare(b.reading, 'ja');
+                if (rCompare !== 0) return rCompare;
+                const dCompare = a.date.localeCompare(b.date);
+                if (dCompare !== 0) return dCompare;
+                return sortByTimestamp(a, b);
+            });
+
+            const visibleKana = isSearching ? kanaSorted : kanaSorted.slice(0, currentLimit);
+            hasMoreFlag = !isSearching && currentLimit < kanaSorted.length;
+
             // Group by Kana Row
-            visibleData.forEach(item => {
+            visibleKana.forEach(item => {
                 const row = getKanaRow(item.reading);
                 if (!groups[row]) groups[row] = [];
                 groups[row].push(item);
             });
 
-            const rowOrder = ['あ行', 'か行', 'さ行', 'た行', 'な行', 'は行', 'ま行', 'や行', 'ら行', 'わ行', 'その他'];
-
             rowOrder.forEach(rowName => {
                 if (!groups[rowName] || groups[rowName].length === 0) return;
-
-                // Sort inside row: Alphabetical by reading -> Date -> Timestamp
-                const items = groups[rowName].sort((a, b) => {
-                    const rCompare = a.reading.localeCompare(b.reading, 'ja');
-                    if (rCompare !== 0) return rCompare;
-                    const dCompare = a.date.localeCompare(b.date);
-                    if (dCompare !== 0) return dCompare;
-                    return sortByTimestamp(a, b);
-                });
-
-                const section = createSectionGroup(rowName, '', items, `row-${rowName.charAt(0)}`);
+                const section = createSectionGroup(rowName, '', groups[rowName], `row-${rowName.charAt(0)}`);
                 fragment.appendChild(section);
             });
 
@@ -155,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
         listContainer.appendChild(fragment);
 
         // 「もっと見る」ボタン
-        if (hasMore) {
+        if (hasMoreFlag) {
             const remaining = displayedData.length - currentLimit;
             const loadMoreBtn = document.createElement('button');
             loadMoreBtn.className = 'load-more-btn';
