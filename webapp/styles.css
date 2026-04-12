@@ -359,8 +359,6 @@ body {
 /* Section Header (e.g. あ行 or Video Title) */
 .section-container {
     margin-bottom: 1rem;
-    content-visibility: auto;
-    contain-intrinsic-size: auto 500px;
 }
 
 .section-header {
