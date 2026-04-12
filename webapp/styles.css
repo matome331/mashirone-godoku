@@ -360,7 +360,7 @@ body {
 .section-container {
     margin-bottom: 1rem;
     content-visibility: auto;
-    contain-intrinsic-size: auto 300px;
+    contain-intrinsic-size: auto 500px;
 }
 
 .section-header {
@@ -420,8 +420,6 @@ body {
     transition: all 0.2s;
     overflow: hidden;
     /* ★ 中身がカードの外にはみ出すのを物理的にブロック */
-    content-visibility: auto;
-    contain-intrinsic-size: auto 100px;
 }
 
 .misreading-card:hover {
