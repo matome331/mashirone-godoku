@@ -530,6 +530,40 @@ body {
     transform: translateY(-5px);
 }
 
+/* Load More Button */
+.load-more-btn {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 0.8rem 1.5rem;
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid var(--accent-blue);
+    border-radius: 20px;
+    color: var(--accent-blue);
+    font-family: var(--font-jp);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(124, 191, 230, 0.2);
+}
+
+.load-more-btn:hover {
+    background: var(--accent-blue);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(124, 191, 230, 0.4);
+}
+
+.load-more-btn:active {
+    transform: translateY(0);
+}
+
+.load-more-btn i {
+    margin-right: 0.4rem;
+}
+
 /* Utils */
 .hidden {
     display: none !important;

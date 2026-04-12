@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let allMisreadings = [];
     let displayedData = [];
+    let currentLimit = 100;
+    const ITEMS_PER_PAGE = 100;
 
     // Helper: Parse HH:MM:SS to seconds
     const parseTimeToSeconds = (timeStr) => {
@@ -74,6 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
             noResults.classList.add('hidden');
         }
 
+        // 検索中は全件表示、通常時はページング
+        const isSearching = searchInput.value.trim() !== '';
+        const visibleData = isSearching ? displayedData : displayedData.slice(0, currentLimit);
+        const hasMore = !isSearching && currentLimit < displayedData.length;
+
         // --- GROUPING & SORTING LOGIC ---
         let groups = {};
 
@@ -82,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             kanaIndex.style.display = 'flex';
 
             // Group by Kana Row
-            displayedData.forEach(item => {
+            visibleData.forEach(item => {
                 const row = getKanaRow(item.reading);
                 if (!groups[row]) groups[row] = [];
                 groups[row].push(item);
@@ -97,10 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const items = groups[rowName].sort((a, b) => {
                     const rCompare = a.reading.localeCompare(b.reading, 'ja');
                     if (rCompare !== 0) return rCompare;
-                    // 同じ読みなら、日付が古い順（昇順）に並べる
                     const dCompare = a.date.localeCompare(b.date);
                     if (dCompare !== 0) return dCompare;
-                    // 日付まで同じなら、タイムスタンプ順（昇順）
                     return sortByTimestamp(a, b);
                 });
 
@@ -113,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
             kanaIndex.style.display = 'none';
 
             // Group by Video (Date)
-            displayedData.forEach(item => {
+            visibleData.forEach(item => {
                 const key = `${item.date}_${item.videoTitle}`;
                 if (!groups[key]) groups[key] = { date: item.date, items: [] };
                 groups[key].items.push(item);
@@ -148,6 +153,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         listContainer.appendChild(fragment);
+
+        // 「もっと見る」ボタン
+        if (hasMore) {
+            const remaining = displayedData.length - currentLimit;
+            const loadMoreBtn = document.createElement('button');
+            loadMoreBtn.className = 'load-more-btn';
+            loadMoreBtn.innerHTML = `<i class="fa-solid fa-chevron-down"></i> もっと見る（残り ${remaining} 件）`;
+            loadMoreBtn.addEventListener('click', () => {
+                currentLimit += ITEMS_PER_PAGE;
+                renderSections();
+            });
+            listContainer.appendChild(loadMoreBtn);
+        }
     };
 
     // Helper: Build DOM for a Section
@@ -200,6 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sort change
     sortSelect.addEventListener('change', () => {
+        currentLimit = ITEMS_PER_PAGE;
         renderSections();
         window.scrollTo(0, 0);
     });
@@ -207,6 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Search logic
     const handleSearch = (e) => {
         const term = e.target.value.toLowerCase().trim();
+        currentLimit = ITEMS_PER_PAGE;
         if (term === '') {
             displayedData = [...allMisreadings];
         } else {
