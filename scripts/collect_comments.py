@@ -9,6 +9,13 @@ CHANNEL_URL = "https://www.youtube.com/@mashi_rone/streams"
 TARGET_AUTHOR = "@ageha1st"
 THRESHOLD_DATE = "2026/03/01"
 
+def safe_print(msg):
+    """CP932でエンコードできない文字を安全に処理して表示"""
+    try:
+        print(msg)
+    except UnicodeEncodeError:
+        print(msg.encode('cp932', errors='replace').decode('cp932'))
+
 def collect_and_analyze():
     db = DatabaseManager()
     
@@ -21,7 +28,7 @@ def collect_and_analyze():
             exclude_keywords = [line.strip() for line in f if line.strip()]
 
     # 追加のゴミキーワード（自動除外）
-    auto_exclude = ["潔癖症", "接続確認", "答え", "└", "えっ？", "忘れない", "不具合", "設定忘れ", "録画ミス"]
+    auto_exclude = ["潔癖症", "接続確認", "答え", "└", "えっ？", "忘れない", "不具合", "設定忘れ", "録画ミス", "ひゃー", "いやー", "あー", "ふっふっふ"]
 
     refined_path = os.path.join(base_dir, "mimy_misreadings_refined.txt")
     
@@ -47,7 +54,7 @@ def collect_and_analyze():
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             channel_info = ydl.extract_info(CHANNEL_URL, download=False, process=False)
-            entries = list(channel_info.get('entries', []))[:15]
+            entries = list(channel_info.get('entries', []))[:50]
             
             new_findings_text = ""
             total_found = 0
@@ -57,7 +64,7 @@ def collect_and_analyze():
                 live_status = entry.get('live_status')
                 entry_title = entry.get('title', '')
                 if live_status in ['is_upcoming', 'is_live'] or "予定" in entry_title or "メン限" in entry_title:
-                    print(f"Skipped (Live/Upcoming/Member): {entry_title}")
+                    safe_print(f"Skipped (Live/Upcoming/Member): {entry_title}")
                     continue
 
                 # IDの正規化
@@ -69,7 +76,7 @@ def collect_and_analyze():
                 
                 # agehaさんの誤読コメントが既に1件でも抽出されている場合は完全スキップ
                 if db.has_misreadings(video_id):
-                    print(f"Skipped (Misreadings already found): {entry_title}")
+                    safe_print(f"Skipped (Misreadings already found): {entry_title}")
                     continue
                 
                 try:
@@ -89,7 +96,7 @@ def collect_and_analyze():
                 upload_date = f"{upload_date_raw[:4]}/{upload_date_raw[4:6]}/{upload_date_raw[6:]}"
                 if upload_date < THRESHOLD_DATE: continue
 
-                print(f"Scanning: {title} ({upload_date})")
+                safe_print(f"Scanning: {title} ({upload_date})")
                 
                 target_clean = TARGET_AUTHOR.lower().lstrip('@')
                 
@@ -168,15 +175,15 @@ def collect_and_analyze():
                 with open(refined_path, "w", encoding="utf-8") as f:
                     f.write(final_content)
 
-                print(f"\n✅ 解析完了: {total_found}件の新規候補を「mimy_misreadings_refined.txt」の先頭に追記しました。")
-                print(" ファイルを確認・編集してください。")
+                safe_print(f"\n✅ 解析完了: {total_found}件の新規候補を「mimy_misreadings_refined.txt」の先頭に追記しました。")
+                safe_print(" ファイルを確認・編集してください。")
             else:
                 print("\n新しい誤読候補は見つかりませんでした。")
                 
     except Exception as e:
         import traceback
         traceback.print_exc()
-        print(f"エラーが発生しました: {e}")
+        safe_print(f"エラーが発生しました: {e}")
 
 if __name__ == "__main__":
     collect_and_analyze()

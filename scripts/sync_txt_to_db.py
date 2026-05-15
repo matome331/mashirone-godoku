@@ -75,7 +75,7 @@ def sync_txt_to_db():
 
         conn.commit()
     
-    print(f"✅ データベース更新完了: {count} 件の誤読を承認済み(status=1)に設定しました。")
+    print(f"[SUCCESS] データベース更新完了: {count} 件の誤読を承認済み(status=1)に設定しました。")
     
     # 2. Webアプリ用 data.js の生成
     approved_data = db.get_approved_data()
@@ -108,7 +108,7 @@ def sync_txt_to_db():
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(js_content)
     
-    print(f"✅ Webアプリ更新完了: {len(web_list)} 件のデータを公開しました。")
+    print(f"[SUCCESS] Webアプリ更新完了: {len(web_list)} 件のデータを公開しました。")
 
 if __name__ == "__main__":
     sync_txt_to_db()

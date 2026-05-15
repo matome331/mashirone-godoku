@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mimy-wiki-v7'; // バージョンを上げて古いキャッシュを破棄
+const CACHE_NAME = 'mimy-wiki-v8'; // バージョンを上げて古いキャッシュを破棄
 
 self.addEventListener('install', (event) => {
     // インストール時に即座にアクティブにする
