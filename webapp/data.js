@@ -1,5 +1,104 @@
 const dictionaryData = [
   {
+    "timestamp": "1:03:07",
+    "original": "馬力",
+    "reading": "ばりょく",
+    "context": "",
+    "videoTitle": "8/11【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lEebNN_ENzI&t=3787s",
+    "date": "2026/08/11"
+  },
+  {
+    "timestamp": "1:10:01",
+    "original": "繊維",
+    "reading": "そしき",
+    "context": "",
+    "videoTitle": "8/11【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lEebNN_ENzI&t=4201s",
+    "date": "2026/08/11"
+  },
+  {
+    "timestamp": "2:36:58",
+    "original": "渡部",
+    "reading": "わたべ",
+    "context": "",
+    "videoTitle": "8/11【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lEebNN_ENzI&t=9418s",
+    "date": "2026/08/11"
+  },
+  {
+    "timestamp": "4:58:20",
+    "original": "豪雪",
+    "reading": "ごうせき",
+    "context": "",
+    "videoTitle": "8/11【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lEebNN_ENzI&t=17900s",
+    "date": "2026/08/11"
+  },
+  {
+    "timestamp": "5:19:02",
+    "original": "急降下",
+    "reading": "きゅうらっか",
+    "context": "",
+    "videoTitle": "8/11【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lEebNN_ENzI&t=19142s",
+    "date": "2026/08/11"
+  },
+  {
+    "timestamp": "1:20:53",
+    "original": "藻",
+    "reading": "そう",
+    "context": "",
+    "videoTitle": "8/5【 昼活 / 雑談 】挨拶300人目標☀️作業のお供にぜひ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=wOtBjfueAjM&t=4853s",
+    "date": "2026/08/05"
+  },
+  {
+    "timestamp": "1:22:34",
+    "original": "鶴瓶",
+    "reading": "つるびん",
+    "context": "",
+    "videoTitle": "8/5【 昼活 / 雑談 】挨拶300人目標☀️作業のお供にぜひ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=wOtBjfueAjM&t=4954s",
+    "date": "2026/08/05"
+  },
+  {
+    "timestamp": "4:43:46",
+    "original": "既プレイ",
+    "reading": "すで",
+    "context": "",
+    "videoTitle": "8/5【 昼活 / 雑談 】挨拶300人目標☀️作業のお供にぜひ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=wOtBjfueAjM&t=17026s",
+    "date": "2026/08/05"
+  },
+  {
+    "timestamp": "5:13:47",
+    "original": "ﾀﾋ様手帳",
+    "reading": "しよう",
+    "context": "",
+    "videoTitle": "8/5【 昼活 / 雑談 】挨拶300人目標☀️作業のお供にぜひ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=wOtBjfueAjM&t=18827s",
+    "date": "2026/08/05"
+  },
+  {
+    "timestamp": "5:27:16",
+    "original": "不可避",
+    "reading": "ふかけつ",
+    "context": "",
+    "videoTitle": "8/5【 昼活 / 雑談 】挨拶300人目標☀️作業のお供にぜひ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=wOtBjfueAjM&t=19636s",
+    "date": "2026/08/05"
+  },
+  {
+    "timestamp": "5:34:32",
+    "original": "富良野",
+    "reading": "とみりょうの",
+    "context": "",
+    "videoTitle": "8/5【 昼活 / 雑談 】挨拶300人目標☀️作業のお供にぜひ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=wOtBjfueAjM&t=20072s",
+    "date": "2026/08/05"
+  },
+  {
     "timestamp": "2:56:33",
     "original": "取締役員",
     "reading": "とりします",
