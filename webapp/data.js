@@ -1,5 +1,284 @@
 const dictionaryData = [
   {
+    "timestamp": "4:18:57",
+    "original": "一揆",
+    "reading": "いっぱつ",
+    "context": "",
+    "videoTitle": "8/25【 #真白猫ミミィ新衣装 】活動3周年を記念して新衣装をお披露目します🌟【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=CEemDt-ddkw&t=15537s",
+    "date": "2026/08/25"
+  },
+  {
+    "timestamp": "1:06:10",
+    "original": "東奔西走",
+    "reading": "とうなん",
+    "context": "",
+    "videoTitle": "8/24【 3周年カウントダウン 】3周年の瞬間を一緒に迎えよう🌟お酒も呑むぞおおお！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=iPeTnk88yyQ&t=3970s",
+    "date": "2026/08/24"
+  },
+  {
+    "timestamp": "1:15:25",
+    "original": "温厚篤実",
+    "reading": "うまじつ",
+    "context": "",
+    "videoTitle": "8/24【 3周年カウントダウン 】3周年の瞬間を一緒に迎えよう🌟お酒も呑むぞおおお！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=iPeTnk88yyQ&t=4525s",
+    "date": "2026/08/24"
+  },
+  {
+    "timestamp": "1:15:32",
+    "original": "淑女",
+    "reading": "おーんじょ",
+    "context": "",
+    "videoTitle": "8/24【 3周年カウントダウン 】3周年の瞬間を一緒に迎えよう🌟お酒も呑むぞおおお！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=iPeTnk88yyQ&t=4532s",
+    "date": "2026/08/24"
+  },
+  {
+    "timestamp": "1:15:52",
+    "original": "僥倖",
+    "reading": "ぼうぼう",
+    "context": "",
+    "videoTitle": "8/24【 3周年カウントダウン 】3周年の瞬間を一緒に迎えよう🌟お酒も呑むぞおおお！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=iPeTnk88yyQ&t=4552s",
+    "date": "2026/08/24"
+  },
+  {
+    "timestamp": "21:22",
+    "original": "安価",
+    "reading": "やすか",
+    "context": "",
+    "videoTitle": "8/24【 3周年カウントダウン 】3周年の瞬間を一緒に迎えよう🌟お酒も呑むぞおおお！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=iPeTnk88yyQ&t=1282s",
+    "date": "2026/08/24"
+  },
+  {
+    "timestamp": "2:27:35",
+    "original": "結納金",
+    "reading": "けつのうきん",
+    "context": "",
+    "videoTitle": "8/24【 3周年カウントダウン 】3周年の瞬間を一緒に迎えよう🌟お酒も呑むぞおおお！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=iPeTnk88yyQ&t=8855s",
+    "date": "2026/08/24"
+  },
+  {
+    "timestamp": "3:22:36",
+    "original": "連日",
+    "reading": "れんにち",
+    "context": "",
+    "videoTitle": "8/24【 3周年カウントダウン 】3周年の瞬間を一緒に迎えよう🌟お酒も呑むぞおおお！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=iPeTnk88yyQ&t=12156s",
+    "date": "2026/08/24"
+  },
+  {
+    "timestamp": "2:02:25",
+    "original": "屋内",
+    "reading": "やない",
+    "context": "",
+    "videoTitle": "8/23【 昼活 / 雑談 】挨拶・高評価で筋トレの回数が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UEOerfyhtDE&t=7345s",
+    "date": "2026/08/23"
+  },
+  {
+    "timestamp": "2:05:57",
+    "original": "屋形船",
+    "reading": "やがた",
+    "context": "",
+    "videoTitle": "8/23【 昼活 / 雑談 】挨拶・高評価で筋トレの回数が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UEOerfyhtDE&t=7557s",
+    "date": "2026/08/23"
+  },
+  {
+    "timestamp": "2:06:02",
+    "original": "渓流",
+    "reading": "だんりゅう",
+    "context": "",
+    "videoTitle": "8/23【 昼活 / 雑談 】挨拶・高評価で筋トレの回数が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UEOerfyhtDE&t=7562s",
+    "date": "2026/08/23"
+  },
+  {
+    "timestamp": "3:41:38",
+    "original": "識別",
+    "reading": "にんべつ",
+    "context": "",
+    "videoTitle": "8/23【 昼活 / 雑談 】挨拶・高評価で筋トレの回数が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UEOerfyhtDE&t=13298s",
+    "date": "2026/08/23"
+  },
+  {
+    "timestamp": "3:48:06",
+    "original": "早急",
+    "reading": "そうきゅう",
+    "context": "",
+    "videoTitle": "8/23【 昼活 / 雑談 】挨拶・高評価で筋トレの回数が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UEOerfyhtDE&t=13686s",
+    "date": "2026/08/23"
+  },
+  {
+    "timestamp": "3:54:34",
+    "original": "幾何学模様",
+    "reading": "いくなんがく",
+    "context": "",
+    "videoTitle": "8/23【 昼活 / 雑談 】挨拶・高評価で筋トレの回数が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UEOerfyhtDE&t=14074s",
+    "date": "2026/08/23"
+  },
+  {
+    "timestamp": "2:02:16",
+    "original": "超越",
+    "reading": "ちょうか",
+    "context": "",
+    "videoTitle": "8/18【 歌枠 / KARAOKE 】8ヶ月ぶりの歌枠で超絶緊張している関西弁白猫VTuberです【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2NBuPWXEflE&t=7336s",
+    "date": "2026/08/18"
+  },
+  {
+    "timestamp": "1:07:27",
+    "original": "溶鉱炉",
+    "reading": "とーこーと",
+    "context": "",
+    "videoTitle": "8/15【 耐久 / 雑談 】高評価331耐久✨️達成したら重大告知！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=ek78CvJphUc&t=4047s",
+    "date": "2026/08/15"
+  },
+  {
+    "timestamp": "1:22:00",
+    "original": "戦隊",
+    "reading": "せんたん",
+    "context": "",
+    "videoTitle": "8/15【 耐久 / 雑談 】高評価331耐久✨️達成したら重大告知！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=ek78CvJphUc&t=4920s",
+    "date": "2026/08/15"
+  },
+  {
+    "timestamp": "2:40:06",
+    "original": "高千穂",
+    "reading": "たかせぼ",
+    "context": "",
+    "videoTitle": "8/15【 耐久 / 雑談 】高評価331耐久✨️達成したら重大告知！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=ek78CvJphUc&t=9606s",
+    "date": "2026/08/15"
+  },
+  {
+    "timestamp": "3:56:14",
+    "original": "禍",
+    "reading": "うず",
+    "context": "",
+    "videoTitle": "8/15【 耐久 / 雑談 】高評価331耐久✨️達成したら重大告知！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=ek78CvJphUc&t=14174s",
+    "date": "2026/08/15"
+  },
+  {
+    "timestamp": "3:57:07",
+    "original": "晴海",
+    "reading": "はるーみ",
+    "context": "",
+    "videoTitle": "8/15【 耐久 / 雑談 】高評価331耐久✨️達成したら重大告知！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=ek78CvJphUc&t=14227s",
+    "date": "2026/08/15"
+  },
+  {
+    "timestamp": "4:23:25",
+    "original": "冷しゃぶ",
+    "reading": "ひやしゃぶ",
+    "context": "",
+    "videoTitle": "8/15【 耐久 / 雑談 】高評価331耐久✨️達成したら重大告知！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=ek78CvJphUc&t=15805s",
+    "date": "2026/08/15"
+  },
+  {
+    "timestamp": "2:13:05",
+    "original": "鬼子母神",
+    "reading": "おにこははかみ",
+    "context": "",
+    "videoTitle": "8/14【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Kb5njJh-Q4c&t=7985s",
+    "date": "2026/08/14"
+  },
+  {
+    "timestamp": "2:17:33",
+    "original": "助太刀",
+    "reading": "じょたとう",
+    "context": "",
+    "videoTitle": "8/14【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Kb5njJh-Q4c&t=8253s",
+    "date": "2026/08/14"
+  },
+  {
+    "timestamp": "3:28:47",
+    "original": "嗜好",
+    "reading": "かっこう",
+    "context": "",
+    "videoTitle": "8/14【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Kb5njJh-Q4c&t=12527s",
+    "date": "2026/08/14"
+  },
+  {
+    "timestamp": "4:00:08",
+    "original": "希釈",
+    "reading": "きやく",
+    "context": "",
+    "videoTitle": "8/14【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Kb5njJh-Q4c&t=14408s",
+    "date": "2026/08/14"
+  },
+  {
+    "timestamp": "4:19:30",
+    "original": "豊水",
+    "reading": "とよすい",
+    "context": "",
+    "videoTitle": "8/14【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Kb5njJh-Q4c&t=15570s",
+    "date": "2026/08/14"
+  },
+  {
+    "timestamp": "4:47:05",
+    "original": "熟れても",
+    "reading": "じゅくれても",
+    "context": "",
+    "videoTitle": "8/14【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Kb5njJh-Q4c&t=17225s",
+    "date": "2026/08/14"
+  },
+  {
+    "timestamp": "5:25:07",
+    "original": "亀戸",
+    "reading": "かめど",
+    "context": "",
+    "videoTitle": "8/14【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Kb5njJh-Q4c&t=19507s",
+    "date": "2026/08/14"
+  },
+  {
+    "timestamp": "5:30:57",
+    "original": "鳥二郎",
+    "reading": "しま",
+    "context": "",
+    "videoTitle": "8/14【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Kb5njJh-Q4c&t=19857s",
+    "date": "2026/08/14"
+  },
+  {
+    "timestamp": "5:50:46",
+    "original": "末席",
+    "reading": "すえせき",
+    "context": "",
+    "videoTitle": "8/14【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Kb5njJh-Q4c&t=21046s",
+    "date": "2026/08/14"
+  },
+  {
+    "timestamp": "5:50:53",
+    "original": "先達",
+    "reading": "せんたち",
+    "context": "",
+    "videoTitle": "8/14【 昼活 / 雑談 】挨拶300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Kb5njJh-Q4c&t=21053s",
+    "date": "2026/08/14"
+  },
+  {
     "timestamp": "1:03:07",
     "original": "馬力",
     "reading": "ばりょく",
