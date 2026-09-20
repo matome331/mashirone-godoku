@@ -49,6 +49,11 @@ python scripts\sync_txt_to_db.py --check
 タイトル・日付・URL・誤読行・重複を検証します。
 エラー時はDBとWebデータを変更しません。
 
+## 旧スクリプト
+
+過去の更新・DB・Web生成ルートは `legacy/` に隔離しています。
+通常運用では実行せず、過去処理の調査・復旧が必要な場合だけ参照します。
+
 ## なぜこの構造にするか
 
 以前は同じ情報が refined.txt / DB / data.js / raw archive にあり、
