@@ -53,12 +53,76 @@ document.addEventListener('DOMContentLoaded', () => {
     // Helper: Sort function by timestamp (for inside same video)
     const sortByTimestamp = (a, b) => parseTimeToSeconds(a.timestamp) - parseTimeToSeconds(b.timestamp);
 
+    const CANONICAL_EXCLUDED_URL =
+        'https://matome331.github.io/mashirone-chat/excluded_videos.txt';
+
+    const parseExcludedVideoIds = (text) => {
+        const ids = new Set();
+        String(text || '').split(/\r?\n/).forEach(rawLine => {
+            const videoId = rawLine.split('#', 1)[0].trim();
+            if (!videoId) return;
+            if (/^[A-Za-z0-9_-]{11}$/.test(videoId)) {
+                ids.add(videoId);
+            }
+        });
+        return ids;
+    };
+
+    const extractVideoId = (url) => {
+        const match = String(url || '').match(/[?&]v=([A-Za-z0-9_-]{11})/);
+        return match ? match[1] : null;
+    };
+
+    const loadExcludedVideoIds = async () => {
+        const merged = new Set();
+        const sources = [
+            CANONICAL_EXCLUDED_URL,
+            '../excluded_videos.txt',
+        ];
+
+        const results = await Promise.allSettled(
+            sources.map(url =>
+                fetch(url, { cache: 'no-store' }).then(async response => {
+                    if (!response.ok) {
+                        throw new Error('HTTP ' + response.status);
+                    }
+                    return response.text();
+                })
+            )
+        );
+
+        results.forEach((result, index) => {
+            if (result.status === 'fulfilled') {
+                parseExcludedVideoIds(result.value).forEach(id => merged.add(id));
+            } else {
+                console.warn(
+                    '公開除外リストを取得できません:',
+                    sources[index],
+                    result.reason
+                );
+            }
+        });
+
+        return merged;
+    };
+
     // Load Data
-    const loadData = () => {
+    const loadData = async () => {
         try {
             // dictionaryData (from data.js) を読み込む
             if (typeof dictionaryData !== 'undefined') {
-                allMisreadings = dictionaryData;
+                const excludedIds = await loadExcludedVideoIds();
+                allMisreadings = dictionaryData.filter(item => {
+                    const videoId = extractVideoId(item.videoUrl);
+                    return !videoId || !excludedIds.has(videoId);
+                });
+
+                if (excludedIds.size > 0) {
+                    console.log(
+                        '公開除外: ' + excludedIds.size + '動画 / ' +
+                        '誤読表示: ' + allMisreadings.length + '件'
+                    );
+                }
             } else {
                 throw new Error('dictionaryData is not defined');
             }
