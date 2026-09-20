@@ -69,13 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
             renderSections();
         } catch (error) {
             console.error('Data load error:', error);
-            loadingIndicator.innerHTML = '<p>データの読み込みに失敗しました...😿</p>';
+            loadingIndicator.replaceChildren();
+            const errorMessage = document.createElement('p');
+            errorMessage.textContent = 'データの読み込みに失敗しました...😿';
+            loadingIndicator.appendChild(errorMessage);
         }
     };
 
     // Rendering Logic
     const renderSections = () => {
-        listContainer.innerHTML = '';
+        listContainer.replaceChildren();
         const sortMode = sortSelect.value;
         const fragment = document.createDocumentFragment();
 
@@ -179,7 +182,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const remaining = displayedData.length - currentLimit;
             const loadMoreBtn = document.createElement('button');
             loadMoreBtn.className = 'load-more-btn';
-            loadMoreBtn.innerHTML = `<i class="fa-solid fa-chevron-down"></i> もっと見る（残り ${remaining} 件）`;
+            const loadMoreIcon = document.createElement('i');
+            loadMoreIcon.className = 'fa-solid fa-chevron-down';
+            loadMoreBtn.appendChild(loadMoreIcon);
+            loadMoreBtn.appendChild(
+                document.createTextNode(` もっと見る（残り ${remaining} 件）`)
+            );
             loadMoreBtn.addEventListener('click', () => {
                 currentLimit += ITEMS_PER_PAGE;
                 renderSections();
@@ -200,7 +208,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // If sorting by date, show date subtly
         if (dateText) {
-            header.innerHTML = `<span class="section-title-text">${headerTitle}</span><span class="section-date">${dateText}</span>`;
+            const titleSpan = document.createElement('span');
+            titleSpan.className = 'section-title-text';
+            titleSpan.textContent = headerTitle;
+
+            const dateSpan = document.createElement('span');
+            dateSpan.className = 'section-date';
+            dateSpan.textContent = dateText;
+
+            header.append(titleSpan, dateSpan);
         } else {
             header.textContent = headerTitle;
         }
@@ -210,23 +226,49 @@ document.addEventListener('DOMContentLoaded', () => {
         const ul = document.createElement('ul');
         ul.className = 'card-grid';
 
-        itemsList.forEach((item, index) => {
+        itemsList.forEach((item) => {
             const li = document.createElement('li');
             li.className = 'misreading-card';
 
-            li.innerHTML = `
-                <div class="card-left">
-                    <div class="timestamp">${item.date}</div>
-                    <div class="words">
-                        <span class="original">${item.original}</span>
-                        <span class="reading">(${item.reading})</span>
-                    </div>
-                    <div class="video-context" title="${item.videoTitle}">${item.videoTitle}</div>
-                </div>
-                <a href="${item.videoUrl}" target="_blank" rel="noopener noreferrer" class="play-btn" aria-label="YouTubeで再生">
-                    <i class="fa-solid fa-play"></i>
-                </a>
-            `;
+            const cardLeft = document.createElement('div');
+            cardLeft.className = 'card-left';
+
+            const timestamp = document.createElement('div');
+            timestamp.className = 'timestamp';
+            timestamp.textContent = item.date;
+
+            const words = document.createElement('div');
+            words.className = 'words';
+
+            const original = document.createElement('span');
+            original.className = 'original';
+            original.textContent = item.original;
+
+            const reading = document.createElement('span');
+            reading.className = 'reading';
+            reading.textContent = `(${item.reading})`;
+
+            words.append(original, reading);
+
+            const videoContext = document.createElement('div');
+            videoContext.className = 'video-context';
+            videoContext.textContent = item.videoTitle;
+            videoContext.title = item.videoTitle;
+
+            cardLeft.append(timestamp, words, videoContext);
+
+            const playLink = document.createElement('a');
+            playLink.href = item.videoUrl;
+            playLink.target = '_blank';
+            playLink.rel = 'noopener noreferrer';
+            playLink.className = 'play-btn';
+            playLink.setAttribute('aria-label', 'YouTubeで再生');
+
+            const playIcon = document.createElement('i');
+            playIcon.className = 'fa-solid fa-play';
+            playLink.appendChild(playIcon);
+
+            li.append(cardLeft, playLink);
             ul.appendChild(li);
         });
 
