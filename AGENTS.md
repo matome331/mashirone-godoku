@@ -81,6 +81,7 @@ python scripts\sync_txt_to_db.py
 - raw archiveを公開状態の調整に使わない。
 - `legacy/` のコードを現行フローへ混ぜない。
 - YouTube収集用のGitHub Actionsワークフローを追加しない。yt-dlp収集はローカル実行を正規ルートとする。
+- `.github/workflows/health-check.yml` の静的な健康診断は維持する。YouTubeへアクセスさせない。
 - 既存動画を「誤読が1件ある」という理由だけで永久スキップしない。
 - チャンネル収集を固定件数（例: 最新50本）で打ち切らず、基準日まで走査する。
 - 同じ情報を複数箇所へ手作業で同期しない。
