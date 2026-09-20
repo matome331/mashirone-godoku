@@ -1,4 +1,8 @@
-# 公開サイトから除外するYouTube動画ID
+# 公開サイトから除外するYouTube動画ID（ローカル予備・生成時ミラー）
+# 正本: https://matome331.github.io/mashirone-chat/excluded_videos.txt
 # 1行に1つ。理由は # 以降にメモできます。
+# Chatで承認した除外IDは、正本を優先して参照します。
+# このローカルファイルは sync_txt_to_db.py の生成時フィルター兼フォールバックです。
+#
 # 例:
 # WL43rULdieQ  # 非公開化
