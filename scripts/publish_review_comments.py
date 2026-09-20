@@ -8,10 +8,17 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
+import re
 import subprocess
 import sys
 from datetime import datetime
+
+try:
+    import yt_dlp
+except ImportError:
+    yt_dlp = None
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REVIEW_DIR = "review_comments"
@@ -20,6 +27,13 @@ HEALTH_SCRIPT = os.path.join(
     "scripts",
     "review_health_check.py",
 )
+
+MEMBER_TITLE_MARKERS = (
+    "メン限",
+    "メンバー限定",
+    "メンバーシップ限定",
+)
+VIDEO_ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
 
 
 def creation_flags():
@@ -140,6 +154,111 @@ def ensure_no_unrelated_staged_files():
         )
 
 
+def changed_review_files():
+    paths = set()
+
+    modified = split_lines(
+        run_git(
+            "diff",
+            "--name-only",
+            "--",
+            ":(glob)review_comments/*.json",
+        ).stdout
+    )
+    paths.update(path for path in modified if is_allowed_path(path))
+
+    untracked = split_lines(
+        run_git(
+            "ls-files",
+            "--others",
+            "--exclude-standard",
+            "--",
+            ":(glob)review_comments/*.json",
+        ).stdout
+    )
+    paths.update(path for path in untracked if is_allowed_path(path))
+
+    return sorted(paths)
+
+
+def is_members_only_metadata(info):
+    title = str(info.get("title", "") or "")
+    if any(marker in title for marker in MEMBER_TITLE_MARKERS):
+        return True
+
+    availability = str(info.get("availability", "") or "").casefold()
+    return availability == "subscriber_only"
+
+
+def sanitize_changed_review_files():
+    paths = changed_review_files()
+    if not paths:
+        print("privacy確認対象のreviewログはありません。")
+        return
+
+    if yt_dlp is None:
+        raise RuntimeError(
+            "メン限確認に必要なyt-dlpが見つかりません。"
+            "python -m pip install -U yt-dlp を実行してください。"
+        )
+
+    print(f"privacy確認: {len(paths)}件のreviewログ")
+
+    ydl_opts = {
+        "skip_download": True,
+        "quiet": True,
+        "no_warnings": True,
+    }
+
+    removed = []
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        for rel_path in paths:
+            abs_path = os.path.join(REPO_ROOT, rel_path)
+            if not os.path.exists(abs_path):
+                continue
+
+            try:
+                with open(abs_path, "r", encoding="utf-8") as f:
+                    payload = json.load(f)
+            except (OSError, json.JSONDecodeError) as exc:
+                raise RuntimeError(
+                    f"{rel_path} をprivacy確認できません: {exc}"
+                ) from exc
+
+            title = str(payload.get("title", "") or "")
+            video_id = str(payload.get("video_id", "") or "")
+
+            if any(marker in title for marker in MEMBER_TITLE_MARKERS):
+                os.remove(abs_path)
+                removed.append(rel_path)
+                print(f"  削除 (メン限タイトル): {rel_path}")
+                continue
+
+            if not VIDEO_ID_RE.fullmatch(video_id):
+                raise RuntimeError(
+                    f"{rel_path}: video_id が不正なためprivacy確認できません"
+                )
+
+            video_url = f"https://www.youtube.com/watch?v={video_id}"
+            try:
+                info = ydl.extract_info(video_url, download=False)
+            except Exception as exc:
+                raise RuntimeError(
+                    f"{rel_path}: YouTube公開範囲を確認できません。"
+                    "安全のためGitHub送信を中止します。"
+                ) from exc
+
+            if is_members_only_metadata(info):
+                os.remove(abs_path)
+                removed.append(rel_path)
+                print(f"  削除 (メンバー限定): {rel_path}")
+
+    if removed:
+        print(f"privacy保護: メン限reviewログを {len(removed)}件 削除しました。")
+    else:
+        print("privacy確認: メン限reviewログはありません。")
+
+
 def run_review_health_check():
     result = subprocess.run(
         [sys.executable, HEALTH_SCRIPT],
@@ -225,6 +344,7 @@ def main():
             print("Git状態: OK")
             return 0
 
+        sanitize_changed_review_files()
         run_review_health_check()
         stage_review_files()
         commit_if_needed()
