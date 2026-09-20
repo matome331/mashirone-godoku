@@ -70,6 +70,23 @@ def safe_print(message):
         )
 
 
+MEMBER_TITLE_MARKERS = (
+    "メン限",
+    "メンバー限定",
+    "メンバーシップ限定",
+)
+
+
+def is_members_only(info):
+    """タイトル表記とyt-dlpのavailabilityからメンバー限定を判定する。"""
+    title = str(info.get("title", "") or "")
+    if any(marker in title for marker in MEMBER_TITLE_MARKERS):
+        return True
+
+    availability = str(info.get("availability", "") or "").casefold()
+    return availability == "subscriber_only"
+
+
 def load_excluded_video_ids():
     excluded = set()
     if not os.path.exists(EXCLUDED_VIDEOS_PATH):
@@ -283,7 +300,7 @@ def collect_comments_for_review():
                 if (
                     live_status in {"is_upcoming", "is_live"}
                     or "予定" in entry_title
-                    or "メン限" in entry_title
+                    or is_members_only(entry)
                 ):
                     safe_print(f"Skipped (Live/Upcoming/Member): {entry_title}")
                     continue
@@ -326,9 +343,10 @@ def collect_comments_for_review():
 
                 title = metadata.get("title", entry_title)
                 if (
-                    "メン限" in title
+                    is_members_only(metadata)
                     or metadata.get("live_status") in {"is_live", "is_upcoming"}
                 ):
+                    safe_print(f"Skipped (Member-only): {title}")
                     continue
 
                 upload_date = format_upload_date(metadata)
