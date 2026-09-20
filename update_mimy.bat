@@ -2,7 +2,6 @@
 setlocal EnableDelayedExpansion
 chcp 65001 > nul
 
-:: ドライブとパスの固定
 set "BASE_DIR=%~dp0"
 %BASE_DIR:~0,2%
 cd "%BASE_DIR%"
@@ -12,30 +11,26 @@ set PYTHONPATH=%BASE_DIR%
 :menu
 cls
 echo ======================================================
-echo    真白猫ミミィ 誤読管理システム (新ワークフロー版)
+echo    真白猫ミミィ 誤読管理システム
 echo ======================================================
 echo.
 echo  【現在の流れ】
-echo   1. 最新配信をスキャン (refined.txt に追記)
-echo   2. refined.txt を自分で編集 (確定作業)
-echo   3. Webサイト・DBに反映 (同期実行)
+echo   1. ageha1stさんのコメントを収集してGitHubへ送信
+echo   2. Chat上で誤読候補を確認・精査
+echo   3. 採用分だけ refined.txt に反映
+echo   4. Webサイト・DBに同期
 echo.
 echo ------------------------------------------------------
-echo 1. 最新配信をスキャン 🔍 (新規候補を追記)
-echo 2. refined.txt を開く 📝 (内容を確認・編集)
-echo 3. Webサイト・DBに反映 🚀 (編集内容を確定)
-echo ------------------------------------------------------
-echo 4. 無視リストを編集 ⚙️
-echo 5. 非公開・削除動画を除外 🚫
-echo 6. 終了
+echo 1. Chat確認用コメントを収集・送信
+echo 2. refined.txt を開く
+echo 3. Webサイト・DBに反映
+echo 4. 非公開・削除動画を除外
+echo 5. 終了
 echo.
-set /p choice="選択 (1-6): "
+set /p choice="選択 (1-5): "
 
 if "%choice%"=="1" (
-    echo.
-    echo --- 最新配信のコメントをスキャン中... ---
-    python scripts\collect_comments.py
-    pause
+    call collect_mimy.bat
     goto menu
 )
 
@@ -49,17 +44,11 @@ if "%choice%"=="3" (
     echo --- refined.txt の内容をデータベース・Webに反映中... ---
     python scripts\sync_txt_to_db.py
     echo.
-    echo ✅ 反映が完了しました！
     pause
     goto menu
 )
 
 if "%choice%"=="4" (
-    start notepad.exe exclude_keywords.txt
-    goto menu
-)
-
-if "%choice%"=="5" (
     echo.
     python scripts\exclude_video.py
     echo.
@@ -67,12 +56,12 @@ if "%choice%"=="5" (
     if /I "!syncnow!"=="y" (
         python scripts\sync_txt_to_db.py
         echo.
-        echo ✅ 除外設定を反映しました！
+        echo 除外設定を反映しました。
     )
     pause
     goto menu
 )
 
-if "%choice%"=="6" exit
+if "%choice%"=="5" exit
 
 goto menu
