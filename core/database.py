@@ -63,8 +63,14 @@ class DatabaseManager:
         with self._get_connection() as conn:
             cursor = conn.cursor()
             cursor.execute('''
-                INSERT OR REPLACE INTO videos (video_id, title, url, upload_date, last_processed, comment_count)
+                INSERT INTO videos (video_id, title, url, upload_date, last_processed, comment_count)
                 VALUES (?, ?, ?, ?, ?, ?)
+                ON CONFLICT(video_id) DO UPDATE SET
+                    title = excluded.title,
+                    url = excluded.url,
+                    upload_date = excluded.upload_date,
+                    last_processed = excluded.last_processed,
+                    comment_count = excluded.comment_count
             ''', (video_id, title, url, upload_date, datetime.now().isoformat(), comment_count))
             conn.commit()
 
