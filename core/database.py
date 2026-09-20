@@ -34,6 +34,12 @@ class DatabaseManager:
                 )
             ''')
             
+            # Existing DBs may predate scan-tracking. Add the column in place.
+            cursor.execute("PRAGMA table_info(videos)")
+            video_columns = {row[1] for row in cursor.fetchall()}
+            if "last_comment_scan" not in video_columns:
+                cursor.execute("ALTER TABLE videos ADD COLUMN last_comment_scan TEXT")
+
             # Misreadings table (The core dictionary)
             # status: 0=pending (for review), 1=approved, 2=rejected
             cursor.execute('''
@@ -57,9 +63,46 @@ class DatabaseManager:
         with self._get_connection() as conn:
             cursor = conn.cursor()
             cursor.execute('''
-                INSERT OR REPLACE INTO videos (video_id, title, url, upload_date, last_processed, comment_count)
+                INSERT INTO videos (video_id, title, url, upload_date, last_processed, comment_count)
                 VALUES (?, ?, ?, ?, ?, ?)
+                ON CONFLICT(video_id) DO UPDATE SET
+                    title = excluded.title,
+                    url = excluded.url,
+                    upload_date = excluded.upload_date,
+                    last_processed = excluded.last_processed,
+                    comment_count = excluded.comment_count
             ''', (video_id, title, url, upload_date, datetime.now().isoformat(), comment_count))
+            conn.commit()
+
+    def get_video_scan_state(self, video_id):
+        """Return comment-scan metadata without treating the DB as source of truth."""
+        with self._get_connection() as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.cursor()
+            cursor.execute(
+                "SELECT comment_count, last_comment_scan FROM videos WHERE video_id = ?",
+                (video_id,)
+            )
+            row = cursor.fetchone()
+            return dict(row) if row else None
+
+    def record_video_scan(self, video_id, title, url, upload_date, comment_count):
+        """Record a completed YouTube comment scan for incremental re-checks."""
+        now = datetime.now().isoformat()
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute('''
+                INSERT INTO videos
+                    (video_id, title, url, upload_date, last_processed, comment_count, last_comment_scan)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(video_id) DO UPDATE SET
+                    title = excluded.title,
+                    url = excluded.url,
+                    upload_date = excluded.upload_date,
+                    last_processed = excluded.last_processed,
+                    comment_count = excluded.comment_count,
+                    last_comment_scan = excluded.last_comment_scan
+            ''', (video_id, title, url, upload_date, now, comment_count, now))
             conn.commit()
 
     def is_video_processed(self, video_id, current_comment_count=None):
