@@ -34,7 +34,7 @@ if errorlevel 1 goto :publish_error
 echo.
 echo ======================================================
 echo 完了しました。
-echo ChatGPTで「新しい誤読見て」と依頼してください。
+echo ChatGPTで 新しい誤読見て と依頼してください。
 echo ======================================================
 pause
 exit /b 0
