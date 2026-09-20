@@ -202,6 +202,15 @@ def review_file_path(video_id):
     return os.path.join(REVIEW_DIR, f"{video_id}.json")
 
 
+def remove_review_file(video_id, reason):
+    path = review_file_path(video_id)
+    if os.path.exists(path):
+        os.remove(path)
+        safe_print(f"  -> review削除 ({reason}): {video_id}")
+        return True
+    return False
+
+
 def write_review_file(video_id, title, upload_date, video_url, comments):
     """必要なときだけreview JSONを書き換える。
 
@@ -297,11 +306,20 @@ def collect_comments_for_review():
 
                 live_status = entry.get("live_status")
                 entry_title = entry.get("title", "")
+                raw_video_id = entry.get("id")
+                video_id = (
+                    re.split(r"[&?]", str(raw_video_id))[0]
+                    if raw_video_id
+                    else None
+                )
+
                 if (
                     live_status in {"is_upcoming", "is_live"}
                     or "予定" in entry_title
                     or is_members_only(entry)
                 ):
+                    if video_id and is_members_only(entry):
+                        remove_review_file(video_id, "メンバー限定")
                     safe_print(f"Skipped (Live/Upcoming/Member): {entry_title}")
                     continue
 
@@ -313,12 +331,6 @@ def collect_comments_for_review():
                     )
                     break
 
-                raw_video_id = entry.get("id")
-                video_id = (
-                    re.split(r"[&?]", str(raw_video_id))[0]
-                    if raw_video_id
-                    else None
-                )
                 if not video_id:
                     continue
 
@@ -346,6 +358,8 @@ def collect_comments_for_review():
                     is_members_only(metadata)
                     or metadata.get("live_status") in {"is_live", "is_upcoming"}
                 ):
+                    if is_members_only(metadata):
+                        remove_review_file(video_id, "メンバー限定")
                     safe_print(f"Skipped (Member-only): {title}")
                     continue
 
