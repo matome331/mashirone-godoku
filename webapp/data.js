@@ -7191,15 +7191,6 @@ const dictionaryData = [
     "date": "2025/10/05"
   },
   {
-    "timestamp": "1:26:14",
-    "original": "長尺",
-    "reading": "ちょうぺん",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】2時間で何人と「おはよう」言えるかチャレンジ！10月最初のおはよう待ってます～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=WL43rULdieQ&t=5174s",
-    "date": "2025/09/30"
-  },
-  {
     "timestamp": "1:28:38",
     "original": "多岐",
     "reading": "たなんとか",
@@ -7233,15 +7224,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう350人目標☀️関西弁でまったりお話ししてます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=OaxPH3QKrwk&t=9794s",
-    "date": "2025/09/30"
-  },
-  {
-    "timestamp": "36:12",
-    "original": "下半期",
-    "reading": "かはんき",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】2時間で何人と「おはよう」言えるかチャレンジ！10月最初のおはよう待ってます～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=WL43rULdieQ&t=2172s",
     "date": "2025/09/30"
   },
   {
@@ -12904,51 +12886,6 @@ const dictionaryData = [
     "videoTitle": "୨୧ 雑談 ୨୧ バグによりゲームが進められないため雑談に変更しました🙇‍♀️初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=l03hiOqL_R4&t=11770s",
     "date": "2025/03/23"
-  },
-  {
-    "timestamp": "1:04:02",
-    "original": "刃牙",
-    "reading": "ばきば",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=wy0UpRgokQ4&t=3842s",
-    "date": "2025/03/22"
-  },
-  {
-    "timestamp": "2:56:42",
-    "original": "木端微塵",
-    "reading": "きっぱし",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=wy0UpRgokQ4&t=10602s",
-    "date": "2025/03/22"
-  },
-  {
-    "timestamp": "3:03:55",
-    "original": "挙がる",
-    "reading": "うえでこぶし",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=wy0UpRgokQ4&t=11035s",
-    "date": "2025/03/22"
-  },
-  {
-    "timestamp": "3:03:55",
-    "original": "教鞭",
-    "reading": "きょうびん",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=wy0UpRgokQ4&t=11035s",
-    "date": "2025/03/22"
-  },
-  {
-    "timestamp": "4:52:32",
-    "original": "暑中見舞い",
-    "reading": "じゃんちゅう",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=wy0UpRgokQ4&t=17552s",
-    "date": "2025/03/22"
   },
   {
     "timestamp": "2:12:32",
