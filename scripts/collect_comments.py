@@ -156,10 +156,14 @@ def collect_and_analyze():
     refined_path = os.path.join(base_dir, "mimy_misreadings_refined.txt")
 
     # 判定ルール
+    # 読みは従来のひらがなに加えて、カタカナ・半角カナ・英数字と
+    # 読みの中で使われやすい区切り記号を許容する。
+    # 何でも拾うのではなく、括弧の直前をこの文字種に限定して誤検出を抑える。
+    reading_chunk = r"[ぁ-んァ-ヶーｦ-ﾟA-Za-zＡ-Ｚａ-ｚ0-9０-９・･._．/／+＋#＃&＆'’\-‐‑]+"
     pattern = re.compile(
         r'(?P<timestamp>\d{1,2}:\d{2}(?::\d{2})?)'
         r'\s+'
-        r'(?P<reading>[ぁ-んー]+)'
+        rf'(?P<reading>{reading_chunk}(?:[ \u3000]+{reading_chunk})*)'
         r'\s*[\(（]'
         r'(?P<original>[^）\)\s]+)'
         r'[\)）]'
