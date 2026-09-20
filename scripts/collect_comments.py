@@ -1,24 +1,45 @@
-import yt_dlp
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""@ageha1st さんのコメントをChat確認用キューへ収集する。
+
+このスクリプトは誤読判定を行わない。
+mimy_misreadings_refined.txt も変更しない。
+
+流れ:
+YouTube -> @ageha1st コメントだけ抽出 -> review_comments/<video_id>.json
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
 import os
-import time
 import re
+import sys
+import time
 from datetime import datetime, timedelta
+
+import yt_dlp
 
 from core.database import DatabaseManager
 
-# 設定
+
 CHANNEL_URL = "https://www.youtube.com/@mashi_rone/streams"
 TARGET_AUTHOR = "@ageha1st"
 THRESHOLD_DATE = "2026/03/01"
 RECHECK_DAYS = 7
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REVIEW_DIR = os.path.join(BASE_DIR, "review_comments")
+EXCLUDED_VIDEOS_PATH = os.path.join(BASE_DIR, "excluded_videos.txt")
 
 
 def format_upload_date(info):
     """Return YYYY/MM/DD when yt-dlp metadata includes a usable date."""
     upload_date_raw = info.get("upload_date")
     if upload_date_raw and re.fullmatch(r"\d{8}", str(upload_date_raw)):
-        upload_date_raw = str(upload_date_raw)
-        return f"{upload_date_raw[:4]}/{upload_date_raw[4:6]}/{upload_date_raw[6:]}"
+        raw = str(upload_date_raw)
+        return f"{raw[:4]}/{raw[4:6]}/{raw[6:]}"
 
     timestamp = info.get("timestamp") or info.get("release_timestamp")
     if timestamp:
@@ -30,12 +51,28 @@ def format_upload_date(info):
     return None
 
 
-def safe_print(msg):
-    """CP932でエンコードできない文字を安全に処理して表示"""
+def safe_print(message):
+    """Windows consoleでも表示で停止しないようにする。"""
     try:
-        print(msg)
+        print(message, flush=True)
     except UnicodeEncodeError:
-        print(msg.encode('cp932', errors='replace').decode('cp932'))
+        print(
+            str(message).encode("cp932", errors="replace").decode("cp932"),
+            flush=True,
+        )
+
+
+def load_excluded_video_ids():
+    excluded = set()
+    if not os.path.exists(EXCLUDED_VIDEOS_PATH):
+        return excluded
+
+    with open(EXCLUDED_VIDEOS_PATH, "r", encoding="utf-8") as f:
+        for raw_line in f:
+            video_id = raw_line.split("#", 1)[0].strip()
+            if video_id:
+                excluded.add(video_id)
+    return excluded
 
 
 def should_rescan_video(scan_state, current_comment_count):
@@ -66,161 +103,183 @@ def should_rescan_video(scan_state, current_comment_count):
     return False, "コメント数変化なし・最近確認済み"
 
 
-def merge_findings_into_refined(refined_path, findings):
-    """
-    新規動画は先頭へ追加し、既存動画の再チェックで見つかった項目は
-    同じ動画セクションへ追記する。重複動画セクションは作らない。
-    """
-    if os.path.exists(refined_path):
-        with open(refined_path, "r", encoding="utf-8") as f:
-            content = f.read()
-    else:
-        content = ""
+def is_target_comment(comment):
+    target = TARGET_AUTHOR.casefold().lstrip("@")
+    author = str(comment.get("author", "")).casefold().lstrip("@")
+    author_id = str(comment.get("author_id", "")).casefold().lstrip("@")
+    return target in author or target in author_id
 
-    new_blocks = []
 
-    for finding in findings:
-        video_url = finding["video_url"]
-        entry_lines = finding["entries"]
-        url_marker = f"URL: {video_url}"
-        url_pos = content.find(url_marker)
+def normalize_target_comments(comments):
+    """Chatで判断できるよう、対象ユーザーのコメント本文をほぼそのまま保存する。"""
+    normalized = []
+    seen = set()
 
-        if url_pos >= 0:
-            section_start = content.rfind("【動画】", 0, url_pos)
-            next_section = content.find("\n【動画】", url_pos)
-            section_end = next_section if next_section >= 0 else len(content)
+    for comment in comments:
+        if not is_target_comment(comment):
+            continue
 
-            if section_start < 0:
-                # 形式が想定外なら既存データを壊さず、新規ブロック扱いにする。
-                url_pos = -1
-            else:
-                section = content[section_start:section_end]
-                existing_lines = {line.strip() for line in section.splitlines()}
-                additions = [line for line in entry_lines if line not in existing_lines]
+        text = str(comment.get("text", "") or "")
+        text = text.replace("\r\n", "\n").replace("\r", "\n").strip()
+        if not text:
+            continue
 
-                if additions:
-                    separator = re.search(r"^-{5,}\s*$", section, re.MULTILINE)
-                    if separator:
-                        insert_at = separator.end()
-                        section = (
-                            section[:insert_at]
-                            + "\n"
-                            + "\n".join(additions)
-                            + section[insert_at:]
-                        )
-                    else:
-                        section = section.rstrip() + "\n" + "\n".join(additions) + "\n"
-
-                    content = content[:section_start] + section + content[section_end:]
-                continue
-
-        if url_pos < 0:
-            block = (
-                f"\n【動画】{finding['title']} ({finding['upload_date']})\n"
-                f"URL: {video_url}\n"
-                + "-" * 40
-                + "\n"
-                + "\n".join(entry_lines)
-                + "\n\n"
-            )
-            new_blocks.append(block)
-
-    if new_blocks:
-        new_text = "".join(new_blocks)
-        header_match = re.match(
-            r"(^真白猫ミミィ.*?\n=+\n\n)",
-            content,
-            re.DOTALL,
+        comment_id = str(
+            comment.get("id")
+            or comment.get("comment_id")
+            or ""
         )
-        if header_match:
-            header = header_match.group(1)
-            body = content[len(header):]
-            content = header + new_text + body
-        else:
-            content = new_text + "\n" + content
+        author = str(comment.get("author", "") or TARGET_AUTHOR)
+        author_id = str(comment.get("author_id", "") or "")
+        posted_at = comment.get("timestamp")
 
-    with open(refined_path, "w", encoding="utf-8") as f:
-        f.write(content)
+        dedupe_key = comment_id or (
+            author_id,
+            text,
+            str(posted_at),
+        )
+        if dedupe_key in seen:
+            continue
+        seen.add(dedupe_key)
+
+        item = {
+            "comment_id": comment_id,
+            "author": author,
+            "author_id": author_id,
+            "text": text,
+        }
+        if isinstance(posted_at, (int, float)):
+            item["posted_at"] = posted_at
+
+        normalized.append(item)
+
+    normalized.sort(
+        key=lambda item: (
+            item.get("posted_at", 0),
+            item.get("comment_id", ""),
+            item.get("text", ""),
+        )
+    )
+    return normalized
 
 
-def collect_and_analyze():
+def calculate_source_hash(comments):
+    canonical = json.dumps(
+        comments,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
+
+
+def review_file_path(video_id):
+    return os.path.join(REVIEW_DIR, f"{video_id}.json")
+
+
+def write_review_file(video_id, title, upload_date, video_url, comments):
+    """必要なときだけreview JSONを書き換える。
+
+    対象コメントが0件かつ既存ファイルもない場合はファイルを作らない。
+    以前コメントがあった動画で0件になった場合は空配列へ更新し、
+    Chat側で変化を確認できるようにする。
+    """
+    os.makedirs(REVIEW_DIR, exist_ok=True)
+    path = review_file_path(video_id)
+
+    if not comments and not os.path.exists(path):
+        return "no_target"
+
+    payload = {
+        "version": 1,
+        "video_id": video_id,
+        "title": title,
+        "date": upload_date,
+        "url": video_url,
+        "target_author": TARGET_AUTHOR,
+        "source_hash": calculate_source_hash(comments),
+        "target_comment_count": len(comments),
+        "comments": comments,
+    }
+
+    existing = None
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            existing = None
+
+    if existing == payload:
+        return "unchanged"
+
+    temp_path = path + ".tmp"
+    with open(temp_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    os.replace(temp_path, path)
+
+    return "updated" if existing is not None else "new"
+
+
+def collect_comments_for_review():
     db = DatabaseManager()
+    excluded_video_ids = load_excluded_video_ids()
 
-    # 除外キーワードのロード
-    exclude_keywords = []
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    exclude_path = os.path.join(base_dir, "exclude_keywords.txt")
-    if os.path.exists(exclude_path):
-        with open(exclude_path, "r", encoding="utf-8") as f:
-            exclude_keywords = [line.strip() for line in f if line.strip()]
+    metadata_opts = {
+        "skip_download": True,
+        "quiet": True,
+        "no_warnings": True,
+    }
+    comment_opts = {
+        "getcomments": True,
+        "skip_download": True,
+        "quiet": True,
+        "no_warnings": True,
+    }
 
-    # 非公開・削除済みなど、今後の収集対象から外す動画ID
-    excluded_video_ids = set()
-    excluded_videos_path = os.path.join(base_dir, "excluded_videos.txt")
-    if os.path.exists(excluded_videos_path):
-        with open(excluded_videos_path, "r", encoding="utf-8") as f:
-            for line in f:
-                clean = line.split("#", 1)[0].strip()
-                if clean:
-                    excluded_video_ids.add(clean)
-
-    # 追加のゴミキーワード（自動除外）
-    auto_exclude = [
-        "潔癖症", "接続確認", "答え", "└", "えっ？", "忘れない",
-        "不具合", "設定忘れ", "録画ミス", "ひゃー", "いやー", "あー", "ふっふっふ"
-    ]
-
-    refined_path = os.path.join(base_dir, "mimy_misreadings_refined.txt")
-
-    # 判定ルール
-    # 読みは従来のひらがなに加えて、カタカナ・半角カナ・英数字と
-    # 読みの中で使われやすい区切り記号を許容する。
-    # 何でも拾うのではなく、括弧の直前をこの文字種に限定して誤検出を抑える。
-    reading_chunk = r"[ぁ-んァ-ヶーｦ-ﾟA-Za-zＡ-Ｚａ-ｚ0-9０-９・･._．/／+＋#＃&＆'’\-‐‑]+"
-    pattern = re.compile(
-        r'(?P<timestamp>\d{1,2}:\d{2}(?::\d{2})?)'
-        r'\s+'
-        rf'(?P<reading>{reading_chunk}(?:[ \u3000]+{reading_chunk})*)'
-        r'\s*[\(（]'
-        r'(?P<original>[^）\)\s]+)'
-        r'[\)）]'
+    safe_print(f"--- チャンネル確認中: {CHANNEL_URL} ---")
+    safe_print(
+        f"対象: {TARGET_AUTHOR} のコメントのみ / "
+        "誤読判定・refined.txt更新は行いません"
     )
 
-    # 一覧・コメント数確認用（コメント本文は取らない）
-    metadata_opts = {
-        'skip_download': True,
-        'quiet': True,
-        'no_warnings': True,
+    counters = {
+        "checked": 0,
+        "rescanned": 0,
+        "unchanged_scan": 0,
+        "new_files": 0,
+        "updated_files": 0,
+        "same_files": 0,
+        "no_target": 0,
+        "errors": 0,
     }
-
-    # 実際の再スキャン時だけコメント本文を取得
-    comment_opts = {
-        'getcomments': True,
-        'skip_download': True,
-        'quiet': True,
-        'no_warnings': True,
-    }
-
-    print(f"--- チャンネルの最新動画を確認中: {CHANNEL_URL} ---")
 
     try:
-        with yt_dlp.YoutubeDL(metadata_opts) as metadata_ydl, yt_dlp.YoutubeDL(comment_opts) as comment_ydl:
+        with (
+            yt_dlp.YoutubeDL(metadata_opts) as metadata_ydl,
+            yt_dlp.YoutubeDL(comment_opts) as comment_ydl,
+        ):
             channel_info = metadata_ydl.extract_info(
-                CHANNEL_URL, download=False, process=False
+                CHANNEL_URL,
+                download=False,
+                process=False,
             )
-            entries = list(channel_info.get('entries', []))
-
-            new_findings = []
-            total_found = 0
-            scanned_count = 0
-            unchanged_count = 0
-            checked_entries = 0
+            entries = list(channel_info.get("entries", []))
 
             for entry in entries:
-                checked_entries += 1
+                counters["checked"] += 1
 
-                # /streams は新しい順。一覧メタデータだけで基準日より古いと
-                # 分かる場合は、そこで安全に走査を終了する。
+                live_status = entry.get("live_status")
+                entry_title = entry.get("title", "")
+                if (
+                    live_status in {"is_upcoming", "is_live"}
+                    or "予定" in entry_title
+                    or "メン限" in entry_title
+                ):
+                    safe_print(f"Skipped (Live/Upcoming/Member): {entry_title}")
+                    continue
+
                 entry_date = format_upload_date(entry)
                 if entry_date and entry_date < THRESHOLD_DATE:
                     safe_print(
@@ -228,18 +287,13 @@ def collect_and_analyze():
                         "Stopping channel scan."
                     )
                     break
-                live_status = entry.get('live_status')
-                entry_title = entry.get('title', '')
-                if (
-                    live_status in ['is_upcoming', 'is_live']
-                    or "予定" in entry_title
-                    or "メン限" in entry_title
-                ):
-                    safe_print(f"Skipped (Live/Upcoming/Member): {entry_title}")
-                    continue
 
-                raw_video_id = entry.get('id')
-                video_id = re.split(r'[&?]', raw_video_id)[0] if raw_video_id else None
+                raw_video_id = entry.get("id")
+                video_id = (
+                    re.split(r"[&?]", str(raw_video_id))[0]
+                    if raw_video_id
+                    else None
+                )
                 if not video_id:
                     continue
 
@@ -249,20 +303,31 @@ def collect_and_analyze():
 
                 video_url = f"https://www.youtube.com/watch?v={video_id}"
 
-                # まず軽量な動画情報だけ取得して、再スキャンが必要か判定する。
                 try:
-                    metadata = metadata_ydl.extract_info(video_url, download=False)
-                except Exception:
+                    metadata = metadata_ydl.extract_info(
+                        video_url,
+                        download=False,
+                    )
+                except Exception as exc:
+                    counters["errors"] += 1
+                    safe_print(
+                        f"Metadata error: {video_id} "
+                        f"({type(exc).__name__})"
+                    )
                     continue
 
-                title = metadata.get('title', entry_title)
-                if "メン限" in title or metadata.get('live_status') == 'is_live':
+                title = metadata.get("title", entry_title)
+                if (
+                    "メン限" in title
+                    or metadata.get("live_status") in {"is_live", "is_upcoming"}
+                ):
                     continue
 
                 upload_date = format_upload_date(metadata)
                 if not upload_date:
                     safe_print(f"Skipped (Unknown upload date): {title}")
                     continue
+
                 if upload_date < THRESHOLD_DATE:
                     safe_print(
                         f"Reached threshold: {upload_date} < {THRESHOLD_DATE}. "
@@ -270,100 +335,72 @@ def collect_and_analyze():
                     )
                     break
 
-                current_comment_count = metadata.get('comment_count')
+                current_comment_count = metadata.get("comment_count")
                 scan_state = db.get_video_scan_state(video_id)
                 should_scan, reason = should_rescan_video(
-                    scan_state, current_comment_count
+                    scan_state,
+                    current_comment_count,
                 )
 
                 if not should_scan:
-                    unchanged_count += 1
+                    counters["unchanged_scan"] += 1
                     safe_print(f"Skipped (Unchanged): {title}")
                     continue
 
-                safe_print(f"Scanning: {title} ({upload_date}) [{reason}]")
+                safe_print(
+                    f"Scanning: {title} ({upload_date}) [{reason}]"
+                )
 
                 try:
-                    info = comment_ydl.extract_info(video_url, download=False)
-                except Exception:
+                    info = comment_ydl.extract_info(
+                        video_url,
+                        download=False,
+                    )
+                except Exception as exc:
+                    counters["errors"] += 1
+                    safe_print(
+                        f"Comment error: {video_id} "
+                        f"({type(exc).__name__})"
+                    )
                     continue
 
-                comments = info.get('comments', [])
-                recorded_comment_count = info.get('comment_count')
+                all_comments = info.get("comments", [])
+                target_comments = normalize_target_comments(all_comments)
+
+                result = write_review_file(
+                    video_id,
+                    title,
+                    upload_date,
+                    video_url,
+                    target_comments,
+                )
+
+                if result == "new":
+                    counters["new_files"] += 1
+                    safe_print(
+                        f"  -> review新規: {len(target_comments)}コメント"
+                    )
+                elif result == "updated":
+                    counters["updated_files"] += 1
+                    safe_print(
+                        f"  -> review更新: {len(target_comments)}コメント"
+                    )
+                elif result == "unchanged":
+                    counters["same_files"] += 1
+                    safe_print(
+                        f"  -> ageha1stコメント変化なし: "
+                        f"{len(target_comments)}コメント"
+                    )
+                else:
+                    counters["no_target"] += 1
+                    safe_print("  -> ageha1stコメントなし")
+
+                recorded_comment_count = info.get("comment_count")
                 if recorded_comment_count is None:
                     recorded_comment_count = current_comment_count
                 if recorded_comment_count is None:
-                    recorded_comment_count = len(comments)
+                    recorded_comment_count = len(all_comments)
 
-                target_clean = TARGET_AUTHOR.lower().lstrip('@')
-                entry_lines = []
-
-                for c in comments:
-                    text = c.get('text', '')
-                    author = c.get('author', '').lower().lstrip('@')
-                    author_id = c.get('author_id', '').lower().lstrip('@')
-
-                    if target_clean not in author and target_clean not in author_id:
-                        continue
-
-                    for line in text.split('\n'):
-                        line = line.strip()
-                        if not line:
-                            continue
-
-                        if any(kw in line for kw in exclude_keywords + auto_exclude):
-                            continue
-
-                        match = pattern.search(line)
-                        if not match:
-                            continue
-
-                        ts = match.group('timestamp')
-                        rd = match.group('reading')
-                        og = match.group('original')
-
-                        if (
-                            re.match(r'^[\d:\./ \-]+$', rd)
-                            or re.match(r'^[\d:\./ \-]+$', og)
-                        ):
-                            continue
-                        if len(rd) < 1 or len(og) < 1:
-                            continue
-
-                        # 既に公開済みの項目は再追加しない。
-                        with db._get_connection() as conn:
-                            cursor = conn.cursor()
-                            cursor.execute(
-                                """
-                                SELECT 1
-                                FROM misreadings
-                                WHERE video_id = ?
-                                  AND timestamp = ?
-                                  AND original = ?
-                                  AND reading = ?
-                                  AND status = 1
-                                """,
-                                (video_id, ts, og, rd),
-                            )
-                            if cursor.fetchone():
-                                continue
-
-                        output_line = f"{ts} - {rd}（{og}）"
-                        if output_line not in entry_lines:
-                            entry_lines.append(output_line)
-
-                if entry_lines:
-                    new_findings.append(
-                        {
-                            "title": title,
-                            "upload_date": upload_date,
-                            "video_url": video_url,
-                            "entries": entry_lines,
-                        }
-                    )
-                    total_found += len(entry_lines)
-
-                # コメント本文の確認が完了した時だけスキャン日時を更新する。
                 db.record_video_scan(
                     video_id,
                     title,
@@ -371,30 +408,37 @@ def collect_and_analyze():
                     upload_date,
                     recorded_comment_count,
                 )
-                scanned_count += 1
+                counters["rescanned"] += 1
                 time.sleep(1)
 
-            if total_found > 0:
-                merge_findings_into_refined(refined_path, new_findings)
-                safe_print(
-                    f"\n✅ 解析完了: {total_found}件の新規候補を"
-                    "「mimy_misreadings_refined.txt」に反映しました。"
-                )
-                safe_print(" ファイルを確認・編集してください。")
-            else:
-                print("\n新しい誤読候補は見つかりませんでした。")
-
-            safe_print(
-                f"確認結果: 一覧確認 {checked_entries}本 / "
-                f"再スキャン {scanned_count}本 / "
-                f"変更なしスキップ {unchanged_count}本"
-            )
-
-    except Exception as e:
+    except KeyboardInterrupt:
+        safe_print("\n中断しました。完了済みの動画は記録されています。")
+        return 130
+    except Exception as exc:
         import traceback
+
         traceback.print_exc()
-        safe_print(f"エラーが発生しました: {e}")
+        safe_print(f"収集処理を継続できません: {exc}")
+        return 1
+
+    safe_print("\n" + "=" * 60)
+    safe_print("  収集結果")
+    safe_print("=" * 60)
+    safe_print(f"  一覧確認: {counters['checked']}本")
+    safe_print(f"  コメント再スキャン: {counters['rescanned']}本")
+    safe_print(f"  最近確認済みスキップ: {counters['unchanged_scan']}本")
+    safe_print(f"  review新規: {counters['new_files']}本")
+    safe_print(f"  review更新: {counters['updated_files']}本")
+    safe_print(f"  review内容変化なし: {counters['same_files']}本")
+    safe_print(f"  ageha1stコメントなし: {counters['no_target']}本")
+    safe_print(f"  取得エラー: {counters['errors']}本")
+    safe_print("=" * 60)
+    safe_print(
+        "誤読候補の判断はしていません。"
+        "review_comments をChatで確認してください。"
+    )
+    return 0
 
 
 if __name__ == "__main__":
-    collect_and_analyze()
+    raise SystemExit(collect_comments_for_review())
