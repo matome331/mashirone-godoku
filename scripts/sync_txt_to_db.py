@@ -17,7 +17,12 @@ import argparse
 import json
 import os
 import re
+import sys
 from datetime import datetime
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
 from core.database import DatabaseManager
 
@@ -250,7 +255,7 @@ def write_web_data_atomic(output_path, web_list):
 
 
 def run(check_only=False):
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base_dir = PROJECT_ROOT
     refined_path = os.path.join(base_dir, "mimy_misreadings_refined.txt")
     excluded_path = os.path.join(base_dir, "excluded_videos.txt")
     output_path = os.path.join(base_dir, "webapp", "data.js")
