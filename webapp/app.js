@@ -13,6 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentLimit = 100;
     const ITEMS_PER_PAGE = 100;
 
+    // Helper: Normalize text only for search matching.
+    // Displayed text is left untouched.
+    const normalizeSearchText = (value) => {
+        return String(value ?? '')
+            .normalize('NFKC')
+            .replace(/[\u200B-\u200D\u2060\uFEFF]/g, '')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .toLowerCase();
+    };
+
     // Helper: Parse HH:MM:SS to seconds
     const parseTimeToSeconds = (timeStr) => {
         if (!timeStr) return 0;
@@ -77,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // 検索中は全件表示、通常時はページング
-        const isSearching = searchInput.value.trim() !== '';
+        const isSearching = normalizeSearchText(searchInput.value) !== '';
         const visibleData = isSearching ? displayedData : displayedData.slice(0, currentLimit);
         let hasMoreFlag = !isSearching && currentLimit < displayedData.length;
 
@@ -234,15 +245,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Search logic
     const handleSearch = (e) => {
-        const term = e.target.value.toLowerCase().trim();
+        const term = normalizeSearchText(e.target.value);
         currentLimit = ITEMS_PER_PAGE;
         if (term === '') {
             displayedData = [...allMisreadings];
         } else {
             displayedData = allMisreadings.filter(item => {
-                // 誤読そのもの（原文）と読み方のみを検索対象にする
-                return item.original.toLowerCase().includes(term) ||
-                    item.reading.toLowerCase().includes(term);
+                // 表示文字列は変更せず、検索時だけ正規化して比較する。
+                const original = normalizeSearchText(item.original);
+                const reading = normalizeSearchText(item.reading);
+                return original.includes(term) || reading.includes(term);
             });
         }
         renderSections();
