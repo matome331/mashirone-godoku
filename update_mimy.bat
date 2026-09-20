@@ -26,9 +26,10 @@ echo 2. refined.txt を開く 📝 (内容を確認・編集)
 echo 3. Webサイト・DBに反映 🚀 (編集内容を確定)
 echo ------------------------------------------------------
 echo 4. 無視リストを編集 ⚙️
-echo 5. 終了
+echo 5. 非公開・削除動画を除外 🚫
+echo 6. 終了
 echo.
-set /p choice="選択 (1-5): "
+set /p choice="選択 (1-6): "
 
 if "%choice%"=="1" (
     echo.
@@ -58,6 +59,20 @@ if "%choice%"=="4" (
     goto menu
 )
 
-if "%choice%"=="5" exit
+if "%choice%"=="5" (
+    echo.
+    python scripts\exclude_video.py
+    echo.
+    set /p syncnow="続けてWebサイト・DBへ反映しますか？ (y/n): "
+    if /I "%syncnow%"=="y" (
+        python scripts\sync_txt_to_db.py
+        echo.
+        echo ✅ 除外設定を反映しました！
+    )
+    pause
+    goto menu
+)
+
+if "%choice%"=="6" exit
 
 goto menu
