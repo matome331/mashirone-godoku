@@ -60,7 +60,7 @@ python scripts\sync_txt_to_db.py
 ## 現行ワークフロー
 
 1. `update_mimy.bat`
-2. `scripts/collect_comments.py` で新規候補を `mimy_misreadings_refined.txt` に追加
+2. `scripts/collect_comments.py` で新規候補を収集し、既存配信もコメント数変化または7日経過時に再確認
 3. 人間が `mimy_misreadings_refined.txt` を確認・編集
 4. `scripts/sync_txt_to_db.py` でDBミラーと `webapp/data.js` を生成
 5. Gitへ反映
@@ -80,6 +80,7 @@ python scripts\sync_txt_to_db.py
 - DBだけ直して公開データを変更しない。
 - raw archiveを公開状態の調整に使わない。
 - `legacy/` のコードを現行フローへ混ぜない。
+- 既存動画を「誤読が1件ある」という理由だけで永久スキップしない。
 - 同じ情報を複数箇所へ手作業で同期しない。
 - 同期スクリプトの検証が失敗した場合は、生成物を更新せず原因を修正する。
 - 大規模整理や旧ファイル削除は、現行フローと分けて行う。
