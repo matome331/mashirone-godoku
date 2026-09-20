@@ -54,7 +54,10 @@ def split_lines(text):
 
 def is_allowed_path(path):
     normalized = path.replace("\\", "/").lstrip("./")
-    return normalized.startswith("review_comments/")
+    return (
+        normalized.startswith("review_comments/")
+        and normalized.endswith(".json")
+    )
 
 
 def ensure_git_available():
@@ -155,7 +158,7 @@ def stage_review_files():
         "add",
         "-A",
         "--",
-        REVIEW_DIR,
+        ":(glob)review_comments/*.json",
         capture=False,
     )
 
