@@ -90,7 +90,8 @@ YouTubeコメント収集（yt-dlp）はローカル実行を正規ルートと�
 
 - GitHub Actions上でのyt-dlp自動収集は、YouTube側のbot判定・PO Token・共有データセンターIP制限の影響を受けやすいため、現状は採用しません。
 - `.github/workflows/` に収集用ワークフローは置きません。
-- GitHub ActionsはGitHub Pagesの公開処理など、YouTube取得を伴わない用途だけに使います。
+- GitHub ActionsはGitHub Pagesの公開処理やリポジトリ健康診断など、YouTube取得を伴わない用途だけに使います。
+- `.github/workflows/health-check.yml` は、正本の書式・Python構文・Web JavaScript構文だけを検証し、yt-dlpは実行しません。
 - 将来再検討する場合は、現行の正本・除外・同期フローを壊さない独立実験として行います。
 
 ## 旧スクリプト
