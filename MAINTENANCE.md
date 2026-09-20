@@ -61,6 +61,15 @@ python scripts\sync_txt_to_db.py --check
 コメント確認専用の日時はDBの `last_comment_scan` で管理し、
 Web公開同期の `last_processed` とは分離しています。
 
+## GitHub Actions の扱い
+
+YouTubeコメント収集（yt-dlp）はローカル実行を正規ルートとします。
+
+- GitHub Actions上でのyt-dlp自動収集は、YouTube側のbot判定・PO Token・共有データセンターIP制限の影響を受けやすいため、現状は採用しません。
+- `.github/workflows/` に収集用ワークフローは置きません。
+- GitHub ActionsはGitHub Pagesの公開処理など、YouTube取得を伴わない用途だけに使います。
+- 将来再検討する場合は、現行の正本・除外・同期フローを壊さない独立実験として行います。
+
 ## 旧スクリプト
 
 過去の更新・DB・Web生成ルートは `legacy/` に隔離しています。
