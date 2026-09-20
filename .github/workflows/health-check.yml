@@ -26,6 +26,9 @@ jobs:
       - name: Validate refined source of truth
         run: python scripts/sync_txt_to_db.py --check
 
+      - name: Validate Chat review queue
+        run: python scripts/review_health_check.py
+
       - name: Check Python syntax
         run: python -m compileall -q core scripts
 
