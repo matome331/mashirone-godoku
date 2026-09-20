@@ -19,7 +19,15 @@ import sys
 import time
 from datetime import datetime, timedelta
 
-import yt_dlp
+try:
+    import yt_dlp
+except ImportError:
+    print(
+        "yt-dlp が見つかりません。"
+        "python -m pip install -U yt-dlp を実行してください。",
+        file=sys.stderr,
+    )
+    raise SystemExit(1)
 
 from core.database import DatabaseManager
 
