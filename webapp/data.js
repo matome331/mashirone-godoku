@@ -1,5 +1,176 @@
 const dictionaryData = [
   {
+    "timestamp": "1:48:40",
+    "original": "所在地",
+    "reading": "しょじゃいち",
+    "context": "",
+    "videoTitle": "9/19【 朝活 / 雑談 】みんなの出身地教えてください！47都道府県埋め耐久に初挑戦🌍️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=sExk_xK5DOQ&t=6520s",
+    "date": "2026/09/19"
+  },
+  {
+    "timestamp": "3:16:42",
+    "original": "久留米市",
+    "reading": "くるべし",
+    "context": "",
+    "videoTitle": "9/19【 朝活 / 雑談 】みんなの出身地教えてください！47都道府県埋め耐久に初挑戦🌍️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=sExk_xK5DOQ&t=11802s",
+    "date": "2026/09/19"
+  },
+  {
+    "timestamp": "4:28:58",
+    "original": "悲哀",
+    "reading": "ひょうあい",
+    "context": "",
+    "videoTitle": "9/19【 朝活 / 雑談 】みんなの出身地教えてください！47都道府県埋め耐久に初挑戦🌍️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=sExk_xK5DOQ&t=16138s",
+    "date": "2026/09/19"
+  },
+  {
+    "timestamp": "5:03:00",
+    "original": "警鐘",
+    "reading": "けいほう",
+    "context": "",
+    "videoTitle": "9/19【 朝活 / 雑談 】みんなの出身地教えてください！47都道府県埋め耐久に初挑戦🌍️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=sExk_xK5DOQ&t=18180s",
+    "date": "2026/09/19"
+  },
+  {
+    "timestamp": "44:30",
+    "original": "連日",
+    "reading": "れんにち",
+    "context": "",
+    "videoTitle": "9/18【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=v9E0vrDmdh8&t=2670s",
+    "date": "2026/09/18"
+  },
+  {
+    "timestamp": "44:56",
+    "original": "荒天",
+    "reading": "あらてん",
+    "context": "",
+    "videoTitle": "9/18【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=v9E0vrDmdh8&t=2696s",
+    "date": "2026/09/18"
+  },
+  {
+    "timestamp": "1:22:50",
+    "original": "香木",
+    "reading": "こうき",
+    "context": "",
+    "videoTitle": "9/18【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=v9E0vrDmdh8&t=4970s",
+    "date": "2026/09/18"
+  },
+  {
+    "timestamp": "2:06:11",
+    "original": "天然物",
+    "reading": "てんねんぶつ",
+    "context": "",
+    "videoTitle": "9/18【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=v9E0vrDmdh8&t=7571s",
+    "date": "2026/09/18"
+  },
+  {
+    "timestamp": "2:23:48",
+    "original": "十万石",
+    "reading": "せき",
+    "context": "",
+    "videoTitle": "9/18【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=v9E0vrDmdh8&t=8628s",
+    "date": "2026/09/18"
+  },
+  {
+    "timestamp": "3:26:05",
+    "original": "小布施",
+    "reading": "しょうふせ",
+    "context": "",
+    "videoTitle": "9/18【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=v9E0vrDmdh8&t=12365s",
+    "date": "2026/09/18"
+  },
+  {
+    "timestamp": "3:26:39",
+    "original": "小布施堂",
+    "reading": "しょうふせどう",
+    "context": "",
+    "videoTitle": "9/18【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=v9E0vrDmdh8&t=12399s",
+    "date": "2026/09/18"
+  },
+  {
+    "timestamp": "3:26:44",
+    "original": "朱雀",
+    "reading": "すずめ",
+    "context": "",
+    "videoTitle": "9/18【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=v9E0vrDmdh8&t=12404s",
+    "date": "2026/09/18"
+  },
+  {
+    "timestamp": "3:31:48",
+    "original": "臼",
+    "reading": "しゃく",
+    "context": "",
+    "videoTitle": "9/18【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=v9E0vrDmdh8&t=12708s",
+    "date": "2026/09/18"
+  },
+  {
+    "timestamp": "47:12",
+    "original": "遂行",
+    "reading": "ついこう",
+    "context": "",
+    "videoTitle": "9/16【 JSP3 / 日本事故物件監視協会3 】実在する事故物件を監視することになりました【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9JE2LT5pkGU&t=2832s",
+    "date": "2026/09/16"
+  },
+  {
+    "timestamp": "58:08",
+    "original": "軒下",
+    "reading": "けんか",
+    "context": "",
+    "videoTitle": "9/16【 JSP3 / 日本事故物件監視協会3 】実在する事故物件を監視することになりました【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9JE2LT5pkGU&t=3488s",
+    "date": "2026/09/16"
+  },
+  {
+    "timestamp": "1:02:42",
+    "original": "貴殿",
+    "reading": "きどの",
+    "context": "",
+    "videoTitle": "9/16【 JSP3 / 日本事故物件監視協会3 】実在する事故物件を監視することになりました【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9JE2LT5pkGU&t=3762s",
+    "date": "2026/09/16"
+  },
+  {
+    "timestamp": "1:04:40",
+    "original": "殉職",
+    "reading": "しゅんしょく",
+    "context": "",
+    "videoTitle": "9/16【 JSP3 / 日本事故物件監視協会3 】実在する事故物件を監視することになりました【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9JE2LT5pkGU&t=3880s",
+    "date": "2026/09/16"
+  },
+  {
+    "timestamp": "3:42:13",
+    "original": "横須賀",
+    "reading": "よこすが",
+    "context": "",
+    "videoTitle": "9/16【 JSP3 / 日本事故物件監視協会3 】実在する事故物件を監視することになりました【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9JE2LT5pkGU&t=13333s",
+    "date": "2026/09/16"
+  },
+  {
+    "timestamp": "3:46:30",
+    "original": "此処",
+    "reading": "こちら",
+    "context": "",
+    "videoTitle": "9/16【 JSP3 / 日本事故物件監視協会3 】実在する事故物件を監視することになりました【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9JE2LT5pkGU&t=13590s",
+    "date": "2026/09/16"
+  },
+  {
     "timestamp": "2:00:04",
     "original": "横山光輝",
     "reading": "こうき",
