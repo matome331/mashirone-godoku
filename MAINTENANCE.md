@@ -111,3 +111,25 @@ YouTubeコメント収集（yt-dlp）はローカル実行を正規ルートと�
 - その他 = 生成物または参照用
 
 と役割を固定します。
+
+## チャット検索と共通の非公開動画除外
+
+運用上の正本は `mashirone-chat/excluded_videos.txt` です。
+
+公開サイトの `webapp/app.js` は起動時に次の2つを読み、動画IDを合算して検索対象から外します。
+
+1. 正本: `https://matome331.github.io/mashirone-chat/excluded_videos.txt`
+2. ローカル予備: `../excluded_videos.txt`
+
+そのため、Chatで非公開/削除を確認してチャット検索側の正本へ追加した動画は、
+誤読まとめ側でも検索対象から外れます。
+
+ローカルの `excluded_videos.txt` は次の用途で残します。
+
+- `scripts/sync_txt_to_db.py` の生成時フィルター
+- 正本取得に失敗した場合のフォールバック
+- GitHub上でのミラー確認
+
+元の `mimy_misreadings_refined.txt` は削除しません。
+除外解除時は正本の動画IDを外せば、ランタイム検索フィルターは復帰します。
+必要に応じてローカルミラーも揃えたうえで再同期します。
