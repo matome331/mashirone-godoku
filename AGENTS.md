@@ -67,27 +67,19 @@ python scripts\sync_txt_to_db.py
 
 ## Legacy / 調査用スクリプト
 
-ルート直下や `scripts/` には過去の試行錯誤で作られた旧スクリプトがあります。
-名前が似ていても、公開更新に使う処理とは限りません。
+旧更新ルートは `legacy/` に隔離されています。
+通常の更新・修正では参照・実行しません。
 
-特に以下を現行の公開更新フローとして使用しないでください。
+過去処理の調査や復旧が明示的に必要な場合だけ `legacy/README.md` を確認してください。
 
-- `update_dictionary.py`
-- `update_all_new_streams.bat`
-- `add_new_stream.bat`
-- `scripts/final_web_update.py`
-- `scripts/generate_webapp_data.py`
-- `scripts/sync_channel.py`
-- `scripts/add_stream.py`
-- `mimy_misreadings.txt`
-
-必要な場合は削除せず、調査・復旧用の旧資産として扱います。
+`mimy_misreadings.txt` も現行の正本ではなく、過去データ・調査用として扱います。
 
 ## 変更時の原則
 
 - `webapp/data.js` を手作業で修正しない。
 - DBだけ直して公開データを変更しない。
 - raw archiveを公開状態の調整に使わない。
+- `legacy/` のコードを現行フローへ混ぜない。
 - 同じ情報を複数箇所へ手作業で同期しない。
 - 同期スクリプトの検証が失敗した場合は、生成物を更新せず原因を修正する。
 - 大規模整理や旧ファイル削除は、現行フローと分けて行う。
