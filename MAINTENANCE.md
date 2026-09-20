@@ -7,6 +7,10 @@ YouTube / コメント
         ↓
 scripts/collect_comments.py
         ↓
+review_comments/<video_id>.json ← @ageha1st の生コメントだけ
+        ↓
+Chatで誤読候補を抽出・人間が精査
+        ↓
 mimy_misreadings_refined.txt   ← 公開データの正本
         │
         ├── excluded_videos.txt ← 公開除外フィルタ
@@ -49,9 +53,11 @@ python scripts\sync_txt_to_db.py --check
 タイトル・日付・URL・誤読行・重複を検証します。
 エラー時はDBとWebデータを変更しません。
 
-### 誤読コメントの読み表記
+### refined.txt の読み表記
 
-収集時の「読み」は、ひらがなだけでなく以下も許容します。
+コメント収集時には誤読判定をしません。
+Chatで採用した項目を `mimy_misreadings_refined.txt` に反映した後、
+同期処理では「読み」として以下も許容します。
 
 - カタカナ / 半角カナ
 - 英字 / 全角英字
@@ -79,7 +85,7 @@ python scripts\sync_txt_to_db.py --check
 - YouTube上のコメント総数が変わった動画は再スキャン
 - コメント総数が同じでも、最終コメント確認から7日以上経過した動画は再スキャン
 - それ以外はコメント本文の再取得を省略
-- 再チェックで見つかった新規項目は、既存の同じ動画セクションへ追記
+- 再チェックで @ageha1st さんのコメント内容が変わった場合は、対応する `review_comments/<video_id>.json` を更新
 
 コメント確認専用の日時はDBの `last_comment_scan` で管理し、
 Web公開同期の `last_processed` とは分離しています。
@@ -106,7 +112,9 @@ YouTubeコメント収集（yt-dlp）はローカル実行を正規ルートと�
 
 今後は:
 
-- 人間が編集するデータ = `mimy_misreadings_refined.txt`
+- Chat確認前の材料 = `review_comments/*.json`
+- Chat確認状態 = `review_state.json`
+- 人間が確定した公開データ = `mimy_misreadings_refined.txt`
 - 公開しない動画 = `excluded_videos.txt`
 - その他 = 生成物または参照用
 
@@ -133,3 +141,51 @@ YouTubeコメント収集（yt-dlp）はローカル実行を正規ルートと�
 元の `mimy_misreadings_refined.txt` は削除しません。
 除外解除時は正本の動画IDを外せば、ランタイム検索フィルターは復帰します。
 必要に応じてローカルミラーも揃えたうえで再同期します。
+
+## Chatレビューキュー
+
+通常はリポジトリ直下の `collect_mimy.bat` を実行します。
+
+バッチは次の順で動きます。
+
+1. GitHubの `master` とローカルの同期状態を安全確認
+2. yt-dlpで対象配信のコメントを取得
+3. `@ageha1st` さんのコメントだけを動画単位で `review_comments/<video_id>.json` に保存
+4. reviewキュー健康診断
+5. `review_comments/` だけをcommit/push
+
+収集側では次を行いません。
+
+- 誤読かどうかの判定
+- 正規表現による候補の絞り込み
+- `exclude_keywords.txt` による候補除外
+- `mimy_misreadings_refined.txt` の編集
+- DB/Web公開データへの反映
+
+各review JSONには `source_hash` を保存します。
+コメント内容が前回と同じ場合はファイルを書き換えないため、
+定期再スキャンだけでGit履歴が増え続けるのを避けます。
+
+`review_state.json` はChatで確認済みの `source_hash` を記録するためのファイルです。
+現在のreview JSONの `source_hash` と一致しない動画だけが
+「未確認 / コメント更新あり」と判断できます。
+
+Chatでの標準運用:
+
+1. `collect_mimy.bat` を実行
+2. GitHub送信成功を確認
+3. Chatで「新しい誤読見て」と依頼
+4. Chatが未確認reviewだけ読み、誤読候補を提示
+5. Chat上で採用 / 修正 / 不採用を精査
+6. 採用分だけ `mimy_misreadings_refined.txt` へ反映
+7. `review_state.json` に確認済みhashを記録
+8. 同期・健康診断・PR・merge
+
+reviewログ送信用スクリプトは `review_comments/` 以外を自動stageしません。
+ローカル `master` がGitHubより古い場合もpushせず停止します。
+
+reviewキューだけ健康診断する場合:
+
+```bat
+python scripts\review_health_check.py
+```
