@@ -5,9 +5,24 @@ import sqlite3
 from datetime import datetime
 from core.database import DatabaseManager
 
+def load_excluded_video_ids(path):
+    if not os.path.exists(path):
+        return set()
+
+    excluded = set()
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            clean = line.split("#", 1)[0].strip()
+            if clean:
+                excluded.add(clean)
+    return excluded
+
+
 def sync_txt_to_db():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     refined_path = os.path.join(base_dir, "mimy_misreadings_refined.txt")
+    excluded_path = os.path.join(base_dir, "excluded_videos.txt")
+    excluded_video_ids = load_excluded_video_ids(excluded_path)
     db = DatabaseManager()
     
     if not os.path.exists(refined_path):
@@ -48,6 +63,11 @@ def sync_txt_to_db():
             video_url = url_match.group(1).split('&t=')[0].split('?t=')[0]
             video_id_match = re.search(r'v=([^&]+)', video_url)
             video_id = video_id_match.group(1) if video_id_match else video_url
+
+            # 非公開・削除済みなど、公開除外リストにある動画は同期対象から外す
+            if video_id in excluded_video_ids:
+                print(f"[SKIP] 公開除外: {video_id} | {video_title}")
+                continue
             
             # 動画情報を更新
             cursor.execute('''
@@ -76,6 +96,8 @@ def sync_txt_to_db():
         conn.commit()
     
     print(f"[SUCCESS] データベース更新完了: {count} 件の誤読を承認済み(status=1)に設定しました。")
+    if excluded_video_ids:
+        print(f"[INFO] 公開除外動画: {len(excluded_video_ids)} 件")
     
     # 2. Webアプリ用 data.js の生成
     approved_data = db.get_approved_data()
