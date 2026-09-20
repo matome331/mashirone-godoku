@@ -13,6 +13,23 @@ THRESHOLD_DATE = "2026/03/01"
 RECHECK_DAYS = 7
 
 
+def format_upload_date(info):
+    """Return YYYY/MM/DD when yt-dlp metadata includes a usable date."""
+    upload_date_raw = info.get("upload_date")
+    if upload_date_raw and re.fullmatch(r"\d{8}", str(upload_date_raw)):
+        upload_date_raw = str(upload_date_raw)
+        return f"{upload_date_raw[:4]}/{upload_date_raw[4:6]}/{upload_date_raw[6:]}"
+
+    timestamp = info.get("timestamp") or info.get("release_timestamp")
+    if timestamp:
+        try:
+            return datetime.fromtimestamp(timestamp).strftime("%Y/%m/%d")
+        except (TypeError, ValueError, OSError):
+            pass
+
+    return None
+
+
 def safe_print(msg):
     """CP932でエンコードできない文字を安全に処理して表示"""
     try:
@@ -191,14 +208,26 @@ def collect_and_analyze():
             channel_info = metadata_ydl.extract_info(
                 CHANNEL_URL, download=False, process=False
             )
-            entries = list(channel_info.get('entries', []))[:50]
+            entries = list(channel_info.get('entries', []))
 
             new_findings = []
             total_found = 0
             scanned_count = 0
             unchanged_count = 0
+            checked_entries = 0
 
             for entry in entries:
+                checked_entries += 1
+
+                # /streams は新しい順。一覧メタデータだけで基準日より古いと
+                # 分かる場合は、そこで安全に走査を終了する。
+                entry_date = format_upload_date(entry)
+                if entry_date and entry_date < THRESHOLD_DATE:
+                    safe_print(
+                        f"Reached threshold: {entry_date} < {THRESHOLD_DATE}. "
+                        "Stopping channel scan."
+                    )
+                    break
                 live_status = entry.get('live_status')
                 entry_title = entry.get('title', '')
                 if (
@@ -230,12 +259,16 @@ def collect_and_analyze():
                 if "メン限" in title or metadata.get('live_status') == 'is_live':
                     continue
 
-                upload_date_raw = metadata.get('upload_date', '00000000')
-                upload_date = (
-                    f"{upload_date_raw[:4]}/{upload_date_raw[4:6]}/{upload_date_raw[6:]}"
-                )
-                if upload_date < THRESHOLD_DATE:
+                upload_date = format_upload_date(metadata)
+                if not upload_date:
+                    safe_print(f"Skipped (Unknown upload date): {title}")
                     continue
+                if upload_date < THRESHOLD_DATE:
+                    safe_print(
+                        f"Reached threshold: {upload_date} < {THRESHOLD_DATE}. "
+                        "Stopping channel scan."
+                    )
+                    break
 
                 current_comment_count = metadata.get('comment_count')
                 scan_state = db.get_video_scan_state(video_id)
@@ -352,7 +385,8 @@ def collect_and_analyze():
                 print("\n新しい誤読候補は見つかりませんでした。")
 
             safe_print(
-                f"確認結果: 再スキャン {scanned_count}本 / "
+                f"確認結果: 一覧確認 {checked_entries}本 / "
+                f"再スキャン {scanned_count}本 / "
                 f"変更なしスキップ {unchanged_count}本"
             )
 
