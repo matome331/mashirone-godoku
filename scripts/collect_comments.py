@@ -183,10 +183,7 @@ def collect_and_analyze():
     print(f"--- チャンネルの最新動画を確認中: {CHANNEL_URL} ---")
 
     try:
-        with (
-            yt_dlp.YoutubeDL(metadata_opts) as metadata_ydl,
-            yt_dlp.YoutubeDL(comment_opts) as comment_ydl,
-        ):
+        with yt_dlp.YoutubeDL(metadata_opts) as metadata_ydl, yt_dlp.YoutubeDL(comment_opts) as comment_ydl:
             channel_info = metadata_ydl.extract_info(
                 CHANNEL_URL, download=False, process=False
             )
