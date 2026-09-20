@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal EnableDelayedExpansion
 chcp 65001 > nul
 
 :: ドライブとパスの固定
@@ -64,7 +64,7 @@ if "%choice%"=="5" (
     python scripts\exclude_video.py
     echo.
     set /p syncnow="続けてWebサイト・DBへ反映しますか？ (y/n): "
-    if /I "%syncnow%"=="y" (
+    if /I "!syncnow!"=="y" (
         python scripts\sync_txt_to_db.py
         echo.
         echo ✅ 除外設定を反映しました！
