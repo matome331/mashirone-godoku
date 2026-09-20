@@ -1,0 +1,51 @@
+name: Repository health check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-data:
+    name: Validate canonical data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate refined source of truth
+        run: python scripts/sync_txt_to_db.py --check
+
+      - name: Check Python syntax
+        run: python -m compileall -q core scripts
+
+  validate-web:
+    name: Validate web scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check app.js syntax
+        run: node --check webapp/app.js
+
+      - name: Check data.js syntax
+        run: node --check webapp/data.js
+
+      - name: Check service worker syntax
+        run: node --check webapp/sw.js
