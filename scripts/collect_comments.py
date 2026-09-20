@@ -27,6 +27,16 @@ def collect_and_analyze():
         with open(exclude_path, "r", encoding="utf-8") as f:
             exclude_keywords = [line.strip() for line in f if line.strip()]
 
+    # 非公開・削除済みなど、今後の収集対象から外す動画ID
+    excluded_video_ids = set()
+    excluded_videos_path = os.path.join(base_dir, "excluded_videos.txt")
+    if os.path.exists(excluded_videos_path):
+        with open(excluded_videos_path, "r", encoding="utf-8") as f:
+            for line in f:
+                clean = line.split("#", 1)[0].strip()
+                if clean:
+                    excluded_video_ids.add(clean)
+
     # 追加のゴミキーワード（自動除外）
     auto_exclude = ["潔癖症", "接続確認", "答え", "└", "えっ？", "忘れない", "不具合", "設定忘れ", "録画ミス", "ひゃー", "いやー", "あー", "ふっふっふ"]
 
@@ -71,6 +81,10 @@ def collect_and_analyze():
                 raw_video_id = entry.get('id')
                 video_id = re.split(r'[&?]', raw_video_id)[0] if raw_video_id else None
                 if not video_id: continue
+
+                if video_id in excluded_video_ids:
+                    safe_print(f"Skipped (Excluded video): {entry_title}")
+                    continue
 
                 video_url = f"https://www.youtube.com/watch?v={video_id}"
                 

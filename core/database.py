@@ -10,6 +10,8 @@ class DatabaseManager:
             db_path = os.path.join(base_dir, "data", "misreadings.db")
         
         self.db_path = db_path
+        db_dir = os.path.dirname(os.path.abspath(self.db_path))
+        os.makedirs(db_dir, exist_ok=True)
         self._init_db()
 
     def _get_connection(self):
