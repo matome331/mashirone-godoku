@@ -315,21 +315,32 @@ body {
         margin-bottom: 0.6rem;
         border-radius: 8px;
         top: 0.5rem;
+        position: sticky;
     }
 
     .logo {
         font-size: 1.0rem;
         /* 大幅に縮小（改行防止） */
+        padding-right: 7.2rem;
     }
 
     .title-row {
         gap: 0.35rem;
     }
 
+    .sort-container {
+        position: static;
+    }
+
     .misreading-count {
-        margin: 0 0 0.2rem auto;
+        position: absolute;
+        top: 1.0rem;
+        right: 0.9rem;
+        z-index: 2;
+        margin: 0;
         padding: 0.05rem 0.4rem;
         font-size: 0.65rem;
+        white-space: nowrap;
     }
 
     .header-main {
