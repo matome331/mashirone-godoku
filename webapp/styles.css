@@ -95,11 +95,14 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    flex: 1 1 100%;
+    min-width: 0;
 }
 
 .title-row {
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 0.55rem;
     flex-wrap: wrap;
 }
@@ -130,6 +133,7 @@ body {
     align-items: center;
     width: fit-content;
     margin-top: 0;
+    margin-left: auto;
     padding: 0.08rem 0.5rem;
     border-radius: 999px;
     background: rgba(242, 139, 175, 0.12);
@@ -315,6 +319,7 @@ body {
 
     .misreading-count {
         margin-top: 0;
+        margin-left: 0.35rem;
         padding: 0.05rem 0.4rem;
         font-size: 0.65rem;
     }
