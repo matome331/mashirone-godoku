@@ -118,6 +118,21 @@ body {
     gap: 0.5rem;
 }
 
+.misreading-count {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 0.2rem;
+    padding: 0.08rem 0.5rem;
+    border-radius: 999px;
+    background: rgba(242, 139, 175, 0.12);
+    color: var(--accent-pink);
+    font-size: 0.72rem;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
 .subtitle {
     display: none;
     /* スマホでは完全に非表示 */
@@ -285,6 +300,12 @@ body {
     .logo {
         font-size: 1.0rem;
         /* 大幅に縮小（改行防止） */
+    }
+
+    .misreading-count {
+        margin-top: 0.1rem;
+        padding: 0.05rem 0.4rem;
+        font-size: 0.65rem;
     }
 
     .header-main {
