@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const noResults = document.getElementById('noResults');
     const kanaIndex = document.getElementById('kanaIndex');
     const backToTop = document.getElementById('backToTop');
+    const misreadingCount = document.getElementById('misreadingCount');
 
     let allMisreadings = [];
     let displayedData = [];
@@ -128,6 +129,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             displayedData = [...allMisreadings];
+
+            if (misreadingCount) {
+                misreadingCount.textContent =
+                    '誤読 ' + allMisreadings.length.toLocaleString('ja-JP') + '件';
+            }
 
             loadingIndicator.classList.add('hidden');
             renderSections();
