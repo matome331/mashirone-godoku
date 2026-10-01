@@ -132,8 +132,7 @@ body {
     display: inline-flex;
     align-items: center;
     width: fit-content;
-    margin-top: 0;
-    margin-left: auto;
+    margin: 0 0 0.3rem auto;
     padding: 0.08rem 0.5rem;
     border-radius: 999px;
     background: rgba(242, 139, 175, 0.12);
@@ -178,6 +177,7 @@ body {
     flex-grow: 1;
     gap: 1rem;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .search-container,
@@ -185,6 +185,15 @@ body {
     position: relative;
     max-width: 400px;
     flex: 1;
+}
+
+.sort-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sort-control {
+    position: relative;
 }
 
 .search-icon,
@@ -318,8 +327,7 @@ body {
     }
 
     .misreading-count {
-        margin-top: 0;
-        margin-left: 0.35rem;
+        margin: 0 0 0.2rem auto;
         padding: 0.05rem 0.4rem;
         font-size: 0.65rem;
     }
