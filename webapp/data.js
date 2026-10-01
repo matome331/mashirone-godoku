@@ -1,5 +1,50 @@
 const dictionaryData = [
   {
+    "timestamp": "2:15:20",
+    "original": "編纂",
+    "reading": "へんしゅう",
+    "context": "",
+    "videoTitle": "10/1【 雑談 】ただいまあああああ！！！体調不良から完全復活しました！！！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=-XXvja-eUDw&t=8120s",
+    "date": "2026/10/01"
+  },
+  {
+    "timestamp": "1:10:40",
+    "original": "膝",
+    "reading": "ひじ",
+    "context": "",
+    "videoTitle": "9/22【 朝活 / 雑談 】おはよう×0.3回筋トレ！？目指せムキムキ💪✨️②【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=nOif2lOxP0k&t=4240s",
+    "date": "2026/09/22"
+  },
+  {
+    "timestamp": "1:31:03",
+    "original": "風情",
+    "reading": "ふうじょう",
+    "context": "",
+    "videoTitle": "9/22【 朝活 / 雑談 】おはよう×0.3回筋トレ！？目指せムキムキ💪✨️②【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=nOif2lOxP0k&t=5463s",
+    "date": "2026/09/22"
+  },
+  {
+    "timestamp": "2:46:44",
+    "original": "拳立て",
+    "reading": "こぶしだて",
+    "context": "",
+    "videoTitle": "9/22【 朝活 / 雑談 】おはよう×0.3回筋トレ！？目指せムキムキ💪✨️②【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=nOif2lOxP0k&t=10004s",
+    "date": "2026/09/22"
+  },
+  {
+    "timestamp": "2:48:11",
+    "original": "腹斜筋",
+    "reading": "はらしゃきん",
+    "context": "",
+    "videoTitle": "9/22【 朝活 / 雑談 】おはよう×0.3回筋トレ！？目指せムキムキ💪✨️②【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=nOif2lOxP0k&t=10091s",
+    "date": "2026/09/22"
+  },
+  {
     "timestamp": "1:48:40",
     "original": "所在地",
     "reading": "しょじゃいち",
@@ -225,6 +270,15 @@ const dictionaryData = [
     "date": "2026/09/13"
   },
   {
+    "timestamp": "35:46",
+    "original": "癖",
+    "reading": "くせ",
+    "context": "",
+    "videoTitle": "9/12【 昼活 / 雑談 】初見さん15人目標☀️カフェオレ飲みながらまったり雑談中☕️💭【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=ArS7UfgzG5g&t=2146s",
+    "date": "2026/09/12"
+  },
+  {
     "timestamp": "1:02:43",
     "original": "スレッショルド",
     "reading": "つれっしょるど",
@@ -267,15 +321,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "9/12【 昼活 / 雑談 】初見さん15人目標☀️カフェオレ飲みながらまったり雑談中☕️💭【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=ArS7UfgzG5g&t=7451s",
-    "date": "2026/09/12"
-  },
-  {
-    "timestamp": "35:46",
-    "original": "癖",
-    "reading": "くせ",
-    "context": "",
-    "videoTitle": "9/12【 昼活 / 雑談 】初見さん15人目標☀️カフェオレ飲みながらまったり雑談中☕️💭【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=ArS7UfgzG5g&t=2146s",
     "date": "2026/09/12"
   },
   {
@@ -351,6 +396,15 @@ const dictionaryData = [
     "date": "2026/09/11"
   },
   {
+    "timestamp": "43:07",
+    "original": "おはぎ",
+    "reading": "おはげ",
+    "context": "",
+    "videoTitle": "9/11【 晩酌 / 雑談 】久しぶりにお酒呑むぞ！！！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=h3YT-Sv3lhk&t=2587s",
+    "date": "2026/09/11"
+  },
+  {
     "timestamp": "1:00:15",
     "original": "お屠蘇",
     "reading": "おみそ",
@@ -366,15 +420,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "9/11【 晩酌 / 雑談 】久しぶりにお酒呑むぞ！！！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=h3YT-Sv3lhk&t=4833s",
-    "date": "2026/09/11"
-  },
-  {
-    "timestamp": "43:07",
-    "original": "おはぎ",
-    "reading": "おはげ",
-    "context": "",
-    "videoTitle": "9/11【 晩酌 / 雑談 】久しぶりにお酒呑むぞ！！！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=h3YT-Sv3lhk&t=2587s",
     "date": "2026/09/11"
   },
   {
@@ -468,6 +513,15 @@ const dictionaryData = [
     "date": "2026/09/06"
   },
   {
+    "timestamp": "52:00",
+    "original": "深雪",
+    "reading": "ふゆき",
+    "context": "",
+    "videoTitle": "9/4【 Snowed Under | 雪葬 】はじめての雪かき頑張ります！！！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=415tjB6lS2E&t=3120s",
+    "date": "2026/09/04"
+  },
+  {
     "timestamp": "1:32:25",
     "original": "幼子",
     "reading": "ようじ",
@@ -510,15 +564,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "9/4【 Snowed Under | 雪葬 】はじめての雪かき頑張ります！！！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=415tjB6lS2E&t=13470s",
-    "date": "2026/09/04"
-  },
-  {
-    "timestamp": "52:00",
-    "original": "深雪",
-    "reading": "ふゆき",
-    "context": "",
-    "videoTitle": "9/4【 Snowed Under | 雪葬 】はじめての雪かき頑張ります！！！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=415tjB6lS2E&t=3120s",
     "date": "2026/09/04"
   },
   {
@@ -900,6 +945,15 @@ const dictionaryData = [
     "date": "2026/07/30"
   },
   {
+    "timestamp": "48:43",
+    "original": "労い",
+    "reading": "まかない",
+    "context": "",
+    "videoTitle": "7/25【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？🍚✨️ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=1sAWzFVgX3A&t=2923s",
+    "date": "2026/07/25"
+  },
+  {
     "timestamp": "2:30:07",
     "original": "存続",
     "reading": "ぞんぞく",
@@ -942,15 +996,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "7/25【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？🍚✨️ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=1sAWzFVgX3A&t=10900s",
-    "date": "2026/07/25"
-  },
-  {
-    "timestamp": "48:43",
-    "original": "労い",
-    "reading": "まかない",
-    "context": "",
-    "videoTitle": "7/25【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？🍚✨️ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=1sAWzFVgX3A&t=2923s",
     "date": "2026/07/25"
   },
   {
@@ -1107,48 +1152,12 @@ const dictionaryData = [
     "date": "2026/07/10"
   },
   {
-    "timestamp": "1:12:07",
-    "original": "高安山",
-    "reading": "たかやすざん",
-    "context": "",
-    "videoTitle": "7/2【 朝活 / 雑談 】おはよう300人目標☀️久しぶりの朝活だ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=SopV_rCKAMU&t=4327s",
-    "date": "2026/07/02"
-  },
-  {
-    "timestamp": "1:42:02",
-    "original": "警戒",
-    "reading": "けいほう",
-    "context": "",
-    "videoTitle": "7/2【 朝活 / 雑談 】おはよう300人目標☀️久しぶりの朝活だ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=SopV_rCKAMU&t=6122s",
-    "date": "2026/07/02"
-  },
-  {
     "timestamp": "26:15",
     "original": "提げる",
     "reading": "かかげた",
     "context": "",
     "videoTitle": "7/2【 イワクツギ 】心霊系配信者にスパチャで指示！？【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=JQ5goVU1K84&t=1575s",
-    "date": "2026/07/02"
-  },
-  {
-    "timestamp": "2:03:37",
-    "original": "お札",
-    "reading": "おさつ",
-    "context": "",
-    "videoTitle": "7/2【 イワクツギ 】心霊系配信者にスパチャで指示！？【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=JQ5goVU1K84&t=7417s",
-    "date": "2026/07/02"
-  },
-  {
-    "timestamp": "2:33:00",
-    "original": "正妻",
-    "reading": "まさづま",
-    "context": "",
-    "videoTitle": "7/2【 イワクツギ 】心霊系配信者にスパチャで指示！？【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=JQ5goVU1K84&t=9180s",
     "date": "2026/07/02"
   },
   {
@@ -1170,21 +1179,30 @@ const dictionaryData = [
     "date": "2026/07/02"
   },
   {
+    "timestamp": "2:03:37",
+    "original": "お札",
+    "reading": "おさつ",
+    "context": "",
+    "videoTitle": "7/2【 イワクツギ 】心霊系配信者にスパチャで指示！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=JQ5goVU1K84&t=7417s",
+    "date": "2026/07/02"
+  },
+  {
+    "timestamp": "2:33:00",
+    "original": "正妻",
+    "reading": "まさづま",
+    "context": "",
+    "videoTitle": "7/2【 イワクツギ 】心霊系配信者にスパチャで指示！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=JQ5goVU1K84&t=9180s",
+    "date": "2026/07/02"
+  },
+  {
     "timestamp": "3:21:19",
     "original": "目深",
     "reading": "めぶか",
     "context": "",
     "videoTitle": "7/2【 イワクツギ 】心霊系配信者にスパチャで指示！？【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=JQ5goVU1K84&t=12079s",
-    "date": "2026/07/02"
-  },
-  {
-    "timestamp": "3:28:32",
-    "original": "資さん",
-    "reading": "しさん",
-    "context": "",
-    "videoTitle": "7/2【 朝活 / 雑談 】おはよう300人目標☀️久しぶりの朝活だ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=SopV_rCKAMU&t=12512s",
     "date": "2026/07/02"
   },
   {
@@ -1224,12 +1242,57 @@ const dictionaryData = [
     "date": "2026/07/02"
   },
   {
+    "timestamp": "1:12:07",
+    "original": "高安山",
+    "reading": "たかやすざん",
+    "context": "",
+    "videoTitle": "7/2【 朝活 / 雑談 】おはよう300人目標☀️久しぶりの朝活だ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=SopV_rCKAMU&t=4327s",
+    "date": "2026/07/02"
+  },
+  {
+    "timestamp": "1:42:02",
+    "original": "警戒",
+    "reading": "けいほう",
+    "context": "",
+    "videoTitle": "7/2【 朝活 / 雑談 】おはよう300人目標☀️久しぶりの朝活だ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=SopV_rCKAMU&t=6122s",
+    "date": "2026/07/02"
+  },
+  {
+    "timestamp": "3:28:32",
+    "original": "資さん",
+    "reading": "しさん",
+    "context": "",
+    "videoTitle": "7/2【 朝活 / 雑談 】おはよう300人目標☀️久しぶりの朝活だ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=SopV_rCKAMU&t=12512s",
+    "date": "2026/07/02"
+  },
+  {
     "timestamp": "19:38",
     "original": "小型船舶",
     "reading": "せんはく",
     "context": "",
     "videoTitle": "6/30【 雑談 】重大告知あり✨️関西弁白猫Vtuberとゆる～くお話しよ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=B-U0merJufc&t=1178s",
+    "date": "2026/06/30"
+  },
+  {
+    "timestamp": "30:04",
+    "original": "渦中",
+    "reading": "うずちゅう",
+    "context": "",
+    "videoTitle": "6/30【 雑談 】重大告知あり✨️関西弁白猫Vtuberとゆる～くお話しよ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=B-U0merJufc&t=1804s",
+    "date": "2026/06/30"
+  },
+  {
+    "timestamp": "46:32",
+    "original": "従来",
+    "reading": "とらい",
+    "context": "",
+    "videoTitle": "6/30【 雑談 】重大告知あり✨️関西弁白猫Vtuberとゆる～くお話しよ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=B-U0merJufc&t=2792s",
     "date": "2026/06/30"
   },
   {
@@ -1278,22 +1341,13 @@ const dictionaryData = [
     "date": "2026/06/30"
   },
   {
-    "timestamp": "30:04",
-    "original": "渦中",
-    "reading": "うずちゅう",
+    "timestamp": "57:00",
+    "original": "解熱剤",
+    "reading": "かいねつ",
     "context": "",
-    "videoTitle": "6/30【 雑談 】重大告知あり✨️関西弁白猫Vtuberとゆる～くお話しよ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=B-U0merJufc&t=1804s",
-    "date": "2026/06/30"
-  },
-  {
-    "timestamp": "46:32",
-    "original": "従来",
-    "reading": "とらい",
-    "context": "",
-    "videoTitle": "6/30【 雑談 】重大告知あり✨️関西弁白猫Vtuberとゆる～くお話しよ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=B-U0merJufc&t=2792s",
-    "date": "2026/06/30"
+    "videoTitle": "6/23【 雑談 】喉ガラガラで本当にごめんなさい！！！もう少しお休みをいただいて、しっかり治してきます🙇‍♀️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=rg4B5G3w-LE&t=3420s",
+    "date": "2026/06/24"
   },
   {
     "timestamp": "1:28:12",
@@ -1314,15 +1368,6 @@ const dictionaryData = [
     "date": "2026/06/24"
   },
   {
-    "timestamp": "57:00",
-    "original": "解熱剤",
-    "reading": "かいねつ",
-    "context": "",
-    "videoTitle": "6/23【 雑談 】喉ガラガラで本当にごめんなさい！！！もう少しお休みをいただいて、しっかり治してきます🙇‍♀️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=rg4B5G3w-LE&t=3420s",
-    "date": "2026/06/24"
-  },
-  {
     "timestamp": "4:24:00",
     "original": "削岩機",
     "reading": "けずるいわき",
@@ -1330,6 +1375,15 @@ const dictionaryData = [
     "videoTitle": "【 GET TO WORK 】最終決戦🔥（多分）今日でクリアしたい！！！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=DhPIdJnCL_s&t=15840s",
     "date": "2026/06/14"
+  },
+  {
+    "timestamp": "22:06",
+    "original": "大盛況",
+    "reading": "だいせいじょう",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】挨拶・高評価で筋トレの回数が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=H4qt0VvIopI&t=1326s",
+    "date": "2026/06/13"
   },
   {
     "timestamp": "1:23:21",
@@ -1347,15 +1401,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】挨拶・高評価で筋トレの回数が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=H4qt0VvIopI&t=6304s",
-    "date": "2026/06/13"
-  },
-  {
-    "timestamp": "22:06",
-    "original": "大盛況",
-    "reading": "だいせいじょう",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】挨拶・高評価で筋トレの回数が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=H4qt0VvIopI&t=1326s",
     "date": "2026/06/13"
   },
   {
@@ -1503,6 +1548,15 @@ const dictionaryData = [
     "date": "2026/05/29"
   },
   {
+    "timestamp": "51:11",
+    "original": "焙煎",
+    "reading": "ばいぜん",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう350人目標☀️みんなのお名前呼ばせてください～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=kWVDl6WJvGo&t=3071s",
+    "date": "2026/05/22"
+  },
+  {
     "timestamp": "2:27:44",
     "original": "八重洲",
     "reading": "やじゅうしゅう",
@@ -1539,13 +1593,13 @@ const dictionaryData = [
     "date": "2026/05/22"
   },
   {
-    "timestamp": "51:11",
-    "original": "焙煎",
-    "reading": "ばいぜん",
+    "timestamp": "52:00",
+    "original": "酒瓶",
+    "reading": "さけびん",
     "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう350人目標☀️みんなのお名前呼ばせてください～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=kWVDl6WJvGo&t=3071s",
-    "date": "2026/05/22"
+    "videoTitle": "【 晩酌 / 雑談 】デビュー1000日記念飲酒🍻✨️関西弁白猫VTuberとゆる～くお話しよ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=AKNaLoFVa80&t=3120s",
+    "date": "2026/05/21"
   },
   {
     "timestamp": "1:44:00",
@@ -1581,15 +1635,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 晩酌 / 雑談 】デビュー1000日記念飲酒🍻✨️関西弁白猫VTuberとゆる～くお話しよ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=AKNaLoFVa80&t=6761s",
-    "date": "2026/05/21"
-  },
-  {
-    "timestamp": "52:00",
-    "original": "酒瓶",
-    "reading": "さけびん",
-    "context": "",
-    "videoTitle": "【 晩酌 / 雑談 】デビュー1000日記念飲酒🍻✨️関西弁白猫VTuberとゆる～くお話しよ！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=AKNaLoFVa80&t=3120s",
     "date": "2026/05/21"
   },
   {
@@ -2007,15 +2052,6 @@ const dictionaryData = [
     "date": "2026/04/16"
   },
   {
-    "timestamp": "1:24:21",
-    "original": "酒瓶",
-    "reading": "さけびん",
-    "context": "",
-    "videoTitle": "【 雑談 】挨拶・高評価で1.5万人祝いのお酒代が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=MjsltuNgo9U&t=5061s",
-    "date": "2026/04/07"
-  },
-  {
     "timestamp": "24:27",
     "original": "白秋",
     "reading": "しろあき",
@@ -2025,21 +2061,30 @@ const dictionaryData = [
     "date": "2026/04/07"
   },
   {
-    "timestamp": "2:57:21",
-    "original": "日暮里",
-    "reading": "ひぐり",
-    "context": "",
-    "videoTitle": "【 雑談 】挨拶・高評価で1.5万人祝いのお酒代が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=MjsltuNgo9U&t=10641s",
-    "date": "2026/04/07"
-  },
-  {
     "timestamp": "31:34",
     "original": "淑女",
     "reading": "おんじょ",
     "context": "",
     "videoTitle": "【 雑談 】挨拶・高評価で1.5万人祝いのお酒代が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=MjsltuNgo9U&t=1894s",
+    "date": "2026/04/07"
+  },
+  {
+    "timestamp": "1:24:21",
+    "original": "酒瓶",
+    "reading": "さけびん",
+    "context": "",
+    "videoTitle": "【 雑談 】挨拶・高評価で1.5万人祝いのお酒代が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MjsltuNgo9U&t=5061s",
+    "date": "2026/04/07"
+  },
+  {
+    "timestamp": "2:57:21",
+    "original": "日暮里",
+    "reading": "ひぐり",
+    "context": "",
+    "videoTitle": "【 雑談 】挨拶・高評価で1.5万人祝いのお酒代が決まる！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MjsltuNgo9U&t=10641s",
     "date": "2026/04/07"
   },
   {
@@ -2104,6 +2149,60 @@ const dictionaryData = [
     "videoTitle": "【 耐久 / 雑談 】初見さんあと1人お願いします！🙇‍♀️登録者様15000人耐久✨️関西弁白猫VTuberとゆる～く雑談しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=2rIrDtfcxGQ&t=13670s",
     "date": "2026/04/04"
+  },
+  {
+    "timestamp": "49:46",
+    "original": "犬養毅",
+    "reading": "けんよう",
+    "context": "",
+    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=2986s",
+    "date": "2026/04/01"
+  },
+  {
+    "timestamp": "51:49",
+    "original": "火遁",
+    "reading": "ひたて",
+    "context": "",
+    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=3109s",
+    "date": "2026/04/01"
+  },
+  {
+    "timestamp": "52:22",
+    "original": "毬藻",
+    "reading": "うもう",
+    "context": "",
+    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=3142s",
+    "date": "2026/04/01"
+  },
+  {
+    "timestamp": "54:24",
+    "original": "棟梁",
+    "reading": "れんき",
+    "context": "",
+    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=3264s",
+    "date": "2026/04/01"
+  },
+  {
+    "timestamp": "55:52",
+    "original": "罵詈雑言",
+    "reading": "ばとうぞっこん",
+    "context": "",
+    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=3352s",
+    "date": "2026/04/01"
+  },
+  {
+    "timestamp": "57:11",
+    "original": "鞍替え",
+    "reading": "かばんがえ",
+    "context": "",
+    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=3431s",
+    "date": "2026/04/01"
   },
   {
     "timestamp": "1:00:14",
@@ -2637,58 +2736,13 @@ const dictionaryData = [
     "date": "2026/04/01"
   },
   {
-    "timestamp": "49:46",
-    "original": "犬養毅",
-    "reading": "けんよう",
+    "timestamp": "50:00",
+    "original": "津軽海峡冬景色",
+    "reading": "かいきゅう",
     "context": "",
-    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=2986s",
-    "date": "2026/04/01"
-  },
-  {
-    "timestamp": "51:49",
-    "original": "火遁",
-    "reading": "ひたて",
-    "context": "",
-    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=3109s",
-    "date": "2026/04/01"
-  },
-  {
-    "timestamp": "52:22",
-    "original": "毬藻",
-    "reading": "うもう",
-    "context": "",
-    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=3142s",
-    "date": "2026/04/01"
-  },
-  {
-    "timestamp": "54:24",
-    "original": "棟梁",
-    "reading": "れんき",
-    "context": "",
-    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=3264s",
-    "date": "2026/04/01"
-  },
-  {
-    "timestamp": "55:52",
-    "original": "罵詈雑言",
-    "reading": "ばとうぞっこん",
-    "context": "",
-    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=3352s",
-    "date": "2026/04/01"
-  },
-  {
-    "timestamp": "57:11",
-    "original": "鞍替え",
-    "reading": "かばんがえ",
-    "context": "",
-    "videoTitle": "【 漢字でGO! 】エイプリルフールに漢字力を試す関西弁白猫VTuberはこちらです🎓️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=PU4WQlM2sq4&t=3431s",
-    "date": "2026/04/01"
+    "videoTitle": "【 プチお披露目 / 雑談 】3月31日はミミィの日！？新差分プチお披露目✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=ChmQLvYyuyA&t=3000s",
+    "date": "2026/03/31"
   },
   {
     "timestamp": "2:52:29",
@@ -2727,13 +2781,13 @@ const dictionaryData = [
     "date": "2026/03/31"
   },
   {
-    "timestamp": "50:00",
-    "original": "津軽海峡冬景色",
-    "reading": "かいきゅう",
+    "timestamp": "52:27",
+    "original": "玄岳",
+    "reading": "げんおか",
     "context": "",
-    "videoTitle": "【 プチお披露目 / 雑談 】3月31日はミミィの日！？新差分プチお披露目✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=ChmQLvYyuyA&t=3000s",
-    "date": "2026/03/31"
+    "videoTitle": "【 JSP2 / 日本事故物件監視協会2 】再び実在する事故物件を監視することになりました【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=gzTnfMIKAFw&t=3147s",
+    "date": "2026/03/26"
   },
   {
     "timestamp": "2:34:00",
@@ -2763,13 +2817,13 @@ const dictionaryData = [
     "date": "2026/03/26"
   },
   {
-    "timestamp": "52:27",
-    "original": "玄岳",
-    "reading": "げんおか",
+    "timestamp": "49:48",
+    "original": "順守",
+    "reading": "じゅんじゅ",
     "context": "",
-    "videoTitle": "【 JSP2 / 日本事故物件監視協会2 】再び実在する事故物件を監視することになりました【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=gzTnfMIKAFw&t=3147s",
-    "date": "2026/03/26"
+    "videoTitle": "【 雑談 】関西弁白猫VTuberがお話したそうにこちらを見ている…！初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Z43UFpNBKr4&t=2988s",
+    "date": "2026/03/25"
   },
   {
     "timestamp": "1:01:37",
@@ -2805,15 +2859,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 雑談 】関西弁白猫VTuberがお話したそうにこちらを見ている…！初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=Z43UFpNBKr4&t=5490s",
-    "date": "2026/03/25"
-  },
-  {
-    "timestamp": "49:48",
-    "original": "順守",
-    "reading": "じゅんじゅ",
-    "context": "",
-    "videoTitle": "【 雑談 】関西弁白猫VTuberがお話したそうにこちらを見ている…！初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Z43UFpNBKr4&t=2988s",
     "date": "2026/03/25"
   },
   {
@@ -2907,15 +2952,6 @@ const dictionaryData = [
     "date": "2026/03/20"
   },
   {
-    "timestamp": "2:17:27",
-    "original": "越境",
-    "reading": "きょうかい",
-    "context": "",
-    "videoTitle": "【 雑談 】3日ぶりに関西弁白猫VTuberとゆる～くお話しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=suZYUWZD7zY&t=8247s",
-    "date": "2026/03/19"
-  },
-  {
     "timestamp": "41:07",
     "original": "荒廃",
     "reading": "あらはい",
@@ -2925,13 +2961,13 @@ const dictionaryData = [
     "date": "2026/03/19"
   },
   {
-    "timestamp": "1:00:23",
-    "original": "腎臓",
-    "reading": "かんぞう",
+    "timestamp": "2:17:27",
+    "original": "越境",
+    "reading": "きょうかい",
     "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？🍚✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=PAwdFTA1aeA&t=3623s",
-    "date": "2026/03/14"
+    "videoTitle": "【 雑談 】3日ぶりに関西弁白猫VTuberとゆる～くお話しよ🐾初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=suZYUWZD7zY&t=8247s",
+    "date": "2026/03/19"
   },
   {
     "timestamp": "38:34",
@@ -2940,6 +2976,15 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？🍚✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=PAwdFTA1aeA&t=2314s",
+    "date": "2026/03/14"
+  },
+  {
+    "timestamp": "1:00:23",
+    "original": "腎臓",
+    "reading": "かんぞう",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？🍚✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PAwdFTA1aeA&t=3623s",
     "date": "2026/03/14"
   },
   {
@@ -3051,24 +3096,6 @@ const dictionaryData = [
     "date": "2026/03/02"
   },
   {
-    "timestamp": "1:25:11",
-    "original": "添加",
-    "reading": "てんぷ",
-    "context": "",
-    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=5111s",
-    "date": "2026/03/01"
-  },
-  {
-    "timestamp": "1:49:55",
-    "original": "啓蒙",
-    "reading": "かつどう",
-    "context": "",
-    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=6595s",
-    "date": "2026/03/01"
-  },
-  {
     "timestamp": "20:46",
     "original": "果報",
     "reading": "こうほう",
@@ -3084,6 +3111,24 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=1434s",
+    "date": "2026/03/01"
+  },
+  {
+    "timestamp": "1:25:11",
+    "original": "添加",
+    "reading": "てんぷ",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=5111s",
+    "date": "2026/03/01"
+  },
+  {
+    "timestamp": "1:49:55",
+    "original": "啓蒙",
+    "reading": "かつどう",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん20→50人耐久☀️3月最初の挨拶待ってます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MO84C8zM98c&t=6595s",
     "date": "2026/03/01"
   },
   {
@@ -3159,15 +3204,6 @@ const dictionaryData = [
     "date": "2026/02/26"
   },
   {
-    "timestamp": "1:40:03",
-    "original": "粋",
-    "reading": "すい",
-    "context": "",
-    "videoTitle": "【 雑談 】挨拶200人目標☀️関西弁でまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=bPaRFS2MsOA&t=6003s",
-    "date": "2026/02/23"
-  },
-  {
     "timestamp": "35:25",
     "original": "回覧板",
     "reading": "かんらんばん",
@@ -3186,22 +3222,13 @@ const dictionaryData = [
     "date": "2026/02/23"
   },
   {
-    "timestamp": "1:02:44",
-    "original": "工事現場",
-    "reading": "こうじょうげんば",
+    "timestamp": "1:40:03",
+    "original": "粋",
+    "reading": "すい",
     "context": "",
-    "videoTitle": "【 ウミガリ / UMIGARI 】チラズアートさん最新作！今回も魚を狩ります🎣【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=_Pw0MkEp0do&t=3764s",
-    "date": "2026/02/19"
-  },
-  {
-    "timestamp": "1:43:38",
-    "original": "漂白剤",
-    "reading": "じゅうはく",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん・ROM勢さんも大歓迎✨️関西弁の白猫と一緒におはようしよ☀️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=nHRSs2zXGoM&t=6218s",
-    "date": "2026/02/19"
+    "videoTitle": "【 雑談 】挨拶200人目標☀️関西弁でまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=bPaRFS2MsOA&t=6003s",
+    "date": "2026/02/23"
   },
   {
     "timestamp": "28:32",
@@ -3210,6 +3237,15 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 ウミガリ / UMIGARI 】チラズアートさん最新作！今回も魚を狩ります🎣【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=_Pw0MkEp0do&t=1712s",
+    "date": "2026/02/19"
+  },
+  {
+    "timestamp": "1:02:44",
+    "original": "工事現場",
+    "reading": "こうじょうげんば",
+    "context": "",
+    "videoTitle": "【 ウミガリ / UMIGARI 】チラズアートさん最新作！今回も魚を狩ります🎣【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=_Pw0MkEp0do&t=3764s",
     "date": "2026/02/19"
   },
   {
@@ -3264,6 +3300,15 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 ウミガリ / UMIGARI 】チラズアートさん最新作！今回も魚を狩ります🎣【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=_Pw0MkEp0do&t=17658s",
+    "date": "2026/02/19"
+  },
+  {
+    "timestamp": "1:43:38",
+    "original": "漂白剤",
+    "reading": "じゅうはく",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】初見さん・ROM勢さんも大歓迎✨️関西弁の白猫と一緒におはようしよ☀️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=nHRSs2zXGoM&t=6218s",
     "date": "2026/02/19"
   },
   {
@@ -3402,6 +3447,15 @@ const dictionaryData = [
     "date": "2026/02/14"
   },
   {
+    "timestamp": "5:04",
+    "original": "雄叫び",
+    "reading": "おすさけび",
+    "context": "",
+    "videoTitle": "【 雑談 】メンバーシップ開設2周年✨️新バッジお披露目あり✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=6L0E5unORQ4&t=304s",
+    "date": "2026/02/12"
+  },
+  {
     "timestamp": "1:07:02",
     "original": "淑やか",
     "reading": "おだやか",
@@ -3447,13 +3501,22 @@ const dictionaryData = [
     "date": "2026/02/12"
   },
   {
-    "timestamp": "5:04",
-    "original": "雄叫び",
-    "reading": "おすさけび",
+    "timestamp": "24:54",
+    "original": "釣果",
+    "reading": "つりか",
     "context": "",
-    "videoTitle": "【 雑談 】メンバーシップ開設2周年✨️新バッジお披露目あり✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=6L0E5unORQ4&t=304s",
-    "date": "2026/02/12"
+    "videoTitle": "【 ウミガリ / UMIGARI 】チラズアートさん最新作！人生初の釣りに挑戦します🎣【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Mwht4Sj2EWk&t=1494s",
+    "date": "2026/02/11"
+  },
+  {
+    "timestamp": "39:11",
+    "original": "開閉",
+    "reading": "へいかい",
+    "context": "",
+    "videoTitle": "【 ウミガリ / UMIGARI 】チラズアートさん最新作！人生初の釣りに挑戦します🎣【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Mwht4Sj2EWk&t=2351s",
+    "date": "2026/02/11"
   },
   {
     "timestamp": "1:04:00",
@@ -3501,30 +3564,12 @@ const dictionaryData = [
     "date": "2026/02/11"
   },
   {
-    "timestamp": "24:54",
-    "original": "釣果",
-    "reading": "つりか",
-    "context": "",
-    "videoTitle": "【 ウミガリ / UMIGARI 】チラズアートさん最新作！人生初の釣りに挑戦します🎣【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Mwht4Sj2EWk&t=1494s",
-    "date": "2026/02/11"
-  },
-  {
     "timestamp": "2:46:53",
     "original": "検閲",
     "reading": "けんけい",
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=Zw7NZlWXBKo&t=10013s",
-    "date": "2026/02/11"
-  },
-  {
-    "timestamp": "39:11",
-    "original": "開閉",
-    "reading": "へいかい",
-    "context": "",
-    "videoTitle": "【 ウミガリ / UMIGARI 】チラズアートさん最新作！人生初の釣りに挑戦します🎣【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Mwht4Sj2EWk&t=2351s",
     "date": "2026/02/11"
   },
   {
@@ -3573,6 +3618,24 @@ const dictionaryData = [
     "date": "2026/02/10"
   },
   {
+    "timestamp": "25:36",
+    "original": "季節",
+    "reading": "きせき",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん30→50人→80人耐久☀️関西弁でまったりお話してます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=GEeGp2UqGKE&t=1536s",
+    "date": "2026/02/08"
+  },
+  {
+    "timestamp": "37:47",
+    "original": "顎関節症",
+    "reading": "あご",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん30→50人→80人耐久☀️関西弁でまったりお話してます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=GEeGp2UqGKE&t=2267s",
+    "date": "2026/02/08"
+  },
+  {
     "timestamp": "1:04:31",
     "original": "霰",
     "reading": "きり",
@@ -3591,15 +3654,6 @@ const dictionaryData = [
     "date": "2026/02/08"
   },
   {
-    "timestamp": "25:36",
-    "original": "季節",
-    "reading": "きせき",
-    "context": "",
-    "videoTitle": "【 耐久 / 雑談 】初見さん30→50人→80人耐久☀️関西弁でまったりお話してます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=GEeGp2UqGKE&t=1536s",
-    "date": "2026/02/08"
-  },
-  {
     "timestamp": "2:09:10",
     "original": "寒気",
     "reading": "さむけ",
@@ -3615,15 +3669,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 耐久 / 雑談 】初見さん30→50人→80人耐久☀️関西弁でまったりお話してます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=GEeGp2UqGKE&t=8231s",
-    "date": "2026/02/08"
-  },
-  {
-    "timestamp": "37:47",
-    "original": "顎関節症",
-    "reading": "あご",
-    "context": "",
-    "videoTitle": "【 耐久 / 雑談 】初見さん30→50人→80人耐久☀️関西弁でまったりお話してます！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=GEeGp2UqGKE&t=2267s",
     "date": "2026/02/08"
   },
   {
@@ -3681,6 +3726,15 @@ const dictionaryData = [
     "date": "2026/02/07"
   },
   {
+    "timestamp": "27:30",
+    "original": "授けよう",
+    "reading": "ささげよう",
+    "context": "",
+    "videoTitle": "【 雑談 】挨拶250人目標☀️まったり関西弁でお話してます！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=bFGPfsXV-KI&t=1650s",
+    "date": "2026/02/04"
+  },
+  {
     "timestamp": "1:21:20",
     "original": "車中泊",
     "reading": "しゃないはく",
@@ -3723,15 +3777,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 雑談 】挨拶250人目標☀️まったり関西弁でお話してます！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=bFGPfsXV-KI&t=7128s",
-    "date": "2026/02/04"
-  },
-  {
-    "timestamp": "27:30",
-    "original": "授けよう",
-    "reading": "ささげよう",
-    "context": "",
-    "videoTitle": "【 雑談 】挨拶250人目標☀️まったり関西弁でお話してます！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=bFGPfsXV-KI&t=1650s",
     "date": "2026/02/04"
   },
   {
@@ -3816,6 +3861,15 @@ const dictionaryData = [
     "date": "2026/02/03"
   },
   {
+    "timestamp": "31:11",
+    "original": "期日前",
+    "reading": "きじつぜん",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】初見さん20→82人耐久☀️2月最初の挨拶ください！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2pnf9Gromq0&t=1871s",
+    "date": "2026/02/01"
+  },
+  {
     "timestamp": "2:01:16",
     "original": "温厚篤実",
     "reading": "おんこうたたみ",
@@ -3831,15 +3885,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 耐久 / 雑談 】初見さん20→82人耐久☀️2月最初の挨拶ください！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=2pnf9Gromq0&t=8930s",
-    "date": "2026/02/01"
-  },
-  {
-    "timestamp": "31:11",
-    "original": "期日前",
-    "reading": "きじつぜん",
-    "context": "",
-    "videoTitle": "【 耐久 / 雑談 】初見さん20→82人耐久☀️2月最初の挨拶ください！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=2pnf9Gromq0&t=1871s",
     "date": "2026/02/01"
   },
   {
@@ -4059,6 +4104,15 @@ const dictionaryData = [
     "date": "2026/01/24"
   },
   {
+    "timestamp": "52:08",
+    "original": "買収",
+    "reading": "かいしゅう",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️朝の時間を一緒に過ごそ？ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=rkkQEybDLbo&t=3128s",
+    "date": "2026/01/23"
+  },
+  {
     "timestamp": "1:21:30",
     "original": "管",
     "reading": "くだ",
@@ -4077,13 +4131,13 @@ const dictionaryData = [
     "date": "2026/01/23"
   },
   {
-    "timestamp": "52:08",
-    "original": "買収",
-    "reading": "かいしゅう",
+    "timestamp": "37:30",
+    "original": "連日",
+    "reading": "れんにち",
     "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️朝の時間を一緒に過ごそ？ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=rkkQEybDLbo&t=3128s",
-    "date": "2026/01/23"
+    "videoTitle": "【 雑談 】初見さん15人目標✨️確定申告終わりましたあああ！！！！！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=I-hwYv8kcXQ&t=2250s",
+    "date": "2026/01/21"
   },
   {
     "timestamp": "1:31:40",
@@ -4092,15 +4146,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 雑談 】初見さん15人目標✨️確定申告終わりましたあああ！！！！！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=I-hwYv8kcXQ&t=5500s",
-    "date": "2026/01/21"
-  },
-  {
-    "timestamp": "37:30",
-    "original": "連日",
-    "reading": "れんにち",
-    "context": "",
-    "videoTitle": "【 雑談 】初見さん15人目標✨️確定申告終わりましたあああ！！！！！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=I-hwYv8kcXQ&t=2250s",
     "date": "2026/01/21"
   },
   {
@@ -4131,6 +4176,15 @@ const dictionaryData = [
     "date": "2026/01/18"
   },
   {
+    "timestamp": "33:19",
+    "original": "消費税",
+    "reading": "しょうしゅう",
+    "context": "",
+    "videoTitle": "【 雑談 】挨拶＆初見さん＆高評価の数でステッパーする回数が決まる配信！✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UkqDAfDuE6A&t=1999s",
+    "date": "2026/01/18"
+  },
+  {
     "timestamp": "1:25:34",
     "original": "追徴課税",
     "reading": "ついしんかぜい",
@@ -4158,15 +4212,6 @@ const dictionaryData = [
     "date": "2026/01/18"
   },
   {
-    "timestamp": "33:19",
-    "original": "消費税",
-    "reading": "しょうしゅう",
-    "context": "",
-    "videoTitle": "【 雑談 】挨拶＆初見さん＆高評価の数でステッパーする回数が決まる配信！✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=UkqDAfDuE6A&t=1999s",
-    "date": "2026/01/18"
-  },
-  {
     "timestamp": "3:01:14",
     "original": "根詰め",
     "reading": "ねづめ",
@@ -4174,6 +4219,15 @@ const dictionaryData = [
     "videoTitle": "【 雑談 】挨拶＆初見さん＆高評価の数でステッパーする回数が決まる配信！✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=UkqDAfDuE6A&t=10874s",
     "date": "2026/01/18"
+  },
+  {
+    "timestamp": "26:03",
+    "original": "寒気",
+    "reading": "さむけ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NZjJ4fDFkio&t=1563s",
+    "date": "2026/01/17"
   },
   {
     "timestamp": "1:01:19",
@@ -4200,15 +4254,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=NZjJ4fDFkio&t=6566s",
-    "date": "2026/01/17"
-  },
-  {
-    "timestamp": "26:03",
-    "original": "寒気",
-    "reading": "さむけ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=NZjJ4fDFkio&t=1563s",
     "date": "2026/01/17"
   },
   {
@@ -4246,6 +4291,15 @@ const dictionaryData = [
     "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=NZjJ4fDFkio&t=14584s",
     "date": "2026/01/17"
+  },
+  {
+    "timestamp": "50:22",
+    "original": "魚民",
+    "reading": "さかなみん",
+    "context": "",
+    "videoTitle": "【 晩酌 / 雑談 】2026年最初の飲酒雑談！お酒呑むぞおおお！！！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=1_hs1a1RCK4&t=3022s",
+    "date": "2026/01/15"
   },
   {
     "timestamp": "1:03:16",
@@ -4293,13 +4347,13 @@ const dictionaryData = [
     "date": "2026/01/15"
   },
   {
-    "timestamp": "50:22",
-    "original": "魚民",
-    "reading": "さかなみん",
+    "timestamp": "47:04",
+    "original": "排除",
+    "reading": "せつじょ",
     "context": "",
-    "videoTitle": "【 晩酌 / 雑談 】2026年最初の飲酒雑談！お酒呑むぞおおお！！！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=1_hs1a1RCK4&t=3022s",
-    "date": "2026/01/15"
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️朝からまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9rGQ_BF-BJM&t=2824s",
+    "date": "2026/01/14"
   },
   {
     "timestamp": "1:55:42",
@@ -4317,15 +4371,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️朝からまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=9rGQ_BF-BJM&t=9396s",
-    "date": "2026/01/14"
-  },
-  {
-    "timestamp": "47:04",
-    "original": "排除",
-    "reading": "せつじょ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️朝からまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=9rGQ_BF-BJM&t=2824s",
     "date": "2026/01/14"
   },
   {
@@ -4509,21 +4554,21 @@ const dictionaryData = [
     "date": "2026/01/06"
   },
   {
-    "timestamp": "2:05:47",
-    "original": "抱腹絶倒",
-    "reading": "かかえはら",
-    "context": "",
-    "videoTitle": "【 雑談 】2026年最初の配信☀️実家から帰ってきました～！初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=LXBrC5c3wnY&t=7547s",
-    "date": "2026/01/04"
-  },
-  {
     "timestamp": "30:36",
     "original": "健在",
     "reading": "けんざん",
     "context": "",
     "videoTitle": "【 雑談 】2026年最初の配信☀️実家から帰ってきました～！初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=LXBrC5c3wnY&t=1836s",
+    "date": "2026/01/04"
+  },
+  {
+    "timestamp": "2:05:47",
+    "original": "抱腹絶倒",
+    "reading": "かかえはら",
+    "context": "",
+    "videoTitle": "【 雑談 】2026年最初の配信☀️実家から帰ってきました～！初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=LXBrC5c3wnY&t=7547s",
     "date": "2026/01/04"
   },
   {
@@ -4671,6 +4716,15 @@ const dictionaryData = [
     "date": "2025/12/26"
   },
   {
+    "timestamp": "51:14",
+    "original": "血涙",
+    "reading": "ちなみだ",
+    "context": "",
+    "videoTitle": "【 晩酌 / 雑談 】一緒にクリスマス過ごそ🎅✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=8MUqk7rMWYQ&t=3074s",
+    "date": "2025/12/25"
+  },
+  {
     "timestamp": "2:29:58",
     "original": "無用心",
     "reading": "むようじん",
@@ -4686,15 +4740,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 晩酌 / 雑談 】一緒にクリスマス過ごそ🎅✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=8MUqk7rMWYQ&t=10682s",
-    "date": "2025/12/25"
-  },
-  {
-    "timestamp": "51:14",
-    "original": "血涙",
-    "reading": "ちなみだ",
-    "context": "",
-    "videoTitle": "【 晩酌 / 雑談 】一緒にクリスマス過ごそ🎅✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=8MUqk7rMWYQ&t=3074s",
     "date": "2025/12/25"
   },
   {
@@ -4725,6 +4770,24 @@ const dictionaryData = [
     "date": "2025/12/24"
   },
   {
+    "timestamp": "44:52",
+    "original": "浅草寺",
+    "reading": "あさくさでら",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】挨拶あと31人お待ちしております…！BINGO埋めチャレンジ！みんなでコンプリート目指したい✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9xjat7CWWdc&t=2692s",
+    "date": "2025/12/21"
+  },
+  {
+    "timestamp": "45:03",
+    "original": "氷川神社",
+    "reading": "こおりかわ",
+    "context": "",
+    "videoTitle": "【 耐久 / 雑談 】挨拶あと31人お待ちしております…！BINGO埋めチャレンジ！みんなでコンプリート目指したい✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9xjat7CWWdc&t=2703s",
+    "date": "2025/12/21"
+  },
+  {
     "timestamp": "1:38:28",
     "original": "臼と杵",
     "reading": "ます",
@@ -4749,24 +4812,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 耐久 / 雑談 】挨拶あと31人お待ちしております…！BINGO埋めチャレンジ！みんなでコンプリート目指したい✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=9xjat7CWWdc&t=11400s",
-    "date": "2025/12/21"
-  },
-  {
-    "timestamp": "44:52",
-    "original": "浅草寺",
-    "reading": "あさくさでら",
-    "context": "",
-    "videoTitle": "【 耐久 / 雑談 】挨拶あと31人お待ちしております…！BINGO埋めチャレンジ！みんなでコンプリート目指したい✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=9xjat7CWWdc&t=2692s",
-    "date": "2025/12/21"
-  },
-  {
-    "timestamp": "45:03",
-    "original": "氷川神社",
-    "reading": "こおりかわ",
-    "context": "",
-    "videoTitle": "【 耐久 / 雑談 】挨拶あと31人お待ちしております…！BINGO埋めチャレンジ！みんなでコンプリート目指したい✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=9xjat7CWWdc&t=2703s",
     "date": "2025/12/21"
   },
   {
@@ -4914,6 +4959,15 @@ const dictionaryData = [
     "date": "2025/12/17"
   },
   {
+    "timestamp": "52:36",
+    "original": "減給",
+    "reading": "げっきゅう",
+    "context": "",
+    "videoTitle": "【 雑談 】初見さん20人耐久☀️お昼にまったりお話しよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=BMxyW3Fraes&t=3156s",
+    "date": "2025/12/14"
+  },
+  {
     "timestamp": "1:59:55",
     "original": "釧路",
     "reading": "かわじ",
@@ -4938,15 +4992,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 雑談 】初見さん20人耐久☀️お昼にまったりお話しよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=BMxyW3Fraes&t=13356s",
-    "date": "2025/12/14"
-  },
-  {
-    "timestamp": "52:36",
-    "original": "減給",
-    "reading": "げっきゅう",
-    "context": "",
-    "videoTitle": "【 雑談 】初見さん20人耐久☀️お昼にまったりお話しよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=BMxyW3Fraes&t=3156s",
     "date": "2025/12/14"
   },
   {
@@ -5013,6 +5058,15 @@ const dictionaryData = [
     "date": "2025/12/12"
   },
   {
+    "timestamp": "57:00",
+    "original": "浅野間",
+    "reading": "あさのかん",
+    "context": "",
+    "videoTitle": "【 デテイケ - GetOut - 】恐怖の廃墟にカメラを設置しに行きます…【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=C_ni_Moaf-o&t=3420s",
+    "date": "2025/12/11"
+  },
+  {
     "timestamp": "1:00:52",
     "original": "家長",
     "reading": "いやちょう",
@@ -5031,30 +5085,12 @@ const dictionaryData = [
     "date": "2025/12/11"
   },
   {
-    "timestamp": "1:02:46",
-    "original": "垣間",
-    "reading": "はざま",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️通勤通学や作業のお供に✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=eYddHF3xISo&t=3766s",
-    "date": "2025/12/11"
-  },
-  {
     "timestamp": "1:05:16",
     "original": "敷かれて",
     "reading": "ひかれて",
     "context": "",
     "videoTitle": "【 デテイケ - GetOut - 】恐怖の廃墟にカメラを設置しに行きます…【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=C_ni_Moaf-o&t=3916s",
-    "date": "2025/12/11"
-  },
-  {
-    "timestamp": "1:05:26",
-    "original": "針葉樹・広葉樹",
-    "reading": "わかってない",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️通勤通学や作業のお供に✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=eYddHF3xISo&t=3926s",
     "date": "2025/12/11"
   },
   {
@@ -5121,12 +5157,21 @@ const dictionaryData = [
     "date": "2025/12/11"
   },
   {
-    "timestamp": "57:00",
-    "original": "浅野間",
-    "reading": "あさのかん",
+    "timestamp": "1:02:46",
+    "original": "垣間",
+    "reading": "はざま",
     "context": "",
-    "videoTitle": "【 デテイケ - GetOut - 】恐怖の廃墟にカメラを設置しに行きます…【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=C_ni_Moaf-o&t=3420s",
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️通勤通学や作業のお供に✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=eYddHF3xISo&t=3766s",
+    "date": "2025/12/11"
+  },
+  {
+    "timestamp": "1:05:26",
+    "original": "針葉樹・広葉樹",
+    "reading": "わかってない",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️通勤通学や作業のお供に✨️初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=eYddHF3xISo&t=3926s",
     "date": "2025/12/11"
   },
   {
@@ -5337,6 +5382,24 @@ const dictionaryData = [
     "date": "2025/12/04"
   },
   {
+    "timestamp": "32:10",
+    "original": "見出す",
+    "reading": "みだす",
+    "context": "",
+    "videoTitle": "【 雑談 】みんなに「おかえり」言いたい雑談配信🌟初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=VPFU_uTCnsI&t=1930s",
+    "date": "2025/12/03"
+  },
+  {
+    "timestamp": "33:06",
+    "original": "肉塊",
+    "reading": "にくかたまり",
+    "context": "",
+    "videoTitle": "【 雑談 】みんなに「おかえり」言いたい雑談配信🌟初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=VPFU_uTCnsI&t=1986s",
+    "date": "2025/12/03"
+  },
+  {
     "timestamp": "1:00:25",
     "original": "潜水艦",
     "reading": "しんすいかん",
@@ -5370,24 +5433,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 雑談 】みんなに「おかえり」言いたい雑談配信🌟初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=VPFU_uTCnsI&t=7096s",
-    "date": "2025/12/03"
-  },
-  {
-    "timestamp": "32:10",
-    "original": "見出す",
-    "reading": "みだす",
-    "context": "",
-    "videoTitle": "【 雑談 】みんなに「おかえり」言いたい雑談配信🌟初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=VPFU_uTCnsI&t=1930s",
-    "date": "2025/12/03"
-  },
-  {
-    "timestamp": "33:06",
-    "original": "肉塊",
-    "reading": "にくかたまり",
-    "context": "",
-    "videoTitle": "【 雑談 】みんなに「おかえり」言いたい雑談配信🌟初見さん・ROM勢さんも大歓迎！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=VPFU_uTCnsI&t=1986s",
     "date": "2025/12/03"
   },
   {
@@ -5427,30 +5472,12 @@ const dictionaryData = [
     "date": "2025/12/01"
   },
   {
-    "timestamp": "1:00:30",
-    "original": "HE虎舞竜",
-    "reading": "とらまいりゅう",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️通勤通学や作業のおともに！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=2tZQpQXTqdg&t=3630s",
-    "date": "2025/11/28"
-  },
-  {
     "timestamp": "2:02:16",
     "original": "惨たらしく",
     "reading": "にくたらしく",
     "context": "",
     "videoTitle": "【 THE SUSHI HOUSE 】久しぶりのホラゲに挑戦！寿司屋さんのアルバイト始めました🍣【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=ZTxvrRR94ss&t=7336s",
-    "date": "2025/11/28"
-  },
-  {
-    "timestamp": "2:13:33",
-    "original": "発足",
-    "reading": "はっそく",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️通勤通学や作業のおともに！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=2tZQpQXTqdg&t=8013s",
     "date": "2025/11/28"
   },
   {
@@ -5472,15 +5499,6 @@ const dictionaryData = [
     "date": "2025/11/28"
   },
   {
-    "timestamp": "35:10",
-    "original": "割烹着",
-    "reading": "わりかつぎ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️通勤通学や作業のおともに！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=2tZQpQXTqdg&t=2110s",
-    "date": "2025/11/28"
-  },
-  {
     "timestamp": "3:59:07",
     "original": "潜伏",
     "reading": "せんざい",
@@ -5496,6 +5514,33 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 THE SUSHI HOUSE 】久しぶりのホラゲに挑戦！寿司屋さんのアルバイト始めました🍣【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=ZTxvrRR94ss&t=14371s",
+    "date": "2025/11/28"
+  },
+  {
+    "timestamp": "35:10",
+    "original": "割烹着",
+    "reading": "わりかつぎ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️通勤通学や作業のおともに！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2tZQpQXTqdg&t=2110s",
+    "date": "2025/11/28"
+  },
+  {
+    "timestamp": "1:00:30",
+    "original": "HE虎舞竜",
+    "reading": "とらまいりゅう",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️通勤通学や作業のおともに！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2tZQpQXTqdg&t=3630s",
+    "date": "2025/11/28"
+  },
+  {
+    "timestamp": "2:13:33",
+    "original": "発足",
+    "reading": "はっそく",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️通勤通学や作業のおともに！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2tZQpQXTqdg&t=8013s",
     "date": "2025/11/28"
   },
   {
@@ -5643,6 +5688,15 @@ const dictionaryData = [
     "date": "2025/11/24"
   },
   {
+    "timestamp": "52:57",
+    "original": "お礼参り",
+    "reading": "おふだまいり",
+    "context": "",
+    "videoTitle": "【 昼活 / 雑談 】挨拶300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=aQJ4FTVTw9k&t=3177s",
+    "date": "2025/11/24"
+  },
+  {
     "timestamp": "3:24:44",
     "original": "安値",
     "reading": "あんち",
@@ -5658,15 +5712,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 昼活 / 雑談 】挨拶300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=aQJ4FTVTw9k&t=13673s",
-    "date": "2025/11/24"
-  },
-  {
-    "timestamp": "52:57",
-    "original": "お礼参り",
-    "reading": "おふだまいり",
-    "context": "",
-    "videoTitle": "【 昼活 / 雑談 】挨拶300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=aQJ4FTVTw9k&t=3177s",
     "date": "2025/11/24"
   },
   {
@@ -5758,6 +5803,42 @@ const dictionaryData = [
     "videoTitle": "【 晩酌 / 雑談 】初見さん10人目標🌙お酒呑みながらまったりお話するよ～🍶ROM勢さんも大歓迎🌙【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=VVRaYC69JGw&t=17303s",
     "date": "2025/11/21"
+  },
+  {
+    "timestamp": "31:36",
+    "original": "詩人",
+    "reading": "しと",
+    "context": "",
+    "videoTitle": "【 漢字でGO! 】半年ぶりに挑戦！この半年間で成長した漢字力を見てください【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UfofUSN1NVE&t=1896s",
+    "date": "2025/11/20"
+  },
+  {
+    "timestamp": "34:55",
+    "original": "勇猛果敢",
+    "reading": "ゆうもうかじつ",
+    "context": "",
+    "videoTitle": "【 漢字でGO! 】半年ぶりに挑戦！この半年間で成長した漢字力を見てください【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UfofUSN1NVE&t=2095s",
+    "date": "2025/11/20"
+  },
+  {
+    "timestamp": "35:00",
+    "original": "七転八起",
+    "reading": "ななてんはっき",
+    "context": "",
+    "videoTitle": "【 漢字でGO! 】半年ぶりに挑戦！この半年間で成長した漢字力を見てください【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UfofUSN1NVE&t=2100s",
+    "date": "2025/11/20"
+  },
+  {
+    "timestamp": "58:48",
+    "original": "唆す",
+    "reading": "あちす",
+    "context": "",
+    "videoTitle": "【 漢字でGO! 】半年ぶりに挑戦！この半年間で成長した漢字力を見てください【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UfofUSN1NVE&t=3528s",
+    "date": "2025/11/20"
   },
   {
     "timestamp": "1:00:44",
@@ -5922,33 +6003,6 @@ const dictionaryData = [
     "date": "2025/11/20"
   },
   {
-    "timestamp": "31:36",
-    "original": "詩人",
-    "reading": "しと",
-    "context": "",
-    "videoTitle": "【 漢字でGO! 】半年ぶりに挑戦！この半年間で成長した漢字力を見てください【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=UfofUSN1NVE&t=1896s",
-    "date": "2025/11/20"
-  },
-  {
-    "timestamp": "34:55",
-    "original": "勇猛果敢",
-    "reading": "ゆうもうかじつ",
-    "context": "",
-    "videoTitle": "【 漢字でGO! 】半年ぶりに挑戦！この半年間で成長した漢字力を見てください【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=UfofUSN1NVE&t=2095s",
-    "date": "2025/11/20"
-  },
-  {
-    "timestamp": "35:00",
-    "original": "七転八起",
-    "reading": "ななてんはっき",
-    "context": "",
-    "videoTitle": "【 漢字でGO! 】半年ぶりに挑戦！この半年間で成長した漢字力を見てください【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=UfofUSN1NVE&t=2100s",
-    "date": "2025/11/20"
-  },
-  {
     "timestamp": "3:07:30",
     "original": "使者",
     "reading": "しと",
@@ -5991,15 +6045,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 漢字でGO! 】半年ぶりに挑戦！この半年間で成長した漢字力を見てください【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=UfofUSN1NVE&t=11451s",
-    "date": "2025/11/20"
-  },
-  {
-    "timestamp": "58:48",
-    "original": "唆す",
-    "reading": "あちす",
-    "context": "",
-    "videoTitle": "【 漢字でGO! 】半年ぶりに挑戦！この半年間で成長した漢字力を見てください【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=UfofUSN1NVE&t=3528s",
     "date": "2025/11/20"
   },
   {
@@ -6048,12 +6093,39 @@ const dictionaryData = [
     "date": "2025/11/19"
   },
   {
+    "timestamp": "7:38",
+    "original": "昂る",
+    "reading": "のぼる",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今週最初のおはようください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2CIRCXsMCcw&t=458s",
+    "date": "2025/11/18"
+  },
+  {
     "timestamp": "29:54",
     "original": "昂る",
     "reading": "たかまる",
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今週最初のおはようください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=2CIRCXsMCcw&t=1794s",
+    "date": "2025/11/18"
+  },
+  {
+    "timestamp": "41:11",
+    "original": "馬耳東風",
+    "reading": "うまみみひがしかぜ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今週最初のおはようください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2CIRCXsMCcw&t=2471s",
+    "date": "2025/11/18"
+  },
+  {
+    "timestamp": "51:28",
+    "original": "寒気",
+    "reading": "さむけ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今週最初のおはようください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2CIRCXsMCcw&t=3088s",
     "date": "2025/11/18"
   },
   {
@@ -6102,33 +6174,6 @@ const dictionaryData = [
     "date": "2025/11/18"
   },
   {
-    "timestamp": "41:11",
-    "original": "馬耳東風",
-    "reading": "うまみみひがしかぜ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今週最初のおはようください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=2CIRCXsMCcw&t=2471s",
-    "date": "2025/11/18"
-  },
-  {
-    "timestamp": "51:28",
-    "original": "寒気",
-    "reading": "さむけ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今週最初のおはようください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=2CIRCXsMCcw&t=3088s",
-    "date": "2025/11/18"
-  },
-  {
-    "timestamp": "7:38",
-    "original": "昂る",
-    "reading": "のぼる",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今週最初のおはようください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=2CIRCXsMCcw&t=458s",
-    "date": "2025/11/18"
-  },
-  {
     "timestamp": "1:16:19",
     "original": "指宿",
     "reading": "さしやど",
@@ -6154,6 +6199,33 @@ const dictionaryData = [
     "videoTitle": "【 おにぎり屋さんシミュレーター 】おにぎり食べたい…おにぎり食べたい……🍙【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=pLfKJpiRxFA&t=7924s",
     "date": "2025/11/15"
+  },
+  {
+    "timestamp": "49:32",
+    "original": "他人事",
+    "reading": "よそごと",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=qM78xG4nB0Y&t=2972s",
+    "date": "2025/11/12"
+  },
+  {
+    "timestamp": "57:31",
+    "original": "登場",
+    "reading": "とうぞう",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=qM78xG4nB0Y&t=3451s",
+    "date": "2025/11/12"
+  },
+  {
+    "timestamp": "57:31",
+    "original": "充填",
+    "reading": "じゅうとん",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=qM78xG4nB0Y&t=3451s",
+    "date": "2025/11/12"
   },
   {
     "timestamp": "1:51:24",
@@ -6210,31 +6282,13 @@ const dictionaryData = [
     "date": "2025/11/12"
   },
   {
-    "timestamp": "49:32",
-    "original": "他人事",
-    "reading": "よそごと",
+    "timestamp": "56:50",
+    "original": "七変化",
+    "reading": "しちへんけい",
     "context": "",
-    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=qM78xG4nB0Y&t=2972s",
-    "date": "2025/11/12"
-  },
-  {
-    "timestamp": "57:31",
-    "original": "登場",
-    "reading": "とうぞう",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=qM78xG4nB0Y&t=3451s",
-    "date": "2025/11/12"
-  },
-  {
-    "timestamp": "57:31",
-    "original": "充填",
-    "reading": "じゅうとん",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】挨拶300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=qM78xG4nB0Y&t=3451s",
-    "date": "2025/11/12"
+    "videoTitle": "【 昼活 / 雑談 】初見さん20人→31人耐久！お昼にまったりお話しよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=1oJrqkwrz8s&t=3410s",
+    "date": "2025/11/09"
   },
   {
     "timestamp": "1:45:34",
@@ -6252,15 +6306,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 昼活 / 雑談 】初見さん20人→31人耐久！お昼にまったりお話しよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=1oJrqkwrz8s&t=11592s",
-    "date": "2025/11/09"
-  },
-  {
-    "timestamp": "56:50",
-    "original": "七変化",
-    "reading": "しちへんけい",
-    "context": "",
-    "videoTitle": "【 昼活 / 雑談 】初見さん20人→31人耐久！お昼にまったりお話しよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=1oJrqkwrz8s&t=3410s",
     "date": "2025/11/09"
   },
   {
@@ -6282,15 +6327,6 @@ const dictionaryData = [
     "date": "2025/11/08"
   },
   {
-    "timestamp": "2:14:26",
-    "original": "四角形",
-    "reading": "よんかっけい",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】あと5人挨拶お待ちしてます🙇‍♀️おはよう300人目標☀️関西弁でまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=MRPXaZBGRgU&t=8066s",
-    "date": "2025/11/07"
-  },
-  {
     "timestamp": "37:51",
     "original": "立秋",
     "reading": "りっしゅん",
@@ -6309,22 +6345,13 @@ const dictionaryData = [
     "date": "2025/11/07"
   },
   {
-    "timestamp": "1:14:30",
-    "original": "隔靴掻痒",
-    "reading": "かくくつかゆかゆ",
+    "timestamp": "2:14:26",
+    "original": "四角形",
+    "reading": "よんかっけい",
     "context": "",
-    "videoTitle": "【 朝活 / 雑談 】2時間で何人と「おはよう」言えるかチャレンジ！初見さん・ROM勢さんも大歓迎☀️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=VyeUn9tWGeo&t=4470s",
-    "date": "2025/11/04"
-  },
-  {
-    "timestamp": "1:24:01",
-    "original": "竜頭蛇尾",
-    "reading": "りゅうとつだび",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】2時間で何人と「おはよう」言えるかチャレンジ！初見さん・ROM勢さんも大歓迎☀️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=VyeUn9tWGeo&t=5041s",
-    "date": "2025/11/04"
+    "videoTitle": "【 朝活 / 雑談 】あと5人挨拶お待ちしてます🙇‍♀️おはよう300人目標☀️関西弁でまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=MRPXaZBGRgU&t=8066s",
+    "date": "2025/11/07"
   },
   {
     "timestamp": "39:31",
@@ -6360,6 +6387,24 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】2時間で何人と「おはよう」言えるかチャレンジ！初見さん・ROM勢さんも大歓迎☀️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=VyeUn9tWGeo&t=3560s",
+    "date": "2025/11/04"
+  },
+  {
+    "timestamp": "1:14:30",
+    "original": "隔靴掻痒",
+    "reading": "かくくつかゆかゆ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】2時間で何人と「おはよう」言えるかチャレンジ！初見さん・ROM勢さんも大歓迎☀️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=VyeUn9tWGeo&t=4470s",
+    "date": "2025/11/04"
+  },
+  {
+    "timestamp": "1:24:01",
+    "original": "竜頭蛇尾",
+    "reading": "りゅうとつだび",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】2時間で何人と「おはよう」言えるかチャレンジ！初見さん・ROM勢さんも大歓迎☀️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=VyeUn9tWGeo&t=5041s",
     "date": "2025/11/04"
   },
   {
@@ -6516,21 +6561,21 @@ const dictionaryData = [
     "date": "2025/10/29"
   },
   {
-    "timestamp": "1:36:59",
-    "original": "見入った",
-    "reading": "みはった",
-    "context": "",
-    "videoTitle": "【 プチお披露目 / 飲酒 】活動2年2ヶ月記念🎉新しいOPとEDをお披露目するよ～！！！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=OulREZP_jqw&t=5819s",
-    "date": "2025/10/25"
-  },
-  {
     "timestamp": "46:06",
     "original": "許容",
     "reading": "なんとかよう",
     "context": "",
     "videoTitle": "【 プチお披露目 / 飲酒 】活動2年2ヶ月記念🎉新しいOPとEDをお披露目するよ～！！！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=OulREZP_jqw&t=2766s",
+    "date": "2025/10/25"
+  },
+  {
+    "timestamp": "1:36:59",
+    "original": "見入った",
+    "reading": "みはった",
+    "context": "",
+    "videoTitle": "【 プチお披露目 / 飲酒 】活動2年2ヶ月記念🎉新しいOPとEDをお披露目するよ～！！！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=OulREZP_jqw&t=5819s",
     "date": "2025/10/25"
   },
   {
@@ -6633,6 +6678,15 @@ const dictionaryData = [
     "date": "2025/10/23"
   },
   {
+    "timestamp": "34:42",
+    "original": "連日",
+    "reading": "れんにち",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NZDXXAwPcyk&t=2082s",
+    "date": "2025/10/22"
+  },
+  {
     "timestamp": "1:26:01",
     "original": "堅ぶつ",
     "reading": "けんぶつ",
@@ -6660,15 +6714,6 @@ const dictionaryData = [
     "date": "2025/10/22"
   },
   {
-    "timestamp": "34:42",
-    "original": "連日",
-    "reading": "れんにち",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=NZDXXAwPcyk&t=2082s",
-    "date": "2025/10/22"
-  },
-  {
     "timestamp": "3:44:48",
     "original": "空転",
     "reading": "からてん",
@@ -6676,6 +6721,15 @@ const dictionaryData = [
     "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=NZDXXAwPcyk&t=13488s",
     "date": "2025/10/22"
+  },
+  {
+    "timestamp": "39:46",
+    "original": "白川郷",
+    "reading": "しらかわきょう",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう400人目標☀️今週最初のおはようください～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lbiWc1ZSYZo&t=2386s",
+    "date": "2025/10/20"
   },
   {
     "timestamp": "1:40:44",
@@ -6720,15 +6774,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう400人目標☀️今週最初のおはようください～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=lbiWc1ZSYZo&t=9680s",
-    "date": "2025/10/20"
-  },
-  {
-    "timestamp": "39:46",
-    "original": "白川郷",
-    "reading": "しらかわきょう",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう400人目標☀️今週最初のおはようください～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=lbiWc1ZSYZo&t=2386s",
     "date": "2025/10/20"
   },
   {
@@ -6912,6 +6957,15 @@ const dictionaryData = [
     "date": "2025/10/17"
   },
   {
+    "timestamp": "50:46",
+    "original": "魚見台",
+    "reading": "さかなみだい",
+    "context": "",
+    "videoTitle": "【 ノロイヅキ / 呪イ憑キ】動画の場所を探し出さないと…！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=cI8yaCSXOEU&t=3046s",
+    "date": "2025/10/16"
+  },
+  {
     "timestamp": "1:55:23",
     "original": "所持品",
     "reading": "しょゆうぶつ",
@@ -7020,15 +7074,6 @@ const dictionaryData = [
     "date": "2025/10/16"
   },
   {
-    "timestamp": "50:46",
-    "original": "魚見台",
-    "reading": "さかなみだい",
-    "context": "",
-    "videoTitle": "【 ノロイヅキ / 呪イ憑キ】動画の場所を探し出さないと…！？【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=cI8yaCSXOEU&t=3046s",
-    "date": "2025/10/16"
-  },
-  {
     "timestamp": "1:05:33",
     "original": "腹横筋",
     "reading": "ふくよこきん",
@@ -7110,6 +7155,15 @@ const dictionaryData = [
     "date": "2025/10/12"
   },
   {
+    "timestamp": "39:42",
+    "original": "既出",
+    "reading": "きで",
+    "context": "",
+    "videoTitle": "【 飲酒 / 雑談 】初見さん・ROM勢さんも大歓迎✨️お酒呑むぞおおお！！！！！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=7ENc-mcqih0&t=2382s",
+    "date": "2025/10/11"
+  },
+  {
     "timestamp": "1:02:01",
     "original": "大船軒",
     "reading": "だいせん",
@@ -7146,21 +7200,30 @@ const dictionaryData = [
     "date": "2025/10/11"
   },
   {
-    "timestamp": "39:42",
-    "original": "既出",
-    "reading": "きで",
+    "timestamp": "43:43",
+    "original": "殉職者",
+    "reading": "なんとかかんとか",
     "context": "",
-    "videoTitle": "【 飲酒 / 雑談 】初見さん・ROM勢さんも大歓迎✨️お酒呑むぞおおお！！！！！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=7ENc-mcqih0&t=2382s",
-    "date": "2025/10/11"
+    "videoTitle": "【 JSP -日本事故物件監視協会- 】実在する事故物件を監視していきます【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=qSWNSK6dPAw&t=2623s",
+    "date": "2025/10/09"
   },
   {
-    "timestamp": "1:36:43",
-    "original": "広告料",
-    "reading": "こくりょ",
+    "timestamp": "45:10",
+    "original": "居住者",
+    "reading": "いじゅうしゃ",
     "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️関西弁でまったりお話し中！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=zQKM6GZ-gVg&t=5803s",
+    "videoTitle": "【 JSP -日本事故物件監視協会- 】実在する事故物件を監視していきます【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=qSWNSK6dPAw&t=2710s",
+    "date": "2025/10/09"
+  },
+  {
+    "timestamp": "58:30",
+    "original": "仏間",
+    "reading": "ほとけま",
+    "context": "",
+    "videoTitle": "【 JSP -日本事故物件監視協会- 】実在する事故物件を監視していきます【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=qSWNSK6dPAw&t=3510s",
     "date": "2025/10/09"
   },
   {
@@ -7191,30 +7254,12 @@ const dictionaryData = [
     "date": "2025/10/09"
   },
   {
-    "timestamp": "43:43",
-    "original": "殉職者",
-    "reading": "なんとかかんとか",
+    "timestamp": "1:36:43",
+    "original": "広告料",
+    "reading": "こくりょ",
     "context": "",
-    "videoTitle": "【 JSP -日本事故物件監視協会- 】実在する事故物件を監視していきます【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=qSWNSK6dPAw&t=2623s",
-    "date": "2025/10/09"
-  },
-  {
-    "timestamp": "45:10",
-    "original": "居住者",
-    "reading": "いじゅうしゃ",
-    "context": "",
-    "videoTitle": "【 JSP -日本事故物件監視協会- 】実在する事故物件を監視していきます【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=qSWNSK6dPAw&t=2710s",
-    "date": "2025/10/09"
-  },
-  {
-    "timestamp": "58:30",
-    "original": "仏間",
-    "reading": "ほとけま",
-    "context": "",
-    "videoTitle": "【 JSP -日本事故物件監視協会- 】実在する事故物件を監視していきます【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=qSWNSK6dPAw&t=3510s",
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️関西弁でまったりお話し中！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=zQKM6GZ-gVg&t=5803s",
     "date": "2025/10/09"
   },
   {
@@ -7551,6 +7596,15 @@ const dictionaryData = [
     "date": "2025/09/24"
   },
   {
+    "timestamp": "53:37",
+    "original": "今昔",
+    "reading": "こんむかし",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう350→400人目標☀️初お披露目のギミックも…！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=XdYkYSdjO7I&t=3217s",
+    "date": "2025/09/23"
+  },
+  {
     "timestamp": "1:14:51",
     "original": "翁",
     "reading": "おうぎ",
@@ -7632,21 +7686,21 @@ const dictionaryData = [
     "date": "2025/09/23"
   },
   {
-    "timestamp": "53:37",
-    "original": "今昔",
-    "reading": "こんむかし",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう350→400人目標☀️初お披露目のギミックも…！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=XdYkYSdjO7I&t=3217s",
-    "date": "2025/09/23"
-  },
-  {
     "timestamp": "19:53",
     "original": "翻弄",
     "reading": "ほうろう",
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=lpYPtlqfTqk&t=1193s",
+    "date": "2025/09/20"
+  },
+  {
+    "timestamp": "48:52",
+    "original": "蝿",
+    "reading": "なわ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lpYPtlqfTqk&t=2932s",
     "date": "2025/09/20"
   },
   {
@@ -7674,15 +7728,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=lpYPtlqfTqk&t=13894s",
-    "date": "2025/09/20"
-  },
-  {
-    "timestamp": "48:52",
-    "original": "蝿",
-    "reading": "なわ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=lpYPtlqfTqk&t=2932s",
     "date": "2025/09/20"
   },
   {
@@ -7740,6 +7785,24 @@ const dictionaryData = [
     "date": "2025/09/19"
   },
   {
+    "timestamp": "24:36",
+    "original": "違える",
+    "reading": "ちがえる",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう400人目標☀️今日もまったりお話ししよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Ji2vevlgS70&t=1476s",
+    "date": "2025/09/18"
+  },
+  {
+    "timestamp": "35:21",
+    "original": "秘技",
+    "reading": "ひつぎ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう400人目標☀️今日もまったりお話ししよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Ji2vevlgS70&t=2121s",
+    "date": "2025/09/18"
+  },
+  {
     "timestamp": "1:50:14",
     "original": "高価",
     "reading": "たんか",
@@ -7758,30 +7821,12 @@ const dictionaryData = [
     "date": "2025/09/18"
   },
   {
-    "timestamp": "24:36",
-    "original": "違える",
-    "reading": "ちがえる",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう400人目標☀️今日もまったりお話ししよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Ji2vevlgS70&t=1476s",
-    "date": "2025/09/18"
-  },
-  {
     "timestamp": "2:11:51",
     "original": "神器",
     "reading": "しんき",
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう400人目標☀️今日もまったりお話ししよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=Ji2vevlgS70&t=7911s",
-    "date": "2025/09/18"
-  },
-  {
-    "timestamp": "35:21",
-    "original": "秘技",
-    "reading": "ひつぎ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう400人目標☀️今日もまったりお話ししよ～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Ji2vevlgS70&t=2121s",
     "date": "2025/09/18"
   },
   {
@@ -7821,12 +7866,30 @@ const dictionaryData = [
     "date": "2025/09/14"
   },
   {
+    "timestamp": "41:34",
+    "original": "柄",
+    "reading": "がら",
+    "context": "",
+    "videoTitle": "【 しずかなおそうじ 】お掃除頑張るぞ！！！！！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=OEfYnu6-cYI&t=2494s",
+    "date": "2025/09/13"
+  },
+  {
     "timestamp": "1:14:40",
     "original": "邸宅",
     "reading": "なんとかたく",
     "context": "",
     "videoTitle": "【 しずかなおそうじ 】お掃除頑張るぞ！！！！！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=OEfYnu6-cYI&t=4480s",
+    "date": "2025/09/13"
+  },
+  {
+    "timestamp": "2:03:37",
+    "original": "金属封鎖剤",
+    "reading": "なんとかざい",
+    "context": "",
+    "videoTitle": "【 しずかなおそうじ 】お掃除頑張るぞ！！！！！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=OEfYnu6-cYI&t=7417s",
     "date": "2025/09/13"
   },
   {
@@ -7854,24 +7917,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=HHJC9LJpkzM&t=7184s",
-    "date": "2025/09/13"
-  },
-  {
-    "timestamp": "2:03:37",
-    "original": "金属封鎖剤",
-    "reading": "なんとかざい",
-    "context": "",
-    "videoTitle": "【 しずかなおそうじ 】お掃除頑張るぞ！！！！！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=OEfYnu6-cYI&t=7417s",
-    "date": "2025/09/13"
-  },
-  {
-    "timestamp": "41:34",
-    "original": "柄",
-    "reading": "がら",
-    "context": "",
-    "videoTitle": "【 しずかなおそうじ 】お掃除頑張るぞ！！！！！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=OEfYnu6-cYI&t=2494s",
     "date": "2025/09/13"
   },
   {
@@ -8046,6 +8091,24 @@ const dictionaryData = [
     "date": "2025/09/02"
   },
   {
+    "timestamp": "49:24",
+    "original": "設計",
+    "reading": "とうけい",
+    "context": "",
+    "videoTitle": "【 飲酒 / 雑談 】初見さん10人＆挨拶300人目標☀️新衣装ではじめての飲酒配信！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=FAAIOJeSw1M&t=2964s",
+    "date": "2025/08/31"
+  },
+  {
+    "timestamp": "53:41",
+    "original": "体表",
+    "reading": "からだおもて",
+    "context": "",
+    "videoTitle": "【 飲酒 / 雑談 】初見さん10人＆挨拶300人目標☀️新衣装ではじめての飲酒配信！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=FAAIOJeSw1M&t=3221s",
+    "date": "2025/08/31"
+  },
+  {
     "timestamp": "1:01:30",
     "original": "開ける",
     "reading": "ひらけ",
@@ -8115,24 +8178,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 飲酒 / 雑談 】初見さん10人＆挨拶300人目標☀️新衣装ではじめての飲酒配信！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=FAAIOJeSw1M&t=10641s",
-    "date": "2025/08/31"
-  },
-  {
-    "timestamp": "49:24",
-    "original": "設計",
-    "reading": "とうけい",
-    "context": "",
-    "videoTitle": "【 飲酒 / 雑談 】初見さん10人＆挨拶300人目標☀️新衣装ではじめての飲酒配信！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=FAAIOJeSw1M&t=2964s",
-    "date": "2025/08/31"
-  },
-  {
-    "timestamp": "53:41",
-    "original": "体表",
-    "reading": "からだおもて",
-    "context": "",
-    "videoTitle": "【 飲酒 / 雑談 】初見さん10人＆挨拶300人目標☀️新衣装ではじめての飲酒配信！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=FAAIOJeSw1M&t=3221s",
     "date": "2025/08/31"
   },
   {
@@ -8406,6 +8451,42 @@ const dictionaryData = [
     "date": "2025/08/13"
   },
   {
+    "timestamp": "50:25",
+    "original": "賽の目",
+    "reading": "なんとかのめ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vhsN5moh9cA&t=3025s",
+    "date": "2025/08/12"
+  },
+  {
+    "timestamp": "50:25",
+    "original": "穴埋め",
+    "reading": "あなり",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vhsN5moh9cA&t=3025s",
+    "date": "2025/08/12"
+  },
+  {
+    "timestamp": "57:02",
+    "original": "築地市場",
+    "reading": "きくち",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vhsN5moh9cA&t=3422s",
+    "date": "2025/08/12"
+  },
+  {
+    "timestamp": "57:02",
+    "original": "安物買いの銭失い",
+    "reading": "せんうしない",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vhsN5moh9cA&t=3422s",
+    "date": "2025/08/12"
+  },
+  {
     "timestamp": "1:20:16",
     "original": "塗す",
     "reading": "ぬって",
@@ -8448,42 +8529,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=vhsN5moh9cA&t=11544s",
-    "date": "2025/08/12"
-  },
-  {
-    "timestamp": "50:25",
-    "original": "賽の目",
-    "reading": "なんとかのめ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=vhsN5moh9cA&t=3025s",
-    "date": "2025/08/12"
-  },
-  {
-    "timestamp": "50:25",
-    "original": "穴埋め",
-    "reading": "あなり",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=vhsN5moh9cA&t=3025s",
-    "date": "2025/08/12"
-  },
-  {
-    "timestamp": "57:02",
-    "original": "築地市場",
-    "reading": "きくち",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=vhsN5moh9cA&t=3422s",
-    "date": "2025/08/12"
-  },
-  {
-    "timestamp": "57:02",
-    "original": "安物買いの銭失い",
-    "reading": "せんうしない",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう300人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=vhsN5moh9cA&t=3422s",
     "date": "2025/08/12"
   },
   {
@@ -8568,6 +8613,15 @@ const dictionaryData = [
     "date": "2025/08/07"
   },
   {
+    "timestamp": "39:19",
+    "original": "刺剣",
+    "reading": "さしけん",
+    "context": "",
+    "videoTitle": "【 FORK ROAD / 丁字路 】究極の二択を迫られる…！？久々のホラゲ頑張ります（震え声）【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=INDCwBdTLgY&t=2359s",
+    "date": "2025/08/07"
+  },
+  {
     "timestamp": "19:20",
     "original": "立秋",
     "reading": "りっしゅん",
@@ -8577,21 +8631,21 @@ const dictionaryData = [
     "date": "2025/08/07"
   },
   {
+    "timestamp": "42:40",
+    "original": "酷暑",
+    "reading": "もうしょ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう＆初見さんの数だけステッパーチャレンジ☀️運動サボりがちなので、これを機に筋トレ復活したい…！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=sSd6NPn0vAo&t=2560s",
+    "date": "2025/08/07"
+  },
+  {
     "timestamp": "1:10:29",
     "original": "クコの実",
     "reading": "たこのみ",
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう＆初見さんの数だけステッパーチャレンジ☀️運動サボりがちなので、これを機に筋トレ復活したい…！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=sSd6NPn0vAo&t=4229s",
-    "date": "2025/08/07"
-  },
-  {
-    "timestamp": "39:19",
-    "original": "刺剣",
-    "reading": "さしけん",
-    "context": "",
-    "videoTitle": "【 FORK ROAD / 丁字路 】究極の二択を迫られる…！？久々のホラゲ頑張ります（震え声）【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=INDCwBdTLgY&t=2359s",
     "date": "2025/08/07"
   },
   {
@@ -8631,13 +8685,13 @@ const dictionaryData = [
     "date": "2025/08/07"
   },
   {
-    "timestamp": "42:40",
-    "original": "酷暑",
-    "reading": "もうしょ",
+    "timestamp": "53:24",
+    "original": "凶寓",
+    "reading": "きょくとら",
     "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう＆初見さんの数だけステッパーチャレンジ☀️運動サボりがちなので、これを機に筋トレ復活したい…！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=sSd6NPn0vAo&t=2560s",
-    "date": "2025/08/07"
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう350人目標☀️関西弁でまったりお話ししてます♪ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Gk795gHYPhc&t=3204s",
+    "date": "2025/08/06"
   },
   {
     "timestamp": "1:46:54",
@@ -8676,13 +8730,13 @@ const dictionaryData = [
     "date": "2025/08/06"
   },
   {
-    "timestamp": "53:24",
-    "original": "凶寓",
-    "reading": "きょくとら",
+    "timestamp": "46:17",
+    "original": "屋外",
+    "reading": "やがい",
     "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう350人目標☀️関西弁でまったりお話ししてます♪ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Gk795gHYPhc&t=3204s",
-    "date": "2025/08/06"
+    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう350人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=FrGHU84BjI4&t=2777s",
+    "date": "2025/08/05"
   },
   {
     "timestamp": "3:54:01",
@@ -8700,15 +8754,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう350人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=FrGHU84BjI4&t=14395s",
-    "date": "2025/08/05"
-  },
-  {
-    "timestamp": "46:17",
-    "original": "屋外",
-    "reading": "やがい",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】初見さん10人＆おはよう350人目標☀️みんなのお名前呼ばせてください～！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=FrGHU84BjI4&t=2777s",
     "date": "2025/08/05"
   },
   {
@@ -8793,6 +8838,15 @@ const dictionaryData = [
     "date": "2025/08/05"
   },
   {
+    "timestamp": "45:32",
+    "original": "信頼",
+    "reading": "しんよう",
+    "context": "",
+    "videoTitle": "【 飲酒 / 雑談 】初見さん10→25人耐久！お昼から呑むぞ～🍻ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=d5k1xnaMUJw&t=2732s",
+    "date": "2025/08/03"
+  },
+  {
     "timestamp": "2:14:41",
     "original": "板金",
     "reading": "てっきん",
@@ -8817,15 +8871,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 飲酒 / 雑談 】初見さん10→25人耐久！お昼から呑むぞ～🍻ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=d5k1xnaMUJw&t=11846s",
-    "date": "2025/08/03"
-  },
-  {
-    "timestamp": "45:32",
-    "original": "信頼",
-    "reading": "しんよう",
-    "context": "",
-    "videoTitle": "【 飲酒 / 雑談 】初見さん10→25人耐久！お昼から呑むぞ～🍻ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=d5k1xnaMUJw&t=2732s",
     "date": "2025/08/03"
   },
   {
@@ -8982,6 +9027,15 @@ const dictionaryData = [
     "date": "2025/07/31"
   },
   {
+    "timestamp": "52:40",
+    "original": "労い",
+    "reading": "つどい",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️みんなのお名前呼ばせてください～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=nts__xjzy64&t=3160s",
+    "date": "2025/07/29"
+  },
+  {
     "timestamp": "1:45:40",
     "original": "飛騨",
     "reading": "ひだか",
@@ -8997,15 +9051,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️みんなのお名前呼ばせてください～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=nts__xjzy64&t=8027s",
-    "date": "2025/07/29"
-  },
-  {
-    "timestamp": "52:40",
-    "original": "労い",
-    "reading": "つどい",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️みんなのお名前呼ばせてください～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=nts__xjzy64&t=3160s",
     "date": "2025/07/29"
   },
   {
@@ -9045,6 +9090,15 @@ const dictionaryData = [
     "date": "2025/07/26"
   },
   {
+    "timestamp": "5:44",
+    "original": "共有",
+    "reading": "こうゆう",
+    "context": "",
+    "videoTitle": "【 歌枠 / Karaoke 】1年以上ぶりの歌枠で超絶緊張しています...！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Jr2QqQra4fk&t=344s",
+    "date": "2025/07/25"
+  },
+  {
     "timestamp": "56:54",
     "original": "履行",
     "reading": "りぎょう",
@@ -9054,13 +9108,13 @@ const dictionaryData = [
     "date": "2025/07/25"
   },
   {
-    "timestamp": "5:44",
-    "original": "共有",
-    "reading": "こうゆう",
+    "timestamp": "33:32",
+    "original": "三又",
+    "reading": "さんまた",
     "context": "",
-    "videoTitle": "【 歌枠 / Karaoke 】1年以上ぶりの歌枠で超絶緊張しています...！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Jr2QqQra4fk&t=344s",
-    "date": "2025/07/25"
+    "videoTitle": "【 朝活 / 雑談 】おはよう350人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=yzBZr3-lco4&t=2012s",
+    "date": "2025/07/22"
   },
   {
     "timestamp": "2:08:27",
@@ -9081,15 +9135,6 @@ const dictionaryData = [
     "date": "2025/07/22"
   },
   {
-    "timestamp": "33:32",
-    "original": "三又",
-    "reading": "さんまた",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう350人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=yzBZr3-lco4&t=2012s",
-    "date": "2025/07/22"
-  },
-  {
     "timestamp": "3:34:55",
     "original": "朗読",
     "reading": "ろうどう",
@@ -9097,6 +9142,15 @@ const dictionaryData = [
     "videoTitle": "【 朝活 / 雑談 】おはよう350人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=yzBZr3-lco4&t=12895s",
     "date": "2025/07/22"
+  },
+  {
+    "timestamp": "52:44",
+    "original": "小売",
+    "reading": "しょうばい",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=jSmG1J8LNAw&t=3164s",
+    "date": "2025/07/21"
   },
   {
     "timestamp": "2:18:02",
@@ -9117,15 +9171,6 @@ const dictionaryData = [
     "date": "2025/07/21"
   },
   {
-    "timestamp": "52:44",
-    "original": "小売",
-    "reading": "しょうばい",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=jSmG1J8LNAw&t=3164s",
-    "date": "2025/07/21"
-  },
-  {
     "timestamp": "5:37:26",
     "original": "石膏",
     "reading": "いしばん",
@@ -9133,6 +9178,24 @@ const dictionaryData = [
     "videoTitle": "【 朝活 / 雑談 】おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=jSmG1J8LNAw&t=20246s",
     "date": "2025/07/21"
+  },
+  {
+    "timestamp": "54:24",
+    "original": "白石温麵",
+    "reading": "しらいし",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=C5KUGNnyApI&t=3264s",
+    "date": "2025/07/19"
+  },
+  {
+    "timestamp": "58:23",
+    "original": "禁漁",
+    "reading": "きんぎょ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=C5KUGNnyApI&t=3503s",
+    "date": "2025/07/19"
   },
   {
     "timestamp": "1:02:40",
@@ -9180,48 +9243,12 @@ const dictionaryData = [
     "date": "2025/07/19"
   },
   {
-    "timestamp": "54:24",
-    "original": "白石温麵",
-    "reading": "しらいし",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=C5KUGNnyApI&t=3264s",
-    "date": "2025/07/19"
-  },
-  {
-    "timestamp": "58:23",
-    "original": "禁漁",
-    "reading": "きんぎょ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=C5KUGNnyApI&t=3503s",
-    "date": "2025/07/19"
-  },
-  {
     "timestamp": "23:31",
     "original": "行脚",
     "reading": "ぎょうきゃく",
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=qp6q9cdC8sA&t=1411s",
-    "date": "2025/07/18"
-  },
-  {
-    "timestamp": "2:35:23",
-    "original": "米国",
-    "reading": "べいくに",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=qp6q9cdC8sA&t=9323s",
-    "date": "2025/07/18"
-  },
-  {
-    "timestamp": "3:13:43",
-    "original": "前腕",
-    "reading": "まえうで",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=qp6q9cdC8sA&t=11623s",
     "date": "2025/07/18"
   },
   {
@@ -9249,6 +9276,24 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=qp6q9cdC8sA&t=2984s",
+    "date": "2025/07/18"
+  },
+  {
+    "timestamp": "2:35:23",
+    "original": "米国",
+    "reading": "べいくに",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=qp6q9cdC8sA&t=9323s",
+    "date": "2025/07/18"
+  },
+  {
+    "timestamp": "3:13:43",
+    "original": "前腕",
+    "reading": "まえうで",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=qp6q9cdC8sA&t=11623s",
     "date": "2025/07/18"
   },
   {
@@ -9297,6 +9342,15 @@ const dictionaryData = [
     "date": "2025/07/17"
   },
   {
+    "timestamp": "36:33",
+    "original": "瞬獄殺",
+    "reading": "しゅごくさつ",
+    "context": "",
+    "videoTitle": "【 夜活 / 雑談 】初見さん・ROM勢さんも大歓迎✨️久しぶりの夜配信だ～！！！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=X8zZCAHRpg4&t=2193s",
+    "date": "2025/07/15"
+  },
+  {
     "timestamp": "1:22:37",
     "original": "古畑任三郎",
     "reading": "こばた",
@@ -9312,15 +9366,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 夜活 / 雑談 】初見さん・ROM勢さんも大歓迎✨️久しぶりの夜配信だ～！！！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=X8zZCAHRpg4&t=5188s",
-    "date": "2025/07/15"
-  },
-  {
-    "timestamp": "36:33",
-    "original": "瞬獄殺",
-    "reading": "しゅごくさつ",
-    "context": "",
-    "videoTitle": "【 夜活 / 雑談 】初見さん・ROM勢さんも大歓迎✨️久しぶりの夜配信だ～！！！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=X8zZCAHRpg4&t=2193s",
     "date": "2025/07/15"
   },
   {
@@ -9396,6 +9441,15 @@ const dictionaryData = [
     "date": "2025/07/08"
   },
   {
+    "timestamp": "56:10",
+    "original": "宝具",
+    "reading": "たからぐ",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NwJpyuWFa9s&t=3370s",
+    "date": "2025/07/06"
+  },
+  {
     "timestamp": "1:35:26",
     "original": "暗所",
     "reading": "あんどころ",
@@ -9414,21 +9468,21 @@ const dictionaryData = [
     "date": "2025/07/06"
   },
   {
-    "timestamp": "56:10",
-    "original": "宝具",
-    "reading": "たからぐ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう×1円と初見さん×5円と高評価×1円でランチ代決定！？ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=NwJpyuWFa9s&t=3370s",
-    "date": "2025/07/06"
-  },
-  {
     "timestamp": "16:13",
     "original": "誤差",
     "reading": "じさ",
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】2時間で何人と「おはよう」言えるかチャレンジ！☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=q7gJg-nR-B4&t=973s",
+    "date": "2025/07/05"
+  },
+  {
+    "timestamp": "43:04",
+    "original": "奮励努力",
+    "reading": "ふんげき",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】2時間で何人と「おはよう」言えるかチャレンジ！☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=q7gJg-nR-B4&t=2584s",
     "date": "2025/07/05"
   },
   {
@@ -9441,13 +9495,13 @@ const dictionaryData = [
     "date": "2025/07/05"
   },
   {
-    "timestamp": "43:04",
-    "original": "奮励努力",
-    "reading": "ふんげき",
+    "timestamp": "43:55",
+    "original": "魔笛",
+    "reading": "まぶえ",
     "context": "",
-    "videoTitle": "【 朝活 / 雑談 】2時間で何人と「おはよう」言えるかチャレンジ！☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=q7gJg-nR-B4&t=2584s",
-    "date": "2025/07/05"
+    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=4WDiXUANaO8&t=2635s",
+    "date": "2025/07/04"
   },
   {
     "timestamp": "1:21:12",
@@ -9465,15 +9519,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=4WDiXUANaO8&t=5962s",
-    "date": "2025/07/04"
-  },
-  {
-    "timestamp": "43:55",
-    "original": "魔笛",
-    "reading": "まぶえ",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう300人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=4WDiXUANaO8&t=2635s",
     "date": "2025/07/04"
   },
   {
@@ -9612,33 +9657,6 @@ const dictionaryData = [
     "date": "2025/06/28"
   },
   {
-    "timestamp": "1:25:02",
-    "original": "心頭",
-    "reading": "こころあたま",
-    "context": "",
-    "videoTitle": "【 雑談 / freetalk 】 23時までまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=vazVZFMDgtA&t=5102s",
-    "date": "2025/06/26"
-  },
-  {
-    "timestamp": "1:46:10",
-    "original": "十六夜",
-    "reading": "じゅうろくやるい",
-    "context": "",
-    "videoTitle": "【 雑談 / freetalk 】 23時までまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=vazVZFMDgtA&t=6370s",
-    "date": "2025/06/26"
-  },
-  {
-    "timestamp": "24:42",
-    "original": "増殖",
-    "reading": "じょうしょく",
-    "context": "",
-    "videoTitle": "【 雑談 / freetalk 】 23時までまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=vazVZFMDgtA&t=1482s",
-    "date": "2025/06/26"
-  },
-  {
     "timestamp": "2:14:32",
     "original": "船・溶接",
     "reading": "せんよくせっして",
@@ -9666,6 +9684,15 @@ const dictionaryData = [
     "date": "2025/06/26"
   },
   {
+    "timestamp": "24:42",
+    "original": "増殖",
+    "reading": "じょうしょく",
+    "context": "",
+    "videoTitle": "【 雑談 / freetalk 】 23時までまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vazVZFMDgtA&t=1482s",
+    "date": "2025/06/26"
+  },
+  {
     "timestamp": "43:16",
     "original": "極寒",
     "reading": "ごくさむ",
@@ -9675,13 +9702,22 @@ const dictionaryData = [
     "date": "2025/06/26"
   },
   {
-    "timestamp": "2:35:42",
-    "original": "八重洲",
-    "reading": "やえしゅう",
+    "timestamp": "1:25:02",
+    "original": "心頭",
+    "reading": "こころあたま",
     "context": "",
-    "videoTitle": "【 復帰配信 / 雑談 】 ただいま～！待っててくれて本当にありがとう😭🙏初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=TT1Rdf5rAbc&t=9342s",
-    "date": "2025/06/24"
+    "videoTitle": "【 雑談 / freetalk 】 23時までまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vazVZFMDgtA&t=5102s",
+    "date": "2025/06/26"
+  },
+  {
+    "timestamp": "1:46:10",
+    "original": "十六夜",
+    "reading": "じゅうろくやるい",
+    "context": "",
+    "videoTitle": "【 雑談 / freetalk 】 23時までまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vazVZFMDgtA&t=6370s",
+    "date": "2025/06/26"
   },
   {
     "timestamp": "36:26",
@@ -9690,6 +9726,15 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 復帰配信 / 雑談 】 ただいま～！待っててくれて本当にありがとう😭🙏初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=TT1Rdf5rAbc&t=2186s",
+    "date": "2025/06/24"
+  },
+  {
+    "timestamp": "2:35:42",
+    "original": "八重洲",
+    "reading": "やえしゅう",
+    "context": "",
+    "videoTitle": "【 復帰配信 / 雑談 】 ただいま～！待っててくれて本当にありがとう😭🙏初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=TT1Rdf5rAbc&t=9342s",
     "date": "2025/06/24"
   },
   {
@@ -9729,6 +9774,15 @@ const dictionaryData = [
     "date": "2025/06/12"
   },
   {
+    "timestamp": "56:27",
+    "original": "小樽",
+    "reading": "こだる",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】 おはよう×5回と初見さん×15回でステッパー頑張ります💪☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=XxPlkhd5yos&t=3387s",
+    "date": "2025/06/11"
+  },
+  {
     "timestamp": "1:01:58",
     "original": "十勝川",
     "reading": "じゅうしょうがわ",
@@ -9747,13 +9801,22 @@ const dictionaryData = [
     "date": "2025/06/11"
   },
   {
-    "timestamp": "56:27",
-    "original": "小樽",
-    "reading": "こだる",
+    "timestamp": "51:03",
+    "original": "螺旋",
+    "reading": "かじょう",
     "context": "",
-    "videoTitle": "【 朝活 / 雑談 】 おはよう×5回と初見さん×15回でステッパー頑張ります💪☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=XxPlkhd5yos&t=3387s",
-    "date": "2025/06/11"
+    "videoTitle": "【 雑談 / freetalk 】 初見さん・ROM勢さんも大歓迎✨️夜にまったりお話しよ～！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=JjO3wckk9zQ&t=3063s",
+    "date": "2025/06/10"
+  },
+  {
+    "timestamp": "52:33",
+    "original": "墓地",
+    "reading": "はかち",
+    "context": "",
+    "videoTitle": "【 雑談 / freetalk 】 初見さん・ROM勢さんも大歓迎✨️夜にまったりお話しよ～！【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=JjO3wckk9zQ&t=3153s",
+    "date": "2025/06/10"
   },
   {
     "timestamp": "1:21:46",
@@ -9789,24 +9852,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 雑談 / freetalk 】 初見さん・ROM勢さんも大歓迎✨️夜にまったりお話しよ～！【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=JjO3wckk9zQ&t=7674s",
-    "date": "2025/06/10"
-  },
-  {
-    "timestamp": "51:03",
-    "original": "螺旋",
-    "reading": "かじょう",
-    "context": "",
-    "videoTitle": "【 雑談 / freetalk 】 初見さん・ROM勢さんも大歓迎✨️夜にまったりお話しよ～！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=JjO3wckk9zQ&t=3063s",
-    "date": "2025/06/10"
-  },
-  {
-    "timestamp": "52:33",
-    "original": "墓地",
-    "reading": "はかち",
-    "context": "",
-    "videoTitle": "【 雑談 / freetalk 】 初見さん・ROM勢さんも大歓迎✨️夜にまったりお話しよ～！【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=JjO3wckk9zQ&t=3153s",
     "date": "2025/06/10"
   },
   {
@@ -9853,6 +9898,15 @@ const dictionaryData = [
     "videoTitle": "【 朝活 / 雑談  】 おはよう350 人目標☀️今週最初のおはよう言わせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=edaXJPGHfrI&t=14194s",
     "date": "2025/06/09"
+  },
+  {
+    "timestamp": "45:23",
+    "original": "制定",
+    "reading": "せんてい",
+    "context": "",
+    "videoTitle": "【 朝活 / 雑談 】おはよう350人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=1uG72dKGEEg&t=2723s",
+    "date": "2025/06/08"
   },
   {
     "timestamp": "2:01:26",
@@ -9924,15 +9978,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "【 朝活 / 雑談 】おはよう350人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=1uG72dKGEEg&t=14187s",
-    "date": "2025/06/08"
-  },
-  {
-    "timestamp": "45:23",
-    "original": "制定",
-    "reading": "せんてい",
-    "context": "",
-    "videoTitle": "【 朝活 / 雑談 】おはよう350人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=1uG72dKGEEg&t=2723s",
     "date": "2025/06/08"
   },
   {
@@ -10314,6 +10359,15 @@ const dictionaryData = [
     "date": "2025/05/25"
   },
   {
+    "timestamp": "24:33",
+    "original": "千古不易",
+    "reading": "せんこふやす",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍚✨️初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=w1asBpoCllE&t=1473s",
+    "date": "2025/05/24"
+  },
+  {
     "timestamp": "1:09:09",
     "original": "梔子",
     "reading": "ゆず",
@@ -10338,15 +10392,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍚✨️初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=w1asBpoCllE&t=5131s",
-    "date": "2025/05/24"
-  },
-  {
-    "timestamp": "24:33",
-    "original": "千古不易",
-    "reading": "せんこふやす",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍚✨️初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=w1asBpoCllE&t=1473s",
     "date": "2025/05/24"
   },
   {
@@ -10420,6 +10465,33 @@ const dictionaryData = [
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう300人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=98ZsUd1WyyI&t=10636s",
     "date": "2025/05/23"
+  },
+  {
+    "timestamp": "50:20",
+    "original": "正露丸",
+    "reading": "せいろまる",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=RdO-rh8FCUg&t=3020s",
+    "date": "2025/05/22"
+  },
+  {
+    "timestamp": "55:06",
+    "original": "管轄",
+    "reading": "かんがい",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=RdO-rh8FCUg&t=3306s",
+    "date": "2025/05/22"
+  },
+  {
+    "timestamp": "55:06",
+    "original": "和らい",
+    "reading": "なごらい",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=RdO-rh8FCUg&t=3306s",
+    "date": "2025/05/22"
   },
   {
     "timestamp": "1:12:07",
@@ -10548,33 +10620,6 @@ const dictionaryData = [
     "date": "2025/05/22"
   },
   {
-    "timestamp": "50:20",
-    "original": "正露丸",
-    "reading": "せいろまる",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=RdO-rh8FCUg&t=3020s",
-    "date": "2025/05/22"
-  },
-  {
-    "timestamp": "55:06",
-    "original": "管轄",
-    "reading": "かんがい",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=RdO-rh8FCUg&t=3306s",
-    "date": "2025/05/22"
-  },
-  {
-    "timestamp": "55:06",
-    "original": "和らい",
-    "reading": "なごらい",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=RdO-rh8FCUg&t=3306s",
-    "date": "2025/05/22"
-  },
-  {
     "timestamp": "1:38:02",
     "original": "東奔西走",
     "reading": "とほうせいそう",
@@ -10620,21 +10665,21 @@ const dictionaryData = [
     "date": "2025/05/18"
   },
   {
-    "timestamp": "2:02:07",
-    "original": "超越",
-    "reading": "ちょうこ",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍚✨️初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=UsN1AnCLjN0&t=7327s",
-    "date": "2025/05/18"
-  },
-  {
     "timestamp": "42:35",
     "original": "推測",
     "reading": "おくそく",
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍚✨️初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=UsN1AnCLjN0&t=2555s",
+    "date": "2025/05/18"
+  },
+  {
+    "timestamp": "2:02:07",
+    "original": "超越",
+    "reading": "ちょうこ",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍚✨️初見さん・ROM勢さんも大歓迎です✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UsN1AnCLjN0&t=7327s",
     "date": "2025/05/18"
   },
   {
@@ -10692,6 +10737,15 @@ const dictionaryData = [
     "date": "2025/05/13"
   },
   {
+    "timestamp": "43:34",
+    "original": "非ず",
+    "reading": "ひず",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️まったり関西弁でお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=7T0_PAJTOEQ&t=2614s",
+    "date": "2025/05/12"
+  },
+  {
     "timestamp": "2:17:55",
     "original": "茨城",
     "reading": "いばらぎ",
@@ -10719,15 +10773,6 @@ const dictionaryData = [
     "date": "2025/05/12"
   },
   {
-    "timestamp": "43:34",
-    "original": "非ず",
-    "reading": "ひず",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️まったり関西弁でお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=7T0_PAJTOEQ&t=2614s",
-    "date": "2025/05/12"
-  },
-  {
     "timestamp": "4:48:57",
     "original": "深淵",
     "reading": "しんぶち",
@@ -10746,6 +10791,15 @@ const dictionaryData = [
     "date": "2025/05/12"
   },
   {
+    "timestamp": "7:16",
+    "original": "鹿威し",
+    "reading": "かかおどし",
+    "context": "",
+    "videoTitle": "୨୧ 飲酒 / 雑談 ୨୧ 初見さん・ROM勢さんも大歓迎✨️昼飲みだ～！まったり関西弁でお話してます💭【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lAc4SKEVHgM&t=436s",
+    "date": "2025/05/11"
+  },
+  {
     "timestamp": "1:11:45",
     "original": "乾物",
     "reading": "かんぶつ",
@@ -10755,13 +10809,22 @@ const dictionaryData = [
     "date": "2025/05/11"
   },
   {
-    "timestamp": "7:16",
-    "original": "鹿威し",
-    "reading": "かかおどし",
+    "timestamp": "42:01",
+    "original": "迫って",
+    "reading": "おって",
     "context": "",
-    "videoTitle": "୨୧ 飲酒 / 雑談 ୨୧ 初見さん・ROM勢さんも大歓迎✨️昼飲みだ～！まったり関西弁でお話してます💭【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=lAc4SKEVHgM&t=436s",
-    "date": "2025/05/11"
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Q3kdZkwYpOg&t=2521s",
+    "date": "2025/05/08"
+  },
+  {
+    "timestamp": "43:26",
+    "original": "処世術",
+    "reading": "しょよじゅちゅ",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Q3kdZkwYpOg&t=2606s",
+    "date": "2025/05/08"
   },
   {
     "timestamp": "1:39:30",
@@ -10896,24 +10959,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=Q3kdZkwYpOg&t=12706s",
-    "date": "2025/05/08"
-  },
-  {
-    "timestamp": "42:01",
-    "original": "迫って",
-    "reading": "おって",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Q3kdZkwYpOg&t=2521s",
-    "date": "2025/05/08"
-  },
-  {
-    "timestamp": "43:26",
-    "original": "処世術",
-    "reading": "しょよじゅちゅ",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Q3kdZkwYpOg&t=2606s",
     "date": "2025/05/08"
   },
   {
@@ -11115,48 +11160,12 @@ const dictionaryData = [
     "date": "2025/05/02"
   },
   {
-    "timestamp": "1:10:42",
-    "original": "専売特許",
-    "reading": "とくしょ",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=aqKtL9O-SH4&t=4242s",
-    "date": "2025/04/29"
-  },
-  {
     "timestamp": "31:06",
     "original": "旨",
     "reading": "うま",
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう300人目標☀️9時までまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=9EUWh-PX_Fs&t=1866s",
-    "date": "2025/04/29"
-  },
-  {
-    "timestamp": "3:22:08",
-    "original": "風情",
-    "reading": "ふうじょう",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=aqKtL9O-SH4&t=12128s",
-    "date": "2025/04/29"
-  },
-  {
-    "timestamp": "3:40:12",
-    "original": "宮内庁",
-    "reading": "みやないちょう",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=aqKtL9O-SH4&t=13212s",
-    "date": "2025/04/29"
-  },
-  {
-    "timestamp": "3:57:31",
-    "original": "記念碑",
-    "reading": "すい",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=aqKtL9O-SH4&t=14251s",
     "date": "2025/04/29"
   },
   {
@@ -11187,6 +11196,42 @@ const dictionaryData = [
     "date": "2025/04/29"
   },
   {
+    "timestamp": "1:10:42",
+    "original": "専売特許",
+    "reading": "とくしょ",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=aqKtL9O-SH4&t=4242s",
+    "date": "2025/04/29"
+  },
+  {
+    "timestamp": "3:22:08",
+    "original": "風情",
+    "reading": "ふうじょう",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=aqKtL9O-SH4&t=12128s",
+    "date": "2025/04/29"
+  },
+  {
+    "timestamp": "3:40:12",
+    "original": "宮内庁",
+    "reading": "みやないちょう",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=aqKtL9O-SH4&t=13212s",
+    "date": "2025/04/29"
+  },
+  {
+    "timestamp": "3:57:31",
+    "original": "記念碑",
+    "reading": "すい",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️今日もまったりお話しよ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=aqKtL9O-SH4&t=14251s",
+    "date": "2025/04/29"
+  },
+  {
     "timestamp": "2:35:32",
     "original": "探す",
     "reading": "やらす",
@@ -11214,15 +11259,6 @@ const dictionaryData = [
     "date": "2025/04/28"
   },
   {
-    "timestamp": "1:28:34",
-    "original": "多人数",
-    "reading": "おおにんずう",
-    "context": "",
-    "videoTitle": "୨୧ 飲酒 / 雑談 ୨୧ お酒呑みながらまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=KQJUTiXcjs4&t=5314s",
-    "date": "2025/04/27"
-  },
-  {
     "timestamp": "27:06",
     "original": "九段下",
     "reading": "きゅうだん",
@@ -11241,6 +11277,24 @@ const dictionaryData = [
     "date": "2025/04/27"
   },
   {
+    "timestamp": "42:22",
+    "original": "姪っ子",
+    "reading": "すえっこ",
+    "context": "",
+    "videoTitle": "୨୧ 飲酒 / 雑談 ୨୧ お酒呑みながらまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=KQJUTiXcjs4&t=2542s",
+    "date": "2025/04/27"
+  },
+  {
+    "timestamp": "1:28:34",
+    "original": "多人数",
+    "reading": "おおにんずう",
+    "context": "",
+    "videoTitle": "୨୧ 飲酒 / 雑談 ୨୧ お酒呑みながらまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=KQJUTiXcjs4&t=5314s",
+    "date": "2025/04/27"
+  },
+  {
     "timestamp": "2:00:00",
     "original": "玄人",
     "reading": "げんじん",
@@ -11256,15 +11310,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 飲酒 / 雑談 ୨୧ お酒呑みながらまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=KQJUTiXcjs4&t=8265s",
-    "date": "2025/04/27"
-  },
-  {
-    "timestamp": "42:22",
-    "original": "姪っ子",
-    "reading": "すえっこ",
-    "context": "",
-    "videoTitle": "୨୧ 飲酒 / 雑談 ୨୧ お酒呑みながらまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=KQJUTiXcjs4&t=2542s",
     "date": "2025/04/27"
   },
   {
@@ -11313,6 +11358,15 @@ const dictionaryData = [
     "date": "2025/04/25"
   },
   {
+    "timestamp": "34:48",
+    "original": "井伊直弼",
+    "reading": "なおかゆ",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=iQ8IQB60C5I&t=2088s",
+    "date": "2025/04/24"
+  },
+  {
     "timestamp": "2:53:15",
     "original": "早苗",
     "reading": "はやなえ",
@@ -11331,15 +11385,6 @@ const dictionaryData = [
     "date": "2025/04/24"
   },
   {
-    "timestamp": "34:48",
-    "original": "井伊直弼",
-    "reading": "なおかゆ",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=iQ8IQB60C5I&t=2088s",
-    "date": "2025/04/24"
-  },
-  {
     "timestamp": "4:42:05",
     "original": "混入",
     "reading": "しんにゅう",
@@ -11347,6 +11392,42 @@ const dictionaryData = [
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=iQ8IQB60C5I&t=16925s",
     "date": "2025/04/24"
+  },
+  {
+    "timestamp": "7:50",
+    "original": "躊躇う",
+    "reading": "とまどう",
+    "context": "",
+    "videoTitle": "୨୧ 押してダメなら押してみろ ୨୧ ボタンだらけの部屋から脱出するぞおおお！【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=s1kVzpfq71s&t=470s",
+    "date": "2025/04/22"
+  },
+  {
+    "timestamp": "23:45",
+    "original": "鼓舞激励",
+    "reading": "こぶげきこう",
+    "context": "",
+    "videoTitle": "୨୧ 押してダメなら押してみろ ୨୧ ボタンだらけの部屋から脱出するぞおおお！【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=s1kVzpfq71s&t=1425s",
+    "date": "2025/04/22"
+  },
+  {
+    "timestamp": "23:54",
+    "original": "一意専心",
+    "reading": "いちいけんしん",
+    "context": "",
+    "videoTitle": "୨୧ 押してダメなら押してみろ ୨୧ ボタンだらけの部屋から脱出するぞおおお！【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=s1kVzpfq71s&t=1434s",
+    "date": "2025/04/22"
+  },
+  {
+    "timestamp": "23:56",
+    "original": "猪突猛進",
+    "reading": "ととつ",
+    "context": "",
+    "videoTitle": "୨୧ 押してダメなら押してみろ ୨୧ ボタンだらけの部屋から脱出するぞおおお！【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=s1kVzpfq71s&t=1436s",
+    "date": "2025/04/22"
   },
   {
     "timestamp": "1:53:50",
@@ -11382,33 +11463,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400→450人目標☀️まったり関西弁でお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=eSsOE7jguAU&t=7126s",
-    "date": "2025/04/22"
-  },
-  {
-    "timestamp": "23:45",
-    "original": "鼓舞激励",
-    "reading": "こぶげきこう",
-    "context": "",
-    "videoTitle": "୨୧ 押してダメなら押してみろ ୨୧ ボタンだらけの部屋から脱出するぞおおお！【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=s1kVzpfq71s&t=1425s",
-    "date": "2025/04/22"
-  },
-  {
-    "timestamp": "23:54",
-    "original": "一意専心",
-    "reading": "いちいけんしん",
-    "context": "",
-    "videoTitle": "୨୧ 押してダメなら押してみろ ୨୧ ボタンだらけの部屋から脱出するぞおおお！【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=s1kVzpfq71s&t=1434s",
-    "date": "2025/04/22"
-  },
-  {
-    "timestamp": "23:56",
-    "original": "猪突猛進",
-    "reading": "ととつ",
-    "context": "",
-    "videoTitle": "୨୧ 押してダメなら押してみろ ୨୧ ボタンだらけの部屋から脱出するぞおおお！【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=s1kVzpfq71s&t=1436s",
     "date": "2025/04/22"
   },
   {
@@ -11475,13 +11529,13 @@ const dictionaryData = [
     "date": "2025/04/22"
   },
   {
-    "timestamp": "7:50",
-    "original": "躊躇う",
-    "reading": "とまどう",
+    "timestamp": "30:09",
+    "original": "解熱剤",
+    "reading": "かいねつ",
     "context": "",
-    "videoTitle": "୨୧ 押してダメなら押してみろ ୨୧ ボタンだらけの部屋から脱出するぞおおお！【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=s1kVzpfq71s&t=470s",
-    "date": "2025/04/22"
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=g67w8PZiilw&t=1809s",
+    "date": "2025/04/21"
   },
   {
     "timestamp": "1:22:50",
@@ -11547,15 +11601,6 @@ const dictionaryData = [
     "date": "2025/04/21"
   },
   {
-    "timestamp": "30:09",
-    "original": "解熱剤",
-    "reading": "かいねつ",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=g67w8PZiilw&t=1809s",
-    "date": "2025/04/21"
-  },
-  {
     "timestamp": "3:23:33",
     "original": "模して",
     "reading": "もよおす",
@@ -11617,6 +11662,69 @@ const dictionaryData = [
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=g67w8PZiilw&t=18430s",
     "date": "2025/04/21"
+  },
+  {
+    "timestamp": "35:35",
+    "original": "不撓不屈",
+    "reading": "ふしょう",
+    "context": "",
+    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=2135s",
+    "date": "2025/04/20"
+  },
+  {
+    "timestamp": "35:37",
+    "original": "勇猛果敢",
+    "reading": "かしん",
+    "context": "",
+    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=2137s",
+    "date": "2025/04/20"
+  },
+  {
+    "timestamp": "46:00",
+    "original": "蛇蝎",
+    "reading": "だだく",
+    "context": "",
+    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=2760s",
+    "date": "2025/04/20"
+  },
+  {
+    "timestamp": "46:00",
+    "original": "後顧之憂",
+    "reading": "ごこうのゆう",
+    "context": "",
+    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=2760s",
+    "date": "2025/04/20"
+  },
+  {
+    "timestamp": "46:08",
+    "original": "百折不撓",
+    "reading": "ひゃくおり",
+    "context": "",
+    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=2768s",
+    "date": "2025/04/20"
+  },
+  {
+    "timestamp": "56:24",
+    "original": "省みる",
+    "reading": "こころみる",
+    "context": "",
+    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=3384s",
+    "date": "2025/04/20"
+  },
+  {
+    "timestamp": "58:47",
+    "original": "乾",
+    "reading": "かんぬ",
+    "context": "",
+    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=3527s",
+    "date": "2025/04/20"
   },
   {
     "timestamp": "1:06:14",
@@ -11952,24 +12060,6 @@ const dictionaryData = [
     "date": "2025/04/20"
   },
   {
-    "timestamp": "35:35",
-    "original": "不撓不屈",
-    "reading": "ふしょう",
-    "context": "",
-    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=2135s",
-    "date": "2025/04/20"
-  },
-  {
-    "timestamp": "35:37",
-    "original": "勇猛果敢",
-    "reading": "かしん",
-    "context": "",
-    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=2137s",
-    "date": "2025/04/20"
-  },
-  {
     "timestamp": "3:00:31",
     "original": "琴線に触れる",
     "reading": "こせん",
@@ -12249,57 +12339,12 @@ const dictionaryData = [
     "date": "2025/04/20"
   },
   {
-    "timestamp": "46:00",
-    "original": "蛇蝎",
-    "reading": "だだく",
-    "context": "",
-    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=2760s",
-    "date": "2025/04/20"
-  },
-  {
-    "timestamp": "46:00",
-    "original": "後顧之憂",
-    "reading": "ごこうのゆう",
-    "context": "",
-    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=2760s",
-    "date": "2025/04/20"
-  },
-  {
-    "timestamp": "46:08",
-    "original": "百折不撓",
-    "reading": "ひゃくおり",
-    "context": "",
-    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=2768s",
-    "date": "2025/04/20"
-  },
-  {
     "timestamp": "4:00:08",
     "original": "天地開闢",
     "reading": "かいへき",
     "context": "",
     "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=14408s",
-    "date": "2025/04/20"
-  },
-  {
-    "timestamp": "56:24",
-    "original": "省みる",
-    "reading": "こころみる",
-    "context": "",
-    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=3384s",
-    "date": "2025/04/20"
-  },
-  {
-    "timestamp": "58:47",
-    "original": "乾",
-    "reading": "かんぬ",
-    "context": "",
-    "videoTitle": "✦ 漢字でGO! ✦ 7ヶ月ぶりに漢字テスト頑張るぞおおお！目指せ満点！🔥【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Pm74kZaxMm0&t=3527s",
     "date": "2025/04/20"
   },
   {
@@ -12483,15 +12528,6 @@ const dictionaryData = [
     "date": "2025/04/16"
   },
   {
-    "timestamp": "1:49:43",
-    "original": "東奔西走",
-    "reading": "とうほうせいそう",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=No9Xd-8a_CA&t=6583s",
-    "date": "2025/04/15"
-  },
-  {
     "timestamp": "31:48",
     "original": "素振り",
     "reading": "そぶり",
@@ -12507,6 +12543,15 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=No9Xd-8a_CA&t=2524s",
+    "date": "2025/04/15"
+  },
+  {
+    "timestamp": "1:49:43",
+    "original": "東奔西走",
+    "reading": "とうほうせいそう",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=No9Xd-8a_CA&t=6583s",
     "date": "2025/04/15"
   },
   {
@@ -12546,6 +12591,15 @@ const dictionaryData = [
     "date": "2025/04/13"
   },
   {
+    "timestamp": "42:57",
+    "original": "黒棺",
+    "reading": "こっかん",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍵✨️初見さん・ROM勢さんも大歓迎🌟【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=GinKBvfaXLc&t=2577s",
+    "date": "2025/04/12"
+  },
+  {
     "timestamp": "1:23:58",
     "original": "出店",
     "reading": "でまえ",
@@ -12579,15 +12633,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍵✨️初見さん・ROM勢さんも大歓迎🌟【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=GinKBvfaXLc&t=8590s",
-    "date": "2025/04/12"
-  },
-  {
-    "timestamp": "42:57",
-    "original": "黒棺",
-    "reading": "こっかん",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍵✨️初見さん・ROM勢さんも大歓迎🌟【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=GinKBvfaXLc&t=2577s",
     "date": "2025/04/12"
   },
   {
@@ -12726,6 +12771,15 @@ const dictionaryData = [
     "date": "2025/04/07"
   },
   {
+    "timestamp": "36:40",
+    "original": "精鋭",
+    "reading": "せいえつ",
+    "context": "",
+    "videoTitle": "୨୧ 飲酒 / 雑談 ୨୧ 挨拶300人目標🌸久しぶりにお酒呑むぞ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vZvc9MNTYDw&t=2200s",
+    "date": "2025/04/06"
+  },
+  {
     "timestamp": "1:01:52",
     "original": "煎る",
     "reading": "にる",
@@ -12753,15 +12807,6 @@ const dictionaryData = [
     "date": "2025/04/06"
   },
   {
-    "timestamp": "36:40",
-    "original": "精鋭",
-    "reading": "せいえつ",
-    "context": "",
-    "videoTitle": "୨୧ 飲酒 / 雑談 ୨୧ 挨拶300人目標🌸久しぶりにお酒呑むぞ～！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=vZvc9MNTYDw&t=2200s",
-    "date": "2025/04/06"
-  },
-  {
     "timestamp": "1:15:20",
     "original": "寝ない",
     "reading": "がんばる",
@@ -12780,21 +12825,21 @@ const dictionaryData = [
     "date": "2025/04/05"
   },
   {
-    "timestamp": "1:17:37",
-    "original": "苦丁茶",
-    "reading": "こてちゃ",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でまったり雑談してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=eSnRvVGxDTQ&t=4657s",
-    "date": "2025/04/02"
-  },
-  {
     "timestamp": "24:25",
     "original": "苦丁茶",
     "reading": "にがちょうちゃ",
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でまったり雑談してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=eSnRvVGxDTQ&t=1465s",
+    "date": "2025/04/02"
+  },
+  {
+    "timestamp": "1:17:37",
+    "original": "苦丁茶",
+    "reading": "こてちゃ",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でまったり雑談してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=eSnRvVGxDTQ&t=4657s",
     "date": "2025/04/02"
   },
   {
@@ -12861,6 +12906,15 @@ const dictionaryData = [
     "date": "2025/04/01"
   },
   {
+    "timestamp": "33:00",
+    "original": "遡行",
+    "reading": "しゃこう",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍚✨️初見さん・ROM勢さんも大歓迎☀️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=FMkC3POkpsM&t=1980s",
+    "date": "2025/03/29"
+  },
+  {
     "timestamp": "1:06:46",
     "original": "十津川",
     "reading": "じゅうつがわ",
@@ -12876,15 +12930,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍚✨️初見さん・ROM勢さんも大歓迎☀️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=FMkC3POkpsM&t=6295s",
-    "date": "2025/03/29"
-  },
-  {
-    "timestamp": "33:00",
-    "original": "遡行",
-    "reading": "しゃこう",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう×1円と初見さん×5円と高評価×1円でランチ代決定🍚✨️初見さん・ROM勢さんも大歓迎☀️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=FMkC3POkpsM&t=1980s",
     "date": "2025/03/29"
   },
   {
@@ -12951,6 +12996,33 @@ const dictionaryData = [
     "date": "2025/03/25"
   },
   {
+    "timestamp": "2:29:46",
+    "original": "枕",
+    "reading": "つくえ",
+    "context": "",
+    "videoTitle": "୨୧ 心霊物件 ୨୧ 格安アパートでの新生活！隣人さんどんな人だろ...？👻【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PnOs866_TUw&t=8986s",
+    "date": "2025/03/25"
+  },
+  {
+    "timestamp": "36:30",
+    "original": "四股",
+    "reading": "よんまた",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=IpxvEv04Xak&t=2190s",
+    "date": "2025/03/25"
+  },
+  {
+    "timestamp": "50:17",
+    "original": "秀逸",
+    "reading": "いつざい",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=IpxvEv04Xak&t=3017s",
+    "date": "2025/03/25"
+  },
+  {
     "timestamp": "1:01:27",
     "original": "神田川",
     "reading": "かねだがわ",
@@ -12987,15 +13059,6 @@ const dictionaryData = [
     "date": "2025/03/25"
   },
   {
-    "timestamp": "2:29:46",
-    "original": "枕",
-    "reading": "つくえ",
-    "context": "",
-    "videoTitle": "୨୧ 心霊物件 ୨୧ 格安アパートでの新生活！隣人さんどんな人だろ...？👻【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=PnOs866_TUw&t=8986s",
-    "date": "2025/03/25"
-  },
-  {
     "timestamp": "2:44:20",
     "original": "古谷",
     "reading": "こたに",
@@ -13011,24 +13074,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=IpxvEv04Xak&t=10657s",
-    "date": "2025/03/25"
-  },
-  {
-    "timestamp": "36:30",
-    "original": "四股",
-    "reading": "よんまた",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=IpxvEv04Xak&t=2190s",
-    "date": "2025/03/25"
-  },
-  {
-    "timestamp": "50:17",
-    "original": "秀逸",
-    "reading": "いつざい",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=IpxvEv04Xak&t=3017s",
     "date": "2025/03/25"
   },
   {
@@ -13131,24 +13176,6 @@ const dictionaryData = [
     "date": "2025/03/20"
   },
   {
-    "timestamp": "1:41:32",
-    "original": "特撮",
-    "reading": "とくさん",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=pOST9OleqbI&t=6092s",
-    "date": "2025/03/19"
-  },
-  {
-    "timestamp": "1:54:13",
-    "original": "偶々",
-    "reading": "すみずみ",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=pOST9OleqbI&t=6853s",
-    "date": "2025/03/19"
-  },
-  {
     "timestamp": "21:02",
     "original": "北方",
     "reading": "きたかた",
@@ -13167,6 +13194,24 @@ const dictionaryData = [
     "date": "2025/03/19"
   },
   {
+    "timestamp": "1:41:32",
+    "original": "特撮",
+    "reading": "とくさん",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=pOST9OleqbI&t=6092s",
+    "date": "2025/03/19"
+  },
+  {
+    "timestamp": "1:54:13",
+    "original": "偶々",
+    "reading": "すみずみ",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=pOST9OleqbI&t=6853s",
+    "date": "2025/03/19"
+  },
+  {
     "timestamp": "2:10:39",
     "original": "天橋立",
     "reading": "てんばしだち",
@@ -13176,21 +13221,21 @@ const dictionaryData = [
     "date": "2025/03/19"
   },
   {
-    "timestamp": "2:11:47",
-    "original": "貪る",
-    "reading": "かじる",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=9Qa7UwUs5vY&t=7907s",
-    "date": "2025/03/17"
-  },
-  {
     "timestamp": "43:46",
     "original": "檜",
     "reading": "やり",
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=9Qa7UwUs5vY&t=2626s",
+    "date": "2025/03/17"
+  },
+  {
+    "timestamp": "2:11:47",
+    "original": "貪る",
+    "reading": "かじる",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9Qa7UwUs5vY&t=7907s",
     "date": "2025/03/17"
   },
   {
@@ -13230,6 +13275,15 @@ const dictionaryData = [
     "date": "2025/03/17"
   },
   {
+    "timestamp": "41:06",
+    "original": "順応",
+    "reading": "じゅんおう",
+    "context": "",
+    "videoTitle": "୨୧ Poppy Playtime Chapter4 ୨୧ ついに最新作に挑戦！今回もクリア目指すぞ...！👻🌀【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=fBXVEWrqQTs&t=2466s",
+    "date": "2025/03/16"
+  },
+  {
     "timestamp": "2:44:28",
     "original": "医者",
     "reading": "いし",
@@ -13248,13 +13302,13 @@ const dictionaryData = [
     "date": "2025/03/16"
   },
   {
-    "timestamp": "41:06",
-    "original": "順応",
-    "reading": "じゅんおう",
+    "timestamp": "32:12",
+    "original": "信越",
+    "reading": "しなの",
     "context": "",
-    "videoTitle": "୨୧ Poppy Playtime Chapter4 ୨୧ ついに最新作に挑戦！今回もクリア目指すぞ...！👻🌀【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=fBXVEWrqQTs&t=2466s",
-    "date": "2025/03/16"
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=trE1zkIXQTU&t=1932s",
+    "date": "2025/03/15"
   },
   {
     "timestamp": "1:31:31",
@@ -13272,15 +13326,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=trE1zkIXQTU&t=7755s",
-    "date": "2025/03/15"
-  },
-  {
-    "timestamp": "32:12",
-    "original": "信越",
-    "reading": "しなの",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でまったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=trE1zkIXQTU&t=1932s",
     "date": "2025/03/15"
   },
   {
@@ -13347,6 +13392,15 @@ const dictionaryData = [
     "date": "2025/03/11"
   },
   {
+    "timestamp": "42:00",
+    "original": "薬事法",
+    "reading": "くすりじほう",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でのんびりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=TahWUUXUT5o&t=2520s",
+    "date": "2025/03/10"
+  },
+  {
     "timestamp": "1:59:09",
     "original": "寒空",
     "reading": "かんくう",
@@ -13380,15 +13434,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でのんびりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=TahWUUXUT5o&t=13990s",
-    "date": "2025/03/10"
-  },
-  {
-    "timestamp": "42:00",
-    "original": "薬事法",
-    "reading": "くすりじほう",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でのんびりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=TahWUUXUT5o&t=2520s",
     "date": "2025/03/10"
   },
   {
@@ -13500,6 +13545,15 @@ const dictionaryData = [
     "date": "2025/03/08"
   },
   {
+    "timestamp": "45:33",
+    "original": "玉砕",
+    "reading": "ぎょくすい",
+    "context": "",
+    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でゆったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=4E8xXw6aIVs&t=2733s",
+    "date": "2025/03/07"
+  },
+  {
     "timestamp": "2:51:10",
     "original": "推進",
     "reading": "おししん",
@@ -13533,15 +13587,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でゆったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=4E8xXw6aIVs&t=14110s",
-    "date": "2025/03/07"
-  },
-  {
-    "timestamp": "45:33",
-    "original": "玉砕",
-    "reading": "ぎょくすい",
-    "context": "",
-    "videoTitle": "୨୧ 朝活 / 雑談 ୨୧ おはよう400人目標☀️関西弁でゆったりお話してます！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ / #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=4E8xXw6aIVs&t=2733s",
     "date": "2025/03/07"
   },
   {
@@ -13635,15 +13680,6 @@ const dictionaryData = [
     "date": "2025/03/06"
   },
   {
-    "timestamp": "1:33:01",
-    "original": "能登栗",
-    "reading": "のうじょう",
-    "context": "",
-    "videoTitle": "୨୧ 真白猫ミミィ生誕祭2025 ୨୧ 新差分お披露目しました✨️たくさんお祝いしてくれて本当にありがとう！【 #真白猫ミミィ #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=XLjBcscQfTw&t=5581s",
-    "date": "2025/03/03"
-  },
-  {
     "timestamp": "2:24:05",
     "original": "玄人",
     "reading": "げんじん",
@@ -13680,6 +13716,15 @@ const dictionaryData = [
     "date": "2025/03/03"
   },
   {
+    "timestamp": "1:33:01",
+    "original": "能登栗",
+    "reading": "のうじょう",
+    "context": "",
+    "videoTitle": "୨୧ 真白猫ミミィ生誕祭2025 ୨୧ 新差分お披露目しました✨️たくさんお祝いしてくれて本当にありがとう！【 #真白猫ミミィ #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=XLjBcscQfTw&t=5581s",
+    "date": "2025/03/03"
+  },
+  {
     "timestamp": "23:46",
     "original": "目出度い",
     "reading": "ひでたい",
@@ -13687,6 +13732,15 @@ const dictionaryData = [
     "videoTitle": "୨୧ 誕生日カウントダウン ୨୧ みんなと一緒にお誕生日を迎えたいな🎂✨️【 #真白猫ミミィ #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=pW4DtVMCc-Q&t=1426s",
     "date": "2025/03/02"
+  },
+  {
+    "timestamp": "42:17",
+    "original": "淑女",
+    "reading": "ばじょ",
+    "context": "",
+    "videoTitle": "✦ 朝活 / 雑談 ✦ おはよう400人目標☀️3月最初のおはようください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=VgjVEdlwPYQ&t=2537s",
+    "date": "2025/03/01"
   },
   {
     "timestamp": "2:38:40",
@@ -13704,15 +13758,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "✦ 朝活 / 雑談 ✦ おはよう400人目標☀️3月最初のおはようください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=VgjVEdlwPYQ&t=13146s",
-    "date": "2025/03/01"
-  },
-  {
-    "timestamp": "42:17",
-    "original": "淑女",
-    "reading": "ばじょ",
-    "context": "",
-    "videoTitle": "✦ 朝活 / 雑談 ✦ おはよう400人目標☀️3月最初のおはようください！初見さん・ROM勢さんも大歓迎✨️【 #真白猫ミミィ #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=VgjVEdlwPYQ&t=2537s",
     "date": "2025/03/01"
   },
   {
@@ -13734,21 +13779,21 @@ const dictionaryData = [
     "date": "2025/03/01"
   },
   {
-    "timestamp": "2:13:44",
-    "original": "裏拳",
-    "reading": "うらこぶし",
-    "context": "",
-    "videoTitle": "✦ 朝活 / 雑談 ✦ おはよう300人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎🌸【 #真白猫ミミィ #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=x5QRcC4C8vc&t=8024s",
-    "date": "2025/02/27"
-  },
-  {
     "timestamp": "49:15",
     "original": "生粋",
     "reading": "しょうすい",
     "context": "",
     "videoTitle": "✦ 朝活 / 雑談 ✦ おはよう300人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎🌸【 #真白猫ミミィ #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=x5QRcC4C8vc&t=2955s",
+    "date": "2025/02/27"
+  },
+  {
+    "timestamp": "2:13:44",
+    "original": "裏拳",
+    "reading": "うらこぶし",
+    "context": "",
+    "videoTitle": "✦ 朝活 / 雑談 ✦ おはよう300人目標☀️みんなのお名前呼ばせてください！初見さん・ROM勢さんも大歓迎🌸【 #真白猫ミミィ #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=x5QRcC4C8vc&t=8024s",
     "date": "2025/02/27"
   },
   {
@@ -13788,6 +13833,15 @@ const dictionaryData = [
     "date": "2025/02/12"
   },
   {
+    "timestamp": "38:00",
+    "original": "脂肪肝",
+    "reading": "しぼうきも",
+    "context": "",
+    "videoTitle": "୨୧ 雑談 ୨୧ 祝メンバーシップ1周年✨️いつも本当にありがとう！お酒呑みながらまったり雑談🍶【 #真白猫ミミィ #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Eas56ISi4YI&t=2280s",
+    "date": "2025/02/12"
+  },
+  {
     "timestamp": "1:03:40",
     "original": "祈念",
     "reading": "きがん",
@@ -13821,15 +13875,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "୨୧ 雑談 ୨୧ 祝メンバーシップ1周年✨️いつも本当にありがとう！お酒呑みながらまったり雑談🍶【 #真白猫ミミィ #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=Eas56ISi4YI&t=8972s",
-    "date": "2025/02/12"
-  },
-  {
-    "timestamp": "38:00",
-    "original": "脂肪肝",
-    "reading": "しぼうきも",
-    "context": "",
-    "videoTitle": "୨୧ 雑談 ୨୧ 祝メンバーシップ1周年✨️いつも本当にありがとう！お酒呑みながらまったり雑談🍶【 #真白猫ミミィ #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Eas56ISi4YI&t=2280s",
     "date": "2025/02/12"
   },
   {
@@ -14121,6 +14166,15 @@ const dictionaryData = [
     "date": "2025/01/06"
   },
   {
+    "timestamp": "29:28",
+    "original": "七草粥",
+    "reading": "しちぐさがゆ",
+    "context": "",
+    "videoTitle": "✦ 朝活 / 雑談 ✦ おはよう331人目標☀️関西弁でのんびりお話してます💭初見さん・ROM勢さんも大歓迎🌸【 #真白猫ミミィ #vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Jf50vDK2mDI&t=1768s",
+    "date": "2025/01/06"
+  },
+  {
     "timestamp": "1:02:28",
     "original": "極寒",
     "reading": "ごくさむ",
@@ -14172,15 +14226,6 @@ const dictionaryData = [
     "context": "",
     "videoTitle": "✦ 朝活 / 雑談 ✦ おはよう331人目標☀️関西弁でのんびりお話してます💭初見さん・ROM勢さんも大歓迎🌸【 #真白猫ミミィ #vtuber 】",
     "videoUrl": "https://www.youtube.com/watch?v=Jf50vDK2mDI&t=6397s",
-    "date": "2025/01/06"
-  },
-  {
-    "timestamp": "29:28",
-    "original": "七草粥",
-    "reading": "しちぐさがゆ",
-    "context": "",
-    "videoTitle": "✦ 朝活 / 雑談 ✦ おはよう331人目標☀️関西弁でのんびりお話してます💭初見さん・ROM勢さんも大歓迎🌸【 #真白猫ミミィ #vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=Jf50vDK2mDI&t=1768s",
     "date": "2025/01/06"
   },
   {
