@@ -1449,6 +1449,60 @@ const dictionaryData = [
     "date": "2026/06/30"
   },
   {
+    "timestamp": "43:32",
+    "original": "熱波",
+    "reading": "あつなみ",
+    "context": "",
+    "videoTitle": "6/28【 雑談 】初見さん10人耐久☀️ゆるゆる関西弁でまったりおしゃべり！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UPOFq6sWSyQ&t=2612s",
+    "date": "2026/06/28"
+  },
+  {
+    "timestamp": "2:03:31",
+    "original": "誤嚥",
+    "reading": "ごかん",
+    "context": "",
+    "videoTitle": "6/28【 雑談 】初見さん10人耐久☀️ゆるゆる関西弁でまったりおしゃべり！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UPOFq6sWSyQ&t=7411s",
+    "date": "2026/06/28"
+  },
+  {
+    "timestamp": "2:16:14",
+    "original": "ウィッシュリスト",
+    "reading": "うおっしゅりすと",
+    "context": "",
+    "videoTitle": "6/28【 雑談 】初見さん10人耐久☀️ゆるゆる関西弁でまったりおしゃべり！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UPOFq6sWSyQ&t=8174s",
+    "date": "2026/06/28"
+  },
+  {
+    "timestamp": "4:04:00",
+    "original": "vine",
+    "reading": "びーん",
+    "context": "",
+    "videoTitle": "6/28【 雑談 】初見さん10人耐久☀️ゆるゆる関西弁でまったりおしゃべり！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UPOFq6sWSyQ&t=14640s",
+    "date": "2026/06/28"
+  },
+  {
+    "timestamp": "4:34:03",
+    "original": "嬉々",
+    "reading": "うれうれ",
+    "context": "",
+    "videoTitle": "6/28【 雑談 】初見さん10人耐久☀️ゆるゆる関西弁でまったりおしゃべり！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UPOFq6sWSyQ&t=16443s",
+    "date": "2026/06/28"
+  },
+  {
+    "timestamp": "4:47:15",
+    "original": "OPEC",
+    "reading": "おーぴーいーしー",
+    "context": "",
+    "videoTitle": "6/28【 雑談 】初見さん10人耐久☀️ゆるゆる関西弁でまったりおしゃべり！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=UPOFq6sWSyQ&t=17235s",
+    "date": "2026/06/28"
+  },
+  {
     "timestamp": "57:00",
     "original": "解熱剤",
     "reading": "かいねつ",
