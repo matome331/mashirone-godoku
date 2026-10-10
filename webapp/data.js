@@ -72,6 +72,15 @@ const dictionaryData = [
     "date": "2026/10/07"
   },
   {
+    "timestamp": "25:01",
+    "original": "閂",
+    "reading": "つきぎめ",
+    "context": "",
+    "videoTitle": "10/5【 漢字でGOGO! 】ついに漢字書きます【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=EO2vt1Ad0Gg&t=1501s",
+    "date": "2026/10/05"
+  },
+  {
     "timestamp": "31:40",
     "original": "叉焼",
     "reading": "しゃしょう",
