@@ -104,7 +104,7 @@ body {
     align-items: center;
     width: 100%;
     gap: 0.55rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 /* PC（マウス操作）のみの演出 */
@@ -132,7 +132,9 @@ body {
     display: inline-flex;
     align-items: center;
     width: fit-content;
-    margin: 0 0 0.3rem auto;
+    flex-shrink: 0;
+    white-space: nowrap;
+    margin: 0 0 0 auto;
     padding: 0.08rem 0.5rem;
     border-radius: 999px;
     background: rgba(242, 139, 175, 0.12);
@@ -321,7 +323,6 @@ body {
     .logo {
         font-size: 1.0rem;
         /* 大幅に縮小（改行防止） */
-        padding-right: 7.2rem;
     }
 
     .title-row {
@@ -333,11 +334,6 @@ body {
     }
 
     .misreading-count {
-        position: absolute;
-        top: 1.0rem;
-        right: 0.9rem;
-        z-index: 2;
-        margin: 0;
         padding: 0.05rem 0.4rem;
         font-size: 0.65rem;
         white-space: nowrap;
