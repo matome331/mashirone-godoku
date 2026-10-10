@@ -1,5 +1,104 @@
 const dictionaryData = [
   {
+    "timestamp": "2:49:27",
+    "original": "新緑狩り",
+    "reading": "しんみどり",
+    "context": "",
+    "videoTitle": "10/8【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NK5wdT1P9xw&t=10167s",
+    "date": "2026/10/08"
+  },
+  {
+    "timestamp": "2:57:29",
+    "original": "指宿",
+    "reading": "ゆびやど",
+    "context": "",
+    "videoTitle": "10/8【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NK5wdT1P9xw&t=10649s",
+    "date": "2026/10/08"
+  },
+  {
+    "timestamp": "3:00:57",
+    "original": "女川",
+    "reading": "おんながわ",
+    "context": "",
+    "videoTitle": "10/8【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NK5wdT1P9xw&t=10857s",
+    "date": "2026/10/08"
+  },
+  {
+    "timestamp": "3:01:04",
+    "original": "呉",
+    "reading": "ごう",
+    "context": "",
+    "videoTitle": "10/8【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NK5wdT1P9xw&t=10864s",
+    "date": "2026/10/08"
+  },
+  {
+    "timestamp": "3:22:28",
+    "original": "崎陽軒",
+    "reading": "さきひのき",
+    "context": "",
+    "videoTitle": "10/8【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NK5wdT1P9xw&t=12148s",
+    "date": "2026/10/08"
+  },
+  {
+    "timestamp": "3:28:26",
+    "original": "出雲",
+    "reading": "いずみ",
+    "context": "",
+    "videoTitle": "10/8【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NK5wdT1P9xw&t=12506s",
+    "date": "2026/10/08"
+  },
+  {
+    "timestamp": "3:30:24",
+    "original": "人吉",
+    "reading": "ひときち",
+    "context": "",
+    "videoTitle": "10/8【 朝活 / 雑談 】おはよう300人目標☀️初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=NK5wdT1P9xw&t=12624s",
+    "date": "2026/10/08"
+  },
+  {
+    "timestamp": "4:00:20",
+    "original": "静脈麻酔",
+    "reading": "せいみゃく",
+    "context": "",
+    "videoTitle": "10/7【 朝活 / 雑談 】挨拶・高評価で歩く距離が増える！？🚶‍♀️ジムをサボりすぎてるので強制的に行かせてください👊【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=FLWysXc_qEk&t=14420s",
+    "date": "2026/10/07"
+  },
+  {
+    "timestamp": "31:40",
+    "original": "叉焼",
+    "reading": "しゃしょう",
+    "context": "",
+    "videoTitle": "10/5【 漢字でGOGO! 】ついに漢字書きます【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=EO2vt1Ad0Gg&t=1900s",
+    "date": "2026/10/05"
+  },
+  {
+    "timestamp": "1:40:07",
+    "original": "年貢",
+    "reading": "ねんこう",
+    "context": "",
+    "videoTitle": "10/5【 漢字でGOGO! 】ついに漢字書きます【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=EO2vt1Ad0Gg&t=6007s",
+    "date": "2026/10/05"
+  },
+  {
+    "timestamp": "2:24:49",
+    "original": "象形文字",
+    "reading": "ぞうけい",
+    "context": "",
+    "videoTitle": "10/5【 漢字でGOGO! 】ついに漢字書きます【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=EO2vt1Ad0Gg&t=8689s",
+    "date": "2026/10/05"
+  },
+  {
     "timestamp": "2:15:20",
     "original": "編纂",
     "reading": "へんしゅう",
