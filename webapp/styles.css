@@ -107,6 +107,20 @@ body {
     flex-wrap: nowrap;
 }
 
+/* Align the desktop count with the sort label below it. */
+@media (min-width: 651px) {
+    .title-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) min(400px, calc((100% - 1rem) / 2));
+        gap: 1rem;
+    }
+
+    .title-row .misreading-count {
+        justify-self: start;
+        margin: 0 0 0 calc(1.7rem + 2px);
+    }
+}
+
 /* PC（マウス操作）のみの演出 */
 @media (min-width: 768px) {
     .title-area {
