@@ -1467,12 +1467,12 @@ const dictionaryData = [
     "date": "2026/06/28"
   },
   {
-    "timestamp": "2:16:14",
+    "timestamp": "2:16:22",
     "original": "ウィッシュリスト",
     "reading": "うおっしゅりすと",
     "context": "",
     "videoTitle": "6/28【 雑談 】初見さん10人耐久☀️ゆるゆる関西弁でまったりおしゃべり！ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
-    "videoUrl": "https://www.youtube.com/watch?v=UPOFq6sWSyQ&t=8174s",
+    "videoUrl": "https://www.youtube.com/watch?v=UPOFq6sWSyQ&t=8182s",
     "date": "2026/06/28"
   },
   {
