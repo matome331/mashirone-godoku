@@ -1530,6 +1530,69 @@ const dictionaryData = [
     "date": "2026/06/24"
   },
   {
+    "timestamp": "1:07:50",
+    "original": "煮沸",
+    "reading": "にふつ",
+    "context": "",
+    "videoTitle": "6/16【 雑談 】初見さん・ROM勢さんも大歓迎！カフェオレ飲みながらまったり雑談☕️💭【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lTjYFgxGKq8&t=4070s",
+    "date": "2026/06/16"
+  },
+  {
+    "timestamp": "1:36:33",
+    "original": "野営",
+    "reading": "のえい",
+    "context": "",
+    "videoTitle": "6/16【 雑談 】初見さん・ROM勢さんも大歓迎！カフェオレ飲みながらまったり雑談☕️💭【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lTjYFgxGKq8&t=5793s",
+    "date": "2026/06/16"
+  },
+  {
+    "timestamp": "1:53:56",
+    "original": "大打撃",
+    "reading": "おおだげき",
+    "context": "",
+    "videoTitle": "6/16【 雑談 】初見さん・ROM勢さんも大歓迎！カフェオレ飲みながらまったり雑談☕️💭【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lTjYFgxGKq8&t=6836s",
+    "date": "2026/06/16"
+  },
+  {
+    "timestamp": "1:58:18",
+    "original": "卒倒",
+    "reading": "そっとつ",
+    "context": "",
+    "videoTitle": "6/16【 雑談 】初見さん・ROM勢さんも大歓迎！カフェオレ飲みながらまったり雑談☕️💭【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lTjYFgxGKq8&t=7098s",
+    "date": "2026/06/16"
+  },
+  {
+    "timestamp": "2:32:28",
+    "original": "一糸乱れぬ",
+    "reading": "ひといとみだれぬ",
+    "context": "",
+    "videoTitle": "6/16【 雑談 】初見さん・ROM勢さんも大歓迎！カフェオレ飲みながらまったり雑談☕️💭【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lTjYFgxGKq8&t=9148s",
+    "date": "2026/06/16"
+  },
+  {
+    "timestamp": "3:44:34",
+    "original": "DEEN",
+    "reading": "でーん",
+    "context": "",
+    "videoTitle": "6/16【 雑談 】初見さん・ROM勢さんも大歓迎！カフェオレ飲みながらまったり雑談☕️💭【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lTjYFgxGKq8&t=13474s",
+    "date": "2026/06/16"
+  },
+  {
+    "timestamp": "3:46:40",
+    "original": "海女",
+    "reading": "うみおんな",
+    "context": "",
+    "videoTitle": "6/16【 雑談 】初見さん・ROM勢さんも大歓迎！カフェオレ飲みながらまったり雑談☕️💭【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=lTjYFgxGKq8&t=13600s",
+    "date": "2026/06/16"
+  },
+  {
     "timestamp": "4:24:00",
     "original": "削岩機",
     "reading": "けずるいわき",
