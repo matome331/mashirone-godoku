@@ -1,5 +1,185 @@
 const dictionaryData = [
   {
+    "timestamp": "32:53",
+    "original": "ドドンパ",
+    "reading": "ビビンバ",
+    "context": "",
+    "videoTitle": "10/31【 昼活 / 雑談 】ハロウィンBINGO耐久🎃ご協力本当にありがとうございました🙏✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=HeEOZuvLqjU&t=1973s",
+    "date": "2026/10/31"
+  },
+  {
+    "timestamp": "1:48:41",
+    "original": "足して",
+    "reading": "ていして",
+    "context": "",
+    "videoTitle": "10/31【 昼活 / 雑談 】ハロウィンBINGO耐久🎃ご協力本当にありがとうございました🙏✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=HeEOZuvLqjU&t=6521s",
+    "date": "2026/10/31"
+  },
+  {
+    "timestamp": "1:59:03",
+    "original": "買って",
+    "reading": "かえって",
+    "context": "",
+    "videoTitle": "10/31【 昼活 / 雑談 】ハロウィンBINGO耐久🎃ご協力本当にありがとうございました🙏✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=HeEOZuvLqjU&t=7143s",
+    "date": "2026/10/31"
+  },
+  {
+    "timestamp": "4:57:45",
+    "original": "お蔵入り",
+    "reading": "おぞういり",
+    "context": "",
+    "videoTitle": "10/31【 昼活 / 雑談 】ハロウィンBINGO耐久🎃ご協力本当にありがとうございました🙏✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=HeEOZuvLqjU&t=17865s",
+    "date": "2026/10/31"
+  },
+  {
+    "timestamp": "5:01:56",
+    "original": "温存",
+    "reading": "おうぞう",
+    "context": "",
+    "videoTitle": "10/31【 昼活 / 雑談 】ハロウィンBINGO耐久🎃ご協力本当にありがとうございました🙏✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=HeEOZuvLqjU&t=18116s",
+    "date": "2026/10/31"
+  },
+  {
+    "timestamp": "5:22:12",
+    "original": "拙くて",
+    "reading": "うとくて",
+    "context": "",
+    "videoTitle": "10/31【 昼活 / 雑談 】ハロウィンBINGO耐久🎃ご協力本当にありがとうございました🙏✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=HeEOZuvLqjU&t=19332s",
+    "date": "2026/10/31"
+  },
+  {
+    "timestamp": "1:08:32",
+    "original": "滑らか",
+    "reading": "すべらか",
+    "context": "",
+    "videoTitle": "10/25【 プチお披露目 】モデルがさらに進化しました👏✨️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PKhwaFdaYEM&t=4112s",
+    "date": "2026/10/25"
+  },
+  {
+    "timestamp": "2:12:02",
+    "original": "一様",
+    "reading": "いちさま",
+    "context": "",
+    "videoTitle": "10/25【 プチお披露目 】モデルがさらに進化しました👏✨️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PKhwaFdaYEM&t=7922s",
+    "date": "2026/10/25"
+  },
+  {
+    "timestamp": "2:20:23",
+    "original": "八尺様",
+    "reading": "ひゃくしゃく",
+    "context": "",
+    "videoTitle": "10/25【 プチお披露目 】モデルがさらに進化しました👏✨️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=PKhwaFdaYEM&t=8423s",
+    "date": "2026/10/25"
+  },
+  {
+    "timestamp": "3:05:07",
+    "original": "横恋慕",
+    "reading": "おうこいまく",
+    "context": "",
+    "videoTitle": "10/21【 雑談 】浮気判定シートに挑戦🔥初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=moB2KWUFKn8&t=11107s",
+    "date": "2026/10/21"
+  },
+  {
+    "timestamp": "33:27",
+    "original": "豚とろ",
+    "reading": "ぶたとろ",
+    "context": "",
+    "videoTitle": "10/20【 昼活 / 雑談 】ゆるっと関西弁でまったりお話してます☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Lg2N1x_SMmY&t=2007s",
+    "date": "2026/10/20"
+  },
+  {
+    "timestamp": "1:55:08",
+    "original": "梵天",
+    "reading": "たんてん",
+    "context": "",
+    "videoTitle": "10/20【 昼活 / 雑談 】ゆるっと関西弁でまったりお話してます☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=Lg2N1x_SMmY&t=6908s",
+    "date": "2026/10/20"
+  },
+  {
+    "timestamp": "54:32",
+    "original": "殲滅",
+    "reading": "しょうめつ",
+    "context": "",
+    "videoTitle": "10/18【 昼活 / 雑談 】ゆるっと関西弁でまったりトーク☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9OVPkXTwCOQ&t=3272s",
+    "date": "2026/10/18"
+  },
+  {
+    "timestamp": "2:19:31",
+    "original": "颯爽",
+    "reading": "そうかい",
+    "context": "",
+    "videoTitle": "10/18【 昼活 / 雑談 】ゆるっと関西弁でまったりトーク☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=9OVPkXTwCOQ&t=8371s",
+    "date": "2026/10/18"
+  },
+  {
+    "timestamp": "1:12:42",
+    "original": "軸",
+    "reading": "がら",
+    "context": "",
+    "videoTitle": "10/12【 昼活 / 雑談 】挨拶＆初見さん＆高評価の数でステッパーする回数が決まる配信！？💪✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2mzG6lOb3uY&t=4362s",
+    "date": "2026/10/12"
+  },
+  {
+    "timestamp": "1:44:22",
+    "original": "Gipt",
+    "reading": "ぎぷと",
+    "context": "",
+    "videoTitle": "10/12【 昼活 / 雑談 】挨拶＆初見さん＆高評価の数でステッパーする回数が決まる配信！？💪✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2mzG6lOb3uY&t=6262s",
+    "date": "2026/10/12"
+  },
+  {
+    "timestamp": "2:33:30",
+    "original": "尖った",
+    "reading": "あごったあご",
+    "context": "",
+    "videoTitle": "10/12【 昼活 / 雑談 】挨拶＆初見さん＆高評価の数でステッパーする回数が決まる配信！？💪✨️【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=2mzG6lOb3uY&t=9210s",
+    "date": "2026/10/12"
+  },
+  {
+    "timestamp": "1:01:01",
+    "original": "清潔感",
+    "reading": "清楚感",
+    "context": "",
+    "videoTitle": "10/11【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=WR4XzA8m_BU&t=3661s",
+    "date": "2026/10/11"
+  },
+  {
+    "timestamp": "2:35:26",
+    "original": "御新香",
+    "reading": "おしるこ",
+    "context": "",
+    "videoTitle": "10/11【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=WR4XzA8m_BU&t=9326s",
+    "date": "2026/10/11"
+  },
+  {
+    "timestamp": "2:49:56",
+    "original": "筋膜性背部痛",
+    "reading": "おうまくせいせぶつ",
+    "context": "",
+    "videoTitle": "10/11【 朝活 / 雑談 】おはよう＆初見さん＆高評価で今日のお昼ご飯代が決まる！？【 真白猫ミミィ / vtuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=WR4XzA8m_BU&t=10196s",
+    "date": "2026/10/11"
+  },
+  {
     "timestamp": "2:49:27",
     "original": "新緑狩り",
     "reading": "しんみどり",
