@@ -1,5 +1,113 @@
 const dictionaryData = [
   {
+    "timestamp": "4:55",
+    "original": "山羊",
+    "reading": "やまひつじ",
+    "context": "",
+    "videoTitle": "11/3【 昼活 / 雑談 】ゆるっと関西弁でお話してます☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=hsNF1OiGi8Y&t=295s",
+    "date": "2026/11/03"
+  },
+  {
+    "timestamp": "1:03:13",
+    "original": "御祈祷",
+    "reading": "おいのり",
+    "context": "",
+    "videoTitle": "11/3【 昼活 / 雑談 】ゆるっと関西弁でお話してます☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=hsNF1OiGi8Y&t=3793s",
+    "date": "2026/11/03"
+  },
+  {
+    "timestamp": "1:48:46",
+    "original": "讃えよ",
+    "reading": "あやまえよ",
+    "context": "",
+    "videoTitle": "11/3【 昼活 / 雑談 】ゆるっと関西弁でお話してます☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=hsNF1OiGi8Y&t=6526s",
+    "date": "2026/11/03"
+  },
+  {
+    "timestamp": "1:31:39",
+    "original": "総統",
+    "reading": "そうとつ",
+    "context": "",
+    "videoTitle": "11/1【 昼活 / 雑談 】11月最初の雑談☀️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=h_odJXPImQw&t=5499s",
+    "date": "2026/11/01"
+  },
+  {
+    "timestamp": "1:58:57",
+    "original": "苦丁茶",
+    "reading": "にがちょうちゃ",
+    "context": "",
+    "videoTitle": "11/1【 昼活 / 雑談 】11月最初の雑談☀️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=h_odJXPImQw&t=7137s",
+    "date": "2026/11/01"
+  },
+  {
+    "timestamp": "2:03:37",
+    "original": "芍薬甘草湯",
+    "reading": "しゃくやくあまぐさゆ",
+    "context": "",
+    "videoTitle": "11/1【 昼活 / 雑談 】11月最初の雑談☀️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=h_odJXPImQw&t=7417s",
+    "date": "2026/11/01"
+  },
+  {
+    "timestamp": "2:15:46",
+    "original": "芍薬",
+    "reading": "ひゃくやく",
+    "context": "",
+    "videoTitle": "11/1【 昼活 / 雑談 】11月最初の雑談☀️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=h_odJXPImQw&t=8146s",
+    "date": "2026/11/01"
+  },
+  {
+    "timestamp": "2:40:55",
+    "original": "多寡",
+    "reading": "たえん",
+    "context": "",
+    "videoTitle": "11/1【 昼活 / 雑談 】11月最初の雑談☀️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=h_odJXPImQw&t=9655s",
+    "date": "2026/11/01"
+  },
+  {
+    "timestamp": "2:44:27",
+    "original": "遵守",
+    "reading": "じょしゅ",
+    "context": "",
+    "videoTitle": "11/1【 昼活 / 雑談 】11月最初の雑談☀️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=h_odJXPImQw&t=9867s",
+    "date": "2026/11/01"
+  },
+  {
+    "timestamp": "2:44:56",
+    "original": "雑居",
+    "reading": "ざつい",
+    "context": "",
+    "videoTitle": "11/1【 昼活 / 雑談 】11月最初の雑談☀️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=h_odJXPImQw&t=9896s",
+    "date": "2026/11/01"
+  },
+  {
+    "timestamp": "2:51:00",
+    "original": "drop",
+    "reading": "どりっぷ",
+    "context": "",
+    "videoTitle": "11/1【 昼活 / 雑談 】11月最初の雑談☀️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=h_odJXPImQw&t=10260s",
+    "date": "2026/11/01"
+  },
+  {
+    "timestamp": "4:02:52",
+    "original": "無線",
+    "reading": "むえん",
+    "context": "",
+    "videoTitle": "11/1【 昼活 / 雑談 】11月最初の雑談☀️初見さん・ROM勢さんも大歓迎◎【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=h_odJXPImQw&t=14572s",
+    "date": "2026/11/01"
+  },
+  {
     "timestamp": "32:53",
     "original": "ドドンパ",
     "reading": "ビビンバ",
