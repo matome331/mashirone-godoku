@@ -1,5 +1,203 @@
 const dictionaryData = [
   {
+    "timestamp": "35:06",
+    "original": "寺後区",
+    "reading": "てらごく",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=2106s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "36:34",
+    "original": "あこやGuy",
+    "reading": "あこやぐい",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=2194s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "2:08:38",
+    "original": "尾けてたら",
+    "reading": "びけて",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=7718s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "2:24:02",
+    "original": "癒着",
+    "reading": "いちゃく",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=8642s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "2:28:02",
+    "original": "拡大",
+    "reading": "こうだい",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=8882s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "2:36:24",
+    "original": "備品",
+    "reading": "そうび",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=9384s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "2:54:00",
+    "original": "育苗",
+    "reading": "いくなえ",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=10440s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "2:56:48",
+    "original": "錠前",
+    "reading": "かぎまえ",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=10608s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "2:57:13",
+    "original": "アクセス",
+    "reading": "アクセル",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=10633s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "3:27:07",
+    "original": "潜り",
+    "reading": "しのび",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=12427s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "3:36:00",
+    "original": "首謀者",
+    "reading": "しゅとうしゃ",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=12960s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "3:56:37",
+    "original": "アクセス",
+    "reading": "アクセル",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=14197s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "4:18:06",
+    "original": "苗床",
+    "reading": "びょうどこ",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=15486s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "4:29:25",
+    "original": "蔑め",
+    "reading": "いましめ",
+    "context": "",
+    "videoTitle": "11/18【 地獄怨根 】夜になると謎の八百屋が現れる…！？【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=vs3Dhj76mFM&t=16165s",
+    "date": "2026/11/18"
+  },
+  {
+    "timestamp": "54:38",
+    "original": "お昼",
+    "reading": "お星のチュール",
+    "context": "",
+    "videoTitle": "11/15【 雑談 】ゆるっと関西弁でまったりお話し☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=P_sm_ZO5k1Q&t=3278s",
+    "date": "2026/11/15"
+  },
+  {
+    "timestamp": "1:03:58",
+    "original": "暮正月",
+    "reading": "くらすにしょうがつ",
+    "context": "",
+    "videoTitle": "11/15【 雑談 】ゆるっと関西弁でまったりお話し☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=P_sm_ZO5k1Q&t=3838s",
+    "date": "2026/11/15"
+  },
+  {
+    "timestamp": "1:31:12",
+    "original": "苦悶",
+    "reading": "くとう",
+    "context": "",
+    "videoTitle": "11/15【 雑談 】ゆるっと関西弁でまったりお話し☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=P_sm_ZO5k1Q&t=5472s",
+    "date": "2026/11/15"
+  },
+  {
+    "timestamp": "2:04:05",
+    "original": "他人事",
+    "reading": "よそごと",
+    "context": "",
+    "videoTitle": "11/15【 雑談 】ゆるっと関西弁でまったりお話し☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=P_sm_ZO5k1Q&t=7445s",
+    "date": "2026/11/15"
+  },
+  {
+    "timestamp": "2:30:04",
+    "original": "匹敵",
+    "reading": "してき",
+    "context": "",
+    "videoTitle": "11/15【 雑談 】ゆるっと関西弁でまったりお話し☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=P_sm_ZO5k1Q&t=9004s",
+    "date": "2026/11/15"
+  },
+  {
+    "timestamp": "2:30:17",
+    "original": "匹敵",
+    "reading": "しってき",
+    "context": "",
+    "videoTitle": "11/15【 雑談 】ゆるっと関西弁でまったりお話し☕️💭初見さん・ROM勢さんも大歓迎✨️【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=P_sm_ZO5k1Q&t=9017s",
+    "date": "2026/11/15"
+  },
+  {
+    "timestamp": "9:54",
+    "original": "雑居ビル",
+    "reading": "ざついビル",
+    "context": "",
+    "videoTitle": "11/14【 絶対遵守 】ルールを破れば即終了！？無人の雑居ビルから脱出します🚪【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=EGmmEfv3QiU&t=594s",
+    "date": "2026/11/14"
+  },
+  {
+    "timestamp": "23:40",
+    "original": "no exceptions",
+    "reading": "えくしょくしょん",
+    "context": "",
+    "videoTitle": "11/14【 絶対遵守 】ルールを破れば即終了！？無人の雑居ビルから脱出します🚪【 真白猫ミミィ / VTuber 】",
+    "videoUrl": "https://www.youtube.com/watch?v=EGmmEfv3QiU&t=1420s",
+    "date": "2026/11/14"
+  },
+  {
     "timestamp": "4:55",
     "original": "山羊",
     "reading": "やまひつじ",
